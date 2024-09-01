@@ -1,0 +1,36 @@
+.navbar a{
+    text-decoration: none;
+    color: black;
+    padding: 8px 15px;
+    font-size: 15px;
+}
+
+.navbar .logo p{
+    /* color: dodgerblue; */
+    font-size: 25px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: rgb(29, 29, 29);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 100px;
+    /* background-color: aqua; */
+    height: 5rem;
+}
+
+.navbar ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.navbar .btn{
+    /* background-color: cornflowerblue; */
+    background-color: rgb(223, 223, 223);
+    color: black;
+    border-radius: 6px;
+}

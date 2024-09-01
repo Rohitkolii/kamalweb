@@ -1,0 +1,36 @@
+.aboutcon{
+    width: 85%;
+    margin: 50px auto;
+    display: flex;
+    gap: 50px;
+}
+
+.aboutcon .col{
+    width: 50%;
+    position: relative;
+}
+
+.aboutcon .col img{
+    width: 100%;
+}
+
+.aboutcon .col h3{
+    font-size: 35px;
+    margin-bottom: 20px;
+
+    /* font-size: 72px; */
+    background: -webkit-linear-gradient(45deg, #e62f30, rgb(62, 130, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.aboutcon .col p{
+    margin: 15px 0;
+}
+
+.aboutcon .col a{
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    /* border-radius: 6px; */
+}
