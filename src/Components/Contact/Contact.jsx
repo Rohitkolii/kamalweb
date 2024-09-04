@@ -3,13 +3,9 @@ import Styles from './Contact.module.css'
 
 const Contact = () => {
   return (
-    <>
+    <div className={Styles.Contact}>
         <section className={Styles.contact_con}>
-
-        <div>hello</div>
-
-        <div>
-        <form>
+            <form>
                 <p>contact us</p>
                     <div className={Styles.row}>
                         <div className={Styles.col}>
@@ -57,10 +53,9 @@ const Contact = () => {
                     </div>
 
                     <button>Submit</button>
-                </form>
-        </div>
+            </form>
       </section>
-    </>
+    </div>
   )
 }
 

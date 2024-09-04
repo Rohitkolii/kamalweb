@@ -1,0 +1,22 @@
+.Partners{
+    /* background-color: #1E201E; */
+    padding: 10px 0;
+    filter: blur(9);
+}
+
+.Partners .row{
+    display: flex;
+    width: 70%;
+    margin: 20px auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Partners .col{
+    width: 90px;
+}
+
+.Partners .col img{
+    width: 100%;
+    filter: grayscale(1);
+}

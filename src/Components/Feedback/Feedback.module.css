@@ -1,0 +1,35 @@
+.Feedback{
+    padding: 40px 0;
+}
+.Feedback .col1{
+    /* background-color: rebeccapurple; */
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.Feedback .col1 p:nth-child(1){
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.Feedback .col1 h3{
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 20px;
+}
+
+.Feedback .reviews{
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    width: 75%;
+    margin: 50px auto;
+}
+
+.Feedback .reviews div{
+    background-color: #171717;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid rgb(15, 15, 15);
+}

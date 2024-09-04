@@ -1,16 +1,18 @@
 .navbar a{
     text-decoration: none;
-    color: black;
+    color: white;
     padding: 8px 15px;
     font-size: 15px;
 }
 
 .navbar .logo p{
     /* color: dodgerblue; */
-    font-size: 25px;
+    font-size: 40px;
     font-weight: 900;
     text-transform: uppercase;
-    color: rgb(29, 29, 29);
+    /* color: rgb(29, 29, 29); */
+    color: white;
+    cursor: pointer;
 }
 
 .navbar{
@@ -20,12 +22,19 @@
     padding: 5px 100px;
     /* background-color: aqua; */
     height: 5rem;
+    /* position: fixed;
+    background-color: rgb(46, 46, 46);
+    width: 100%;
+    z-index: 9; */
 }
 
 .navbar ul{
     display: flex;
     gap: 20px;
     list-style: none;
+}
+.navbar ul svg{
+    font-size: 25px;
 }
 
 .navbar .btn{

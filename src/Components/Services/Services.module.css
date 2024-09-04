@@ -1,0 +1,56 @@
+.Services{
+    /* margin: 40px 0; */
+    padding: 50px 0;
+    background-color: #000000;
+}
+
+.Services h3, .Services p:nth-child(2){
+    text-align: center;
+}
+
+.row{
+    width: 85%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    padding: 5px;
+}
+
+.row .col{
+    background-color: #171717;
+    padding:25px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .2s;
+    border: 1px solid rgb(15, 15, 15);
+}
+
+.row .col:hover{
+    transform: scale(101%);
+    border: 1px solid #0061ff;
+}
+
+
+.row .col svg{
+    color: white;
+    font-size: 25px;
+}
+
+.row .col p:nth-child(2){
+    font-size: 20px;
+    font-weight: 600;
+    /* color: cornflowerblue; */
+    line-height: 35px;
+    text-align: left;
+}
+
+.row .col p:nth-child(3){
+    font-size: 14px;
+    text-align: left;
+}
+
+.row .col a{
+    color: #0061ff;
+    text-decoration: none;
+}
