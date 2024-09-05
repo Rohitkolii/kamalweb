@@ -1,6 +1,7 @@
 .Feedback{
     padding: 40px 0;
 }
+
 .Feedback .col1{
     /* background-color: rebeccapurple; */
     width: 50%;
@@ -32,4 +33,35 @@
     padding: 10px;
     border-radius: 6px;
     border: 1px solid rgb(15, 15, 15);
+}
+
+@media only screen and (max-width:1000px) {
+    .Feedback .reviews{
+        width: 95%;
+        margin: 50px auto;
+        gap: 20px;
+    }
+}
+
+@media only screen and (max-width:750px) {
+    .Feedback .reviews{
+        flex-direction: column-reverse;
+    }
+}
+
+@media only screen and (max-width:550px) {
+    .Feedback .col1{
+        width: 95%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .Feedback{
+        padding: 20px 0;
+    }
+
+    .Feedback .col1 h3{
+        font-size: 25px;
+        line-height: 35px;
+    }
 }

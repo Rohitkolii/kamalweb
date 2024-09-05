@@ -14,7 +14,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 25px;
-    padding: 5px;
+    padding: 5px 0;
 }
 
 .row .col{
@@ -53,4 +53,42 @@
 .row .col a{
     color: #0061ff;
     text-decoration: none;
+}
+
+@media only screen and (max-width:1000px) {
+    .row{
+        width: 95%;
+        gap: 20px;
+        padding: 5px 0;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .row .col p:nth-child(2){
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width:750px) {
+    .row{
+        width: 95%;
+        gap: 25px;
+        padding: 5px 0;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .row{
+        width: 95%;
+        gap: 25px;
+        padding: 5px 0;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+@media only screen and (max-width:550px) {
+    .Services h3{
+        font-size: 25px;
+    }
 }

@@ -34,12 +34,53 @@
     list-style: none;
 }
 .navbar ul svg{
-    font-size: 25px;
+    font-size: 30px;
+    cursor: pointer;
 }
 
 .navbar .btn{
-    /* background-color: cornflowerblue; */
-    background-color: rgb(223, 223, 223);
+    background-color: white;
+    /* background-color: rgb(223, 223, 223); */
     color: black;
     border-radius: 6px;
+}
+
+
+/* Hover Menu  */
+
+.showmenu{
+    background-color: #171717;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    right: 50px;
+    border-radius: 6px;
+    z-index: 99;
+    /* display: none; */
+}
+
+.hidemenu{
+    display: none;
+}
+
+@media only screen and (max-width:800px) {
+    .navbar{
+        padding: 5px 50px;
+    }
+}
+
+@media only screen and (max-width:550px) {
+    .navbar a{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .navbar{
+        padding: 5px 20px;
+    }
+
+    .navbar .logo p{
+        font-size: 30px;
+    }
 }

@@ -6,11 +6,6 @@
     display: block;
 }
 
-.aboutcon{
-    /* background-color: #000000; */
-    /* padding: 30px 0px; */
-}
-
 .inneraboutcon{
     width: 85%;
     margin: 50px auto;
@@ -23,7 +18,7 @@
 
 .aboutcon .col{
     width: 50%;
-    position: relative;
+    /* position: relative; */
 }
 
 .aboutcon .col img{
@@ -49,5 +44,36 @@
     text-decoration: none;
     color: white;
     padding: 10px 20px;
-    /* border-radius: 6px; */
+}
+
+@media only screen and (max-width:1300px) {
+    .inneraboutcon{
+        width: 95%;
+        margin: 50px auto;
+    }
+}
+
+@media only screen and (max-width:1200px) {
+    .aboutcon .col h3{
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width:1050px) {
+    .inneraboutcon{
+        flex-direction: column;
+    }
+
+    .aboutcon .col{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:550px) {
+    .aboutcon .col h3{
+        font-size: 25px;
+    }
+
+    .inneraboutcon{
+        margin: 10px auto;
+    }
 }

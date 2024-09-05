@@ -13,15 +13,15 @@ const Feedback = () => {
 
             <div className={Styles.reviews}>
                 <div>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, ad ipsam. Magni accusamus eos quam quaerat! Fugiat aspernatur eveniet velit minus quisquam eligendi voluptatem nesciunt.</p>
+                    <p className='subp'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, ad ipsam. Magni accusamus eos quam quaerat! Fugiat aspernatur eveniet velit minus quisquam eligendi voluptatem nesciunt.</p>
                     <p style={{color: '#0061ff', fontSize: 14}}>myName021</p>
                 </div>
                 <div>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, ad ipsam. Magni accusamus eos quam quaerat! Fugiat aspernatur eveniet velit minus quisquam eligendi voluptatem nesciunt.</p>
+                    <p className='subp'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, ad ipsam. Magni accusamus eos quam quaerat! Fugiat aspernatur eveniet velit minus quisquam eligendi voluptatem nesciunt.</p>
                     <p style={{color: '#0061ff', fontSize: 14}}>myName021</p>
                 </div>
                 <div>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, ad ipsam. Magni accusamus eos quam quaerat! Fugiat aspernatur eveniet velit minus quisquam eligendi voluptatem nesciunt.</p>
+                    <p className='subp'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, ad ipsam. Magni accusamus eos quam quaerat! Fugiat aspernatur eveniet velit minus quisquam eligendi voluptatem nesciunt.</p>
                     <p style={{color: '#0061ff', fontSize: 14}}>myName021</p>
                 </div>
             </div>

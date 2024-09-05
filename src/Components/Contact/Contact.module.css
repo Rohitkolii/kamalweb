@@ -86,4 +86,12 @@
         width: 90%;
         margin: 30px auto;
     }
+
+    .Contact{
+        width: 95%;
+    }
+
+    .contact_con{
+        width: 100%;
+    }
 }

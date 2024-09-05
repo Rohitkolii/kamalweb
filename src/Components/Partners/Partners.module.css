@@ -20,3 +20,23 @@
     width: 100%;
     filter: grayscale(1);
 }
+
+@media only screen and (max-width: 1050px) {
+    .Partners .row{
+        width: 85%;
+    }
+
+    .Partners .col{
+        width: 70px;
+    }
+}
+@media only screen and (max-width: 650px) {
+    .Partners .col{
+        width: 60px;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .Partners .col{
+        width: 40px;
+    }
+}
