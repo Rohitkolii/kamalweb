@@ -157,9 +157,7 @@
 
     .head{
         height: 100%;
-        position: relative;
-        overflow: hidden;
-        padding: 50px 0;
+        padding-bottom: 50px;
     }
 
     .socials ul{
