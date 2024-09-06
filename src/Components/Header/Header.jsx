@@ -33,8 +33,8 @@ const Header = () => {
                 <h1>Web & App <span style={{color: 'cornflowerblue'}}>Developement</span> Agency</h1>
                 <p>Get your Website & Applications done with our trusted services</p>
                   <div className={Styles.btncon}>
-                    <Link href='/'>Services</Link>
-                    <Link href='/'>Connect -</Link>
+                    <Link href='/services'>Services</Link>
+                    <Link href='/contact'>Connect -</Link>
                   </div>
             </div>
 

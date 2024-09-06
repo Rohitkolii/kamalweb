@@ -7,6 +7,12 @@ import { CiMenuFries } from "react-icons/ci";
 
 const Navbar = () => {
     const [menu, setmenu] = useState(false)
+    
+    if(menu && document.body.clientWidth <= 550){
+        document.body.style.overflow = "hidden"
+    }else{
+        document.body.style.overflow = "visible"
+    }
   return (
     <>
         <nav className={Styles.navbar}>

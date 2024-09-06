@@ -73,6 +73,31 @@
     .navbar ul a{
         display: none;
     }
+
+    .showmenu{
+        background-color: #000000;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        left: 0px;
+        border-radius: 6px;
+        z-index: 99;
+        overflow: hidden;
+        transition: .3s;
+    }
+
+    .hidemenu{
+        display: block;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        left: -100%;
+        border-radius: 6px;
+        z-index: 99;
+        background-color: #171717;
+        overflow: hidden;
+        transition: .3s;
+    }
 }
 
 @media only screen and (max-width:450px) {
