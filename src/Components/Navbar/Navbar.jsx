@@ -1,18 +1,19 @@
 'use client'
 import Link from 'next/link'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Styles from "./Navbar.module.css"
 import { CiMenuFries } from "react-icons/ci";
 
 
 const Navbar = () => {
     const [menu, setmenu] = useState(false)
-    
-    if(menu && document.body.clientWidth <= 550){
-        document.body.style.overflow = "hidden"
-    }else{
-        document.body.style.overflow = "visible"
-    }
+    useEffect(()=> {
+        if(menu && document.body.clientWidth <= 550){
+            document.body.style.overflow = "hidden"
+        }else{
+            document.body.style.overflow = "visible"
+        }
+    },[])
   return (
     <>
         <nav className={Styles.navbar}>
