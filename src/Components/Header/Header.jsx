@@ -30,7 +30,7 @@ const Header = () => {
                   <li><h2>Backend Developement</h2></li>
                 </ul>
       <div className={Styles.glow}></div>
-                <h1>Web & App <span style={{color: 'cornflowerblue'}}>Developement</span> Agency</h1>
+                <h1>Web & App <span style={{color: '#0061ff'}}>Developement</span> Agency</h1>
                 <p>Get your Website & Applications done with our trusted services</p>
                   <div className={Styles.btncon}>
                     <Link href='/services'>Services</Link>

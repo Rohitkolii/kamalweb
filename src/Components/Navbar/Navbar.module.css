@@ -49,18 +49,32 @@
 /* Hover Menu  */
 
 .showmenu{
-    background-color: #171717;
-    width: 50%;
-    height: 50%;
+    background-color: #000000;
+    width: 200px;
+    /* height: 50%; */
     position: absolute;
-    right: 50px;
+    right: 200px;
     border-radius: 6px;
     z-index: 99;
+    padding: 15px 30px;
     /* display: none; */
 }
 
 .hidemenu{
     display: none;
+}
+
+.showmenu a, .hidemenu a{
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.showmenu ul, .hidemenu ul{
+    display: block;
+    list-style-type: none;
+    text-align: center;
+    line-height: 30px;
 }
 
 @media only screen and (max-width:800px) {
@@ -98,6 +112,12 @@
         overflow: hidden;
         transition: .3s;
     }
+
+    .showmenu ul, .hidemenu ul{
+        line-height: 100px;
+    }
+
+    
 }
 
 @media only screen and (max-width:450px) {

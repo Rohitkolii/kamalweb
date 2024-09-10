@@ -15,7 +15,7 @@ const page = () => {
           <p className='subp' style={{margin: '10px 0'}}>We place a strong emphasis on a client-centric approach, which involves open communication and a collaborative process to ensure that we’re always in sync with your vision and requirements. Our project management methodology is designed to keep you informed and engaged throughout the development process, offering regular updates and incorporating feedback to refine and enhance the final product. We are committed to delivering on-time, on-budget solutions that not only fulfill your immediate needs but also lay the groundwork for future growth and success.</p>
           <p className='subp' style={{margin: '10px 0'}}>Choosing Illusion means partnering with a team that is passionate about driving your business forward in the digital landscape. Our dedication to quality, transparency, and ongoing support means that we’re here to assist you long after your project goes live. We believe that our role extends beyond just delivering a product—we aim to be a trusted advisor and resource for all your web and app development needs. With Illusion, you gain access to a blend of creativity, technical prowess, and strategic insight that sets us apart in the industry, ensuring your digital solutions are both innovative and effective.</p>
         </div>
-
+      
         {/* <Services /> */}
         <Footer />
     </>

@@ -6,6 +6,8 @@ import Footer from "../Components/Footer/Footer";
 import Services from "../Components/Services/Services";
 import Partners from "../Components/Partners/Partners";
 import Feedback from "@/Components/Feedback/Feedback";
+import Technologies from "@/Components/Technologies/Technologies";
+import Random from "@/Components/Random/Random";
 
 export default function Home() {
   return (
@@ -15,6 +17,8 @@ export default function Home() {
       <Services />
       <Feedback />
       <Partners />
+      <Technologies />
+      <Random />
       <Contact />
       <Footer />
     </>

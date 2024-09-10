@@ -1,7 +1,7 @@
 .header{
-    text-align: center;
+    text-align: left;
     z-index: 99;
-    width: 90%;
+    width: 85%;
     margin: auto;
 }
 .head{
@@ -20,7 +20,7 @@
     color: white;
     /* background-color: red; */
     width: fit-content;
-    margin: auto;
+    /* margin: auto; */
     color: #0061ff;
 }
 
@@ -87,13 +87,25 @@
     /* filter: blur(); */
     box-shadow: 1px 1px 200px #0061ff;
     border-radius: 50%;
-    
+    animation: moves 3s infinite ease;
+}
+
+@keyframes moves{
+    0%{
+        box-shadow: 1px 1px 200px #0061ff;
+    }
+    50%{
+        box-shadow: 1px 1px 150px #0061ff;
+    }
+    100%{
+        box-shadow: 1px 1px 200px #0061ff;
+    }
 }
 
 
 .socials ul{
     display: flex;
-    justify-content: center;
+    justify-content: left;
     gap: 25px;
     list-style: none;
     /* position: absolute; */
@@ -114,7 +126,7 @@
 .btncon{
     display: flex;
     gap: 20px;
-    justify-content: center;
+    justify-content: left;
     margin: 40px auto;
 }
 

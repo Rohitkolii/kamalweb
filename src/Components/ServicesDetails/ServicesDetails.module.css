@@ -1,0 +1,8 @@
+.ServicesDetails{
+    margin: 20px 0;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: #0F0F0F;
+}

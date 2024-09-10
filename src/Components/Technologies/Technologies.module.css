@@ -1,0 +1,46 @@
+.Technologies{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.list li{
+    cursor: pointer;
+}
+
+.list ul{
+    padding: 10px 0;
+    border-bottom: 1px solid gray;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.list ul li::after{
+    content: '';
+    display: block;
+    background-color: white;
+    height: 3px;
+    width: 0%;
+    margin: auto;
+    transition: ease .3s;
+    border-radius: 6px;
+}
+
+.list ul li:hover::after{
+    width: 100%;
+    transition: ease .3s;
+}
+
+.techs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 200px;
+    gap: 50px;
+    color: black;
+}
+
+.techs div{
+    background-color: white;
+}

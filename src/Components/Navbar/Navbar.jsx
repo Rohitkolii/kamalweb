@@ -3,6 +3,7 @@ import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 import Styles from "./Navbar.module.css"
 import { CiMenuFries } from "react-icons/ci";
+import { AiOutlineClose } from "react-icons/ai";
 
 
 const Navbar = () => {
@@ -13,7 +14,7 @@ const Navbar = () => {
         }else{
             document.body.style.overflow = "visible"
         }
-    },[])
+    },[menu])
   return (
     <>
         <nav className={Styles.navbar}>
@@ -23,15 +24,31 @@ const Navbar = () => {
             <div>
                 <ul>
                     <li><Link href='/'>Home</Link></li>
-                    <li><CiMenuFries onClick={()=> setmenu(!menu)} /></li>
+                    {
+                        !menu ?
+                        <li style={{zIndex: 99}}><CiMenuFries onClick={()=> setmenu(!menu)} /></li>
+                        :
+                        <li style={{zIndex: 99}}><AiOutlineClose onClick={()=> setmenu(!menu)} /></li>
+                    }
                     <li><Link href='/contact' className={Styles.btn}>Contact</Link></li>
                 </ul>
             </div>
         </nav>
 
         <div className={menu ? Styles.showmenu : Styles.hidemenu}>
-
+            <ul>
+                <li><Link href=''>Home</Link></li>
+                <li><Link href=''>About</Link></li>
+                <li><Link href=''>Services</Link></li>
+                <li><Link href=''>Contact</Link></li>
+            </ul>
         </div>
+        {
+        menu ?    
+        <div onClick={()=> setmenu(!menu)} className='layer'></div>
+        :
+        ''
+        }
     </>
   )
 }
