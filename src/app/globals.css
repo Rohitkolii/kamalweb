@@ -13,7 +13,7 @@ body{
   color: white;
 }
 
-h3{
+.gt{
   font-size: 35px;
     /* margin-bottom: 20px; */
 
@@ -36,4 +36,12 @@ h3{
   top: 0;
   filter: blur(9);
   z-index: 9;
+}
+
+
+@media only screen and (max-width:550px) {
+  .gt{
+      font-size: 25px;
+      line-height: 35px;
+  }
 }

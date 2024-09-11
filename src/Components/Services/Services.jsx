@@ -63,7 +63,7 @@ const Services = () => {
                     <span><MdWeb /></span>
                     <p>Other Services</p>
                     <p className='subp'>Enhance your operations with our comprehensive IT and technology services.</p>
-                    <Link href='/'>More services</Link>
+                    <Link href='/services'>More services</Link>
                 </div>
             </div>
         </section>

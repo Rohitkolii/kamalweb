@@ -10,6 +10,15 @@ import Technologies from "@/Components/Technologies/Technologies";
 import Random from "@/Components/Random/Random";
 
 export default function Home() {
+
+  const sections = {
+    web : 'Web',
+    app : 'App',
+    backend : 'Backend',
+    api : "Api's",
+    others : 'others',
+  }
+
   return (
     <>
       <Header />
@@ -17,9 +26,9 @@ export default function Home() {
       <Services />
       <Feedback />
       <Partners />
-      <Technologies />
+      <Technologies sections={sections} />
       <Random />
-      <Contact />
+      {/* <Contact /> */}
       <Footer />
     </>
   );
