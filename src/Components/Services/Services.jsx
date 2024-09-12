@@ -15,7 +15,7 @@ const Services = () => {
   return (
     <>
         <section className={Styles.Services}>
-            <h3>Valuable Services that our company provides to their customers</h3>
+            <h3 className='gt'>Valuable Services that our company provides to their customers</h3>
             <p className='subp'>Hey, Illusion.com provides website developement, App developement, api's and many more services to make your bussiness live.</p>
             <div className={Styles.row}>
                 <div data-aos="fade-up" className={Styles.col}>

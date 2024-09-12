@@ -9,7 +9,8 @@ import { AiOutlineClose } from "react-icons/ai";
 const Navbar = () => {
     const [menu, setmenu] = useState(false)
     useEffect(()=> {
-        if(menu && document.body.clientWidth <= 550){
+        if(menu ){
+            // && document.body.clientWidth <= 550
             document.body.style.overflow = "hidden"
         }else{
             document.body.style.overflow = "visible"
@@ -36,12 +37,55 @@ const Navbar = () => {
         </nav>
 
         <div className={menu ? Styles.showmenu : Styles.hidemenu}>
-            <ul>
-                <li><Link href=''>Home</Link></li>
-                <li><Link href=''>About</Link></li>
-                <li><Link href=''>Services</Link></li>
-                <li><Link href=''>Contact</Link></li>
-            </ul>
+            <div className={Styles.menuheader}>
+                <div>
+                    <h2>You think we <span style={{color: '#0061ff'}}>Develope</span></h2>
+                    <p className='subp'>We ensure to establish websites with the latest trends as we believe that, products whose value satisfies the needs of the market and its potential customers can be efficiently successful.</p>
+                </div>
+            </div>
+
+            <div className={Styles.menulist}>
+                <div className={Styles.menucol}>
+                    <p>Quick Links</p>
+                    <ul>
+                        <Link href="/">About</Link>
+                        <Link href="/">Services</Link>
+                        <Link href="/">Contact</Link>
+                        <Link href="/">Blogs</Link>
+                    </ul>
+                </div>
+                <div className={Styles.menucol}>
+                    <p>Quick Links</p>
+                    <ul>
+                        <Link href="/">Link A</Link>
+                        <Link href="/">Link B</Link>
+                        <Link href="/">Link C</Link>
+                        <Link href="/">Link D</Link>
+                        <Link href="/">Link E</Link>
+                    </ul>
+                </div>
+                <div className={Styles.menucol}>
+                    <p>Quick Links</p>
+                    <ul>
+                        <Link href="/">Link *</Link>
+                        <Link href="/">Link -</Link>
+                        <Link href="/">Link +</Link>
+                        <Link href="/">Link /</Link>
+                        <Link href="/">Link ?</Link>
+                    </ul>
+                </div>
+                <div className={Styles.menucol}>
+                    <p>Connect</p>
+                    <ul>
+                        <Link href="/">Facebook</Link>
+                        <Link href="/">Instagram</Link>
+                        <Link href="/">Linkedin</Link>
+                        <Link href="/">Twitter</Link>
+                        <Link href="/">Mail</Link>
+                    </ul>
+                </div>
+
+            </div>
         </div>
         {
         menu ?    

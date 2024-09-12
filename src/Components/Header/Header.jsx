@@ -39,7 +39,7 @@ const Header = () => {
             </div>
 
 
-            <div className={Styles.socials}>
+            <div data-aos="fade-down" className={Styles.socials}>
               <ul>
                 <li><Link href='/'><FaInstagram /></Link></li>
                 <li><Link href='/'><FaLinkedin /></Link></li>
