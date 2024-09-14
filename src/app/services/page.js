@@ -1,5 +1,7 @@
 import Footer from '@/Components/Footer/Footer'
 import Navbar from '@/Components/Navbar/Navbar'
+import Random from '@/Components/Random/Random'
+import ServiceHeader from '@/Components/ServiceHeader/ServiceHeader'
 import ServicesDetails from '@/Components/ServicesDetails/ServicesDetails'
 import React from 'react'
 
@@ -7,6 +9,7 @@ const page = () => {
   return (
     <>
         <Navbar />
+        <ServiceHeader />
         <div style={{width: '90%', margin: ' 20px auto'}}>
           <h2>Which Services our company provides to their customers?</h2>
           <p className='subp' style={{margin: '10px 0'}}>Welcome to our premier web development company, where creativity and technology converge to bring your digital ambitions to life. Our extensive range of services is designed to cater to the diverse needs of businesses in today’s fast-paced online environment. We start by offering custom website design and development, ensuring that each project is uniquely tailored to reflect your brand’s identity and vision. Our team excels in creating visually compelling and highly functional websites that captivate users and drive engagement.</p>
@@ -17,6 +20,7 @@ const page = () => {
         </div>
 
         <ServicesDetails />
+        <Random />
         <Footer />
     </>
   )

@@ -30,7 +30,7 @@ const Feedback = () => {
                     spaceBetween={30}
                     centeredSlides={true}
                     autoplay={{
-                    delay: 2500,
+                    delay: 3000,
                     disableOnInteraction: false,
                     }}
                     pagination={{
@@ -42,32 +42,32 @@ const Feedback = () => {
                 >
                     <SwiperSlide >
                             <div className={Styles.feedbox}>
+                                <p className={Styles.feedname}><img src="images/img2.jpg" alt="" /> my_Name021</p>
                                 <p className='subp'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, ad ipsam. Magni accusamus eos quam quaerat! Fugiat aspernatur eveniet velit minus quisquam eligendi voluptatem nesciunt.</p>
-                                <p style={{color: '#0061ff', fontSize: 14, display: 'flex', alignItems: 'center', gap: 10, margin: "10px 0px"}}> <img src="images/img2.jpg" alt="" style={{width: 40, height: 40,  borderRadius: '50%'}} /> myName021</p>
                             </div>
                     </SwiperSlide>
                     <SwiperSlide>
                             <div className={Styles.feedbox}>
-                                <p className='subp'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, ad ipsam. Magni accusamus eos quam quaerat! Fugiat aspernatur eveniet velit minus quisquam eligendi voluptatem nesciunt.</p>
-                                <p style={{color: '#0061ff', fontSize: 14, display: 'flex', alignItems: 'center', gap: 10, margin: "10px 0px"}}> <img src="images/img2.jpg" alt="" style={{width: 40, height: 40,  borderRadius: '50%'}} /> myName021</p>
+                                <p className={Styles.feedname}><img src="images/img2.jpg" alt="" /> my_Name021</p>
+                                <p className='subp'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit obcaecati nemo, consequuntur nihil ut non vero atque minus fugit ducimus! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, ad ipsam. Magni accusamus eos quam quaerat! Fugiat aspernatur eveniet velit minus quisquam eligendi voluptatem nesciunt.</p>
                             </div>
                     </SwiperSlide>
                     <SwiperSlide>
                             <div className={Styles.feedbox}>
+                                <p className={Styles.feedname}><img src="images/img2.jpg" alt="" /> my_Name021</p>
                                 <p className='subp'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, ad ipsam. Magni accusamus eos quam quaerat! Fugiat aspernatur eveniet velit minus quisquam eligendi voluptatem nesciunt.</p>
-                                <p style={{color: '#0061ff', fontSize: 14, display: 'flex', alignItems: 'center', gap: 10, margin: "10px 0px"}}> <img src="images/img2.jpg" alt="" style={{width: 40, height: 40,  borderRadius: '50%'}} /> myName021</p>
                             </div>
                     </SwiperSlide>
                     <SwiperSlide>
                             <div className={Styles.feedbox}>
+                                <p className={Styles.feedname}><img src="images/img2.jpg" alt="" /> my_Name021</p>
                                 <p className='subp'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, ad ipsam. Magni accusamus eos quam quaerat! Fugiat aspernatur eveniet velit minus quisquam eligendi voluptatem nesciunt.</p>
-                                <p style={{color: '#0061ff', fontSize: 14, display: 'flex', alignItems: 'center', gap: 10, margin: "10px 0px"}}> <img src="images/img2.jpg" alt="" style={{width: 40, height: 40,  borderRadius: '50%'}} /> myName021</p>
                             </div>
                     </SwiperSlide>
                     <SwiperSlide>
                             <div className={Styles.feedbox}>
+                                <p className={Styles.feedname}><img src="images/img2.jpg" alt="" /> my_Name021</p>
                                 <p className='subp'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, ad ipsam. Magni accusamus eos quam quaerat! Fugiat aspernatur eveniet velit minus quisquam eligendi voluptatem nesciunt.</p>
-                                <p style={{color: '#0061ff', fontSize: 14, display: 'flex', alignItems: 'center', gap: 10, margin: "10px 0px"}}> <img src="images/img2.jpg" alt="" style={{width: 40, height: 40,  borderRadius: '50%'}} /> myName021</p>
                             </div>
                     </SwiperSlide>
                 </Swiper>

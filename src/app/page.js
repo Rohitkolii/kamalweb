@@ -22,10 +22,10 @@ export default function Home() {
   return (
     <>
       <Header />
+      <Partners />
       <About />
       <Services />
       <Feedback />
-      <Partners />
       <Technologies sections={sections} />
       <Random />
       {/* <Contact /> */}

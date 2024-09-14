@@ -1,13 +1,19 @@
 'use client'
 import Footer from '@/Components/Footer/Footer'
 import Navbar from '@/Components/Navbar/Navbar'
+import Numbers from '@/Components/Numbers/Numbers'
+import Partners from '@/Components/Partners/Partners'
+import Random from '@/Components/Random/Random'
+import ServiceHeader from '@/Components/ServiceHeader/ServiceHeader'
 import Services from '@/Components/Services/Services'
+import Team from '@/Components/Team/Team'
 import React from 'react'
 
 const page = () => {
   return (
     <>
         <Navbar />
+        <ServiceHeader />
         <div style={{width: '90%', margin: ' 20px auto'}}>
           <h2>Why to choose us for Web & App Developement services?</h2>
           <p className='subp' style={{margin: '10px 0'}}>At Illusion, we are dedicated to revolutionizing your digital presence with our top-tier web and app development services, blending innovation with unparalleled technical expertise to bring your visions to life. Our approach is grounded in a deep understanding of your business objectives and a commitment to crafting solutions that not only meet but exceed your expectations. We offer a comprehensive suite of services that spans the entire development lifecycle—from ideation and design to development, testing, and deployment. Our team comprises highly skilled developers, creative designers, and strategic thinkers who collaborate closely to ensure every aspect of your project is executed to perfection.</p>
@@ -16,7 +22,10 @@ const page = () => {
           <p className='subp' style={{margin: '10px 0'}}>Choosing Illusion means partnering with a team that is passionate about driving your business forward in the digital landscape. Our dedication to quality, transparency, and ongoing support means that we’re here to assist you long after your project goes live. We believe that our role extends beyond just delivering a product—we aim to be a trusted advisor and resource for all your web and app development needs. With Illusion, you gain access to a blend of creativity, technical prowess, and strategic insight that sets us apart in the industry, ensuring your digital solutions are both innovative and effective.</p>
         </div>
       
-        {/* <Services /> */}
+      <Numbers />
+      <Team />
+      <Partners />
+      <Random />
         <Footer />
     </>
   )

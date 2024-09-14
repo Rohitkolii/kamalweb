@@ -4,5 +4,55 @@
     border-radius: 6px;
     cursor: pointer;
     overflow: hidden;
-    background-color: #0F0F0F;
+    /* background-color: #0F0F0F; */
+}
+
+.servicelist{
+    width: 80%;
+    margin: 50px auto;
+}
+
+.servicelist ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    text-align: center;
+    border-bottom: 1px solid gray;
+}
+
+.servicelist ul li, .servicelist a{
+    width: 100%;
+    /* padding: 20px 0; */
+    color: gray;
+    transition: .3s;
+    text-decoration: none;
+}
+.servicelist ul li::after{
+    content: '';
+    background-color: white;
+    height: 5px;
+    width: 0%;
+    display: block;
+    color: white;
+    border-radius: 6px;
+    transition: .3s;
+    margin: auto;
+}
+
+.servicelist ul li:hover:after{
+    width: 100%;
+}
+
+.servicelist .active a{
+    color: white;
+}
+
+.servicelist .active::after{
+    content: '';
+    background-color: #0061ff;
+    height: 5px;
+    width: 90%;
+    display: block;
+    color: white;
+    border-radius: 6px;
 }

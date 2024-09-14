@@ -29,25 +29,25 @@ const Header = () => {
                   <li><h2>Api's Creation</h2></li>
                   <li><h2>Backend Developement</h2></li>
                 </ul>
-      <div className={Styles.glow}></div>
+                <div className={Styles.glow}></div>
                 <h1>Web & App <span style={{color: '#0061ff'}}>Developement</span> Agency</h1>
                 <p>Get your Website & Applications done with our trusted services</p>
                   <div className={Styles.btncon}>
                     <Link href='/services'>Services</Link>
                     <Link href='/contact'>Connect -</Link>
                   </div>
+                  <div data-aos="fade-down" className={Styles.socials}>
+                    <ul>
+                      <li><Link href='/'><FaInstagram /></Link></li>
+                      <li><Link href='/'><FaLinkedin /></Link></li>
+                      <li><Link href='/'><FaGithub /></Link></li>
+                      <li><Link href='/'><FaFacebookSquare /></Link></li>
+                      <li><Link href='/'><GrContact /></Link></li>
+                    </ul>
+                  </div>
             </div>
 
 
-            <div data-aos="fade-down" className={Styles.socials}>
-              <ul>
-                <li><Link href='/'><FaInstagram /></Link></li>
-                <li><Link href='/'><FaLinkedin /></Link></li>
-                <li><Link href='/'><FaGithub /></Link></li>
-                <li><Link href='/'><FaFacebookSquare /></Link></li>
-                <li><Link href='/'><GrContact /></Link></li>
-              </ul>
-            </div>
         </section>
     </div>
   )

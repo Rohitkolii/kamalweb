@@ -5,28 +5,29 @@
     margin: auto;
 }
 .head{
-    height: 100vh;
+    /* height: 100vh; */
     /* background-color: #000000; */
     position: relative; 
     overflow-x: hidden;
 }
 
 .head .innerheader{
-    margin: 150px 0 0 0;
+    margin: 150px 0;
 }
 
 .header .innerheader h2{
-    font-size: 30px;
+    font-size: 20px;
     color: white;
     /* background-color: red; */
     width: fit-content;
     /* margin: auto; */
     color: #0061ff;
+    font-weight: 500;
 }
 
 .dytext{
-    height: 50px;
-    line-height: 50px;
+    height: 40px;
+    line-height: 40px;
     overflow: hidden;
 }
 
@@ -38,7 +39,7 @@
 
 @keyframes slide{
     100%{
-        top: -200px;
+        top: -160px;
     }
 }
 
@@ -63,7 +64,7 @@
 }
 
 .header .innerheader h1{
-    font-size: 60px;
+    font-size: 50px;
     text-transform: uppercase;
     color: white;
 }

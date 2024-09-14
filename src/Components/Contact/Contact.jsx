@@ -26,7 +26,7 @@ const Contact = () => {
                         </div>
                     </div>
 
-                    {/* <div className={Styles.row}>
+                    <div className={Styles.row}>
                         <div className={Styles.col}>
                             <label htmlFor="phone">
                                 Contact :
@@ -35,7 +35,7 @@ const Contact = () => {
                                 />
                             </label>
                         </div>
-                    </div> */}
+                    </div>
 
                     <div className={Styles.row}>
                         <div className={Styles.col}>
