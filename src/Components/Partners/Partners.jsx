@@ -5,6 +5,7 @@ const Partners = () => {
   return (
     <>
         <section className={Styles.Partners}>
+            <p className='subp' style={{textAlign: 'center',  fontSize: '18px'}}>Trusted by</p>
             <div className={Styles.row}>
                 <div className={Styles.col}>
                     <img src="images/c4.png" alt="" />
