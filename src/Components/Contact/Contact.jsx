@@ -14,7 +14,7 @@ const contact = () => {
       <section className={Styles.inner_Header}>
             <div data-aos="zoom-in-right" className={Styles.col1}>
                 {/* <img src="images/contact.png" alt="" /> */}
-                <h1>Contact us</h1>
+                <h1 className='gt'>Contact us</h1>
                 <p className='subp'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio delectus asperiores magni et eius itaque doloribus maiores. Doloribus quas aspernatur eum dolores voluptas vitae iusto.</p>
                 <div style={{marginTop: 30}} className={Styles.coninfo}>
                     <div>

@@ -31,7 +31,9 @@
     margin: auto;
     padding: 20px;
     border-radius: 6px;
-    height: 200px;
+    text-align: center;
+    /* height: 200px; */
+    /* overflow-y: hidden; */
 }
 
 .feedname{
@@ -62,6 +64,9 @@
     .Feedback .reviews{
         flex-direction: column-reverse;
     }
+    .feedbox p{
+        font-size: 15px;
+    }
 }
 
 @media only screen and (max-width:550px) {
@@ -75,17 +80,25 @@
         padding: 20px 0;
     }
 
-    /* .Feedback .col1 h3{
-        font-size: 25px;
-        line-height: 35px;
-    } */
+    .feedbox p{
+        font-size: 13px;
+    }
+
+    .feedbox{
+        background-color: #0F0F0F;
+        width: 95%;
+        margin: auto;
+        padding: 20px;
+        border-radius: 6px;
+    }
+
 }
 
 
 
 
 
-
+/* 
   
 .swiper {
     width: 100%;
@@ -101,11 +114,10 @@
     font-size: 18px;
     background: #fff;
   
-    /* Center slide text vertically */
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+  } */
   
   /* .swiper-slide img {
     display: block;

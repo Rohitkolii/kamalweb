@@ -48,20 +48,20 @@ const Navbar = () => {
                 <div className={Styles.menucol}>
                     <p>Quick Links</p>
                     <ul>
-                        <Link href="/">About</Link>
-                        <Link href="/">Services</Link>
-                        <Link href="/">Contact</Link>
-                        <Link href="/">Blogs</Link>
+                        <Link href="/about">About</Link>
+                        <Link href="/services">Services</Link>
+                        <Link href="/contact">Contact</Link>
+                        <Link href="/blogs">Blogs</Link>
                     </ul>
                 </div>
                 <div className={Styles.menucol}>
                     <p>Quick Links</p>
                     <ul>
-                        <Link href="/">Link A</Link>
-                        <Link href="/">Link B</Link>
-                        <Link href="/">Link C</Link>
+                        <Link href="/">Gallary</Link>
+                        <Link href="/">Achivements</Link>
+                        {/* <Link href="/">Link C</Link>
                         <Link href="/">Link D</Link>
-                        <Link href="/">Link E</Link>
+                        <Link href="/">Link E</Link> */}
                     </ul>
                 </div>
                 <div className={Styles.menucol}>

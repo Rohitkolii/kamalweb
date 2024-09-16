@@ -96,6 +96,7 @@
     gap: 30px;
     margin: 15px 0;
     line-height: 25px;
+    align-items: center;
 }
 
 .coninfo div:nth-child(1){
@@ -119,9 +120,23 @@
     .inner_Header{
         grid-template-columns: 100%;
         margin: auto;
+        gap: 50px;
+    }
+    
+
+    .col1 p{
+        width: 100%;
+        margin-top: 15px;
     }
 
     .col2 form{
         width: 100%;
+    }
+
+    .coninfo{
+        display: flex;
+        gap: 30px;
+        margin: 15px 0;
+        line-height: 15px;
     }
 }

@@ -35,3 +35,33 @@
 .ServiceHeader div a:active{
     top: 21px;
 }
+
+@media only screen and (max-width: 800px) {
+    .ServiceHeader{
+        padding: 50px 0;
+        border-radius: 6px;
+    }
+    
+    .ServiceHeader h2{
+        font-size: 30px;
+    }
+    
+    
+    .ServiceHeader div a{
+        background-color: white;
+        text-decoration: none;
+        color: black;
+        padding: 8px 10px;
+        top: 20px;
+        position: relative;
+        border-radius: 6px;
+        font-size: 13px;
+}
+}
+
+@media only screen and (max-width: 500px) {
+    .ServiceHeader h2{
+        font-size: 25px;
+        line-height: 25px;
+    }
+}

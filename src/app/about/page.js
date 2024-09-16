@@ -14,7 +14,7 @@ const page = () => {
     <>
         <Navbar />
         <ServiceHeader />
-        <div style={{width: '90%', margin: ' 20px auto'}}>
+        <div style={{width: '90%', margin: ' 20px auto',}}>
           <h2>Why to choose us for Web & App Developement services?</h2>
           <p className='subp' style={{margin: '10px 0'}}>At Illusion, we are dedicated to revolutionizing your digital presence with our top-tier web and app development services, blending innovation with unparalleled technical expertise to bring your visions to life. Our approach is grounded in a deep understanding of your business objectives and a commitment to crafting solutions that not only meet but exceed your expectations. We offer a comprehensive suite of services that spans the entire development lifecycle—from ideation and design to development, testing, and deployment. Our team comprises highly skilled developers, creative designers, and strategic thinkers who collaborate closely to ensure every aspect of your project is executed to perfection.</p>
           <p className='subp' style={{margin: '10px 0'}}>Our commitment to leveraging the latest technologies and industry best practices means that the solutions we provide are not only aesthetically pleasing but also highly functional, scalable, and secure. We understand that each business is unique, and that’s why we offer tailored strategies that align with your specific needs and goals. Whether you’re looking to create a dynamic website, a powerful mobile app, or an integrated system that bridges multiple platforms, Illusion is equipped to handle it all with precision and creativity.</p>
@@ -23,7 +23,7 @@ const page = () => {
         </div>
       
       <Numbers />
-      <Team />
+      {/* <Team /> */}
       <Partners />
       <Random />
         <Footer />

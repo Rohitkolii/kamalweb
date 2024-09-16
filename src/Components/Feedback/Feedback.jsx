@@ -33,9 +33,10 @@ const Feedback = () => {
                     delay: 3000,
                     disableOnInteraction: false,
                     }}
-                    pagination={{
-                    clickable: true,
-                    }}
+                    // pagination={{
+                    // clickable: true,
+                    // }}
+
                     // navigation={true}
                     modules={[Autoplay, Pagination, Navigation]}
                     className="mySwiper"
@@ -49,7 +50,7 @@ const Feedback = () => {
                     <SwiperSlide>
                             <div className={Styles.feedbox}>
                                 <p className={Styles.feedname}><img src="images/img2.jpg" alt="" /> my_Name021</p>
-                                <p className='subp'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit obcaecati nemo, consequuntur nihil ut non vero atque minus fugit ducimus! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, ad ipsam. Magni accusamus eos quam quaerat! Fugiat aspernatur eveniet velit minus quisquam eligendi voluptatem nesciunt.</p>
+                                <p className='subp'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit obcaecati nemo, consequuntur nihil ut non vero atque minus fugit ducimus! Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                             </div>
                     </SwiperSlide>
                     <SwiperSlide>

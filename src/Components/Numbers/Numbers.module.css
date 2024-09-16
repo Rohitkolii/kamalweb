@@ -3,7 +3,8 @@
     margin: 50px auto;
     background-color: #171717;
     border-radius: 12px;
-    box-shadow: 1px 1px 5px #1e1e1e;
+    /* box-shadow: 1px 1px 5px #1e1e1e; */
+    box-shadow: 1px 1px 5px rgba(94, 94, 94, 0.59);
 }
 
 .innerNumbers{
@@ -21,4 +22,64 @@
 .innerNumbers p{
     border-top: 2px solid gray;
     line-height: 50px;
+}
+
+@media only screen and (max-width:1200px) {
+    .Numbers{
+        width: 80%;
+        margin: 50px auto;
+        background-color: #171717;
+        border-radius: 12px;
+        /* box-shadow: 1px 1px 5px #1e1e1e; */
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    .Numbers{
+        width: 95%;
+        margin: 50px auto;
+        background-color: #171717;
+        border-radius: 12px;
+        /* box-shadow: 1px 1px 5px #1e1e1e; */
+    }
+    
+    .innerNumbers h1{
+        color: #0061ff;
+        font-size: 35px;
+    }
+}
+@media only screen and (max-width:750px) {
+    .innerNumbers h1{
+        color: #0061ff;
+        font-size: 25px;
+    }
+    
+    .innerNumbers p{
+        font-size: 12px;
+        line-height: 30px;
+    }
+}
+
+@media only screen and (max-width:550px) {
+    .innerNumbers{
+        padding: 50px 20px;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .innerNumbers p{
+        width: fit-content;
+        margin: auto;
+    }
+
+    .Numbers{
+        width: 70%;
+        margin: 50px auto;
+        background-color: #171717;
+        border-radius: 12px;
+        /* box-shadow: 1px 1px 5px #1e1e1e; */
+    }
 }
