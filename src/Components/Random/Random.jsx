@@ -9,8 +9,8 @@ const Random = () => {
         <p className='subp'>Make your ideas Real.</p>
 
         <div style={{display:'flex', gap: 20, justifyContent: 'center', margin: '30px 0'}}>
-            <Link style={{backgroundColor : '#0061FF', padding: '15px 20px', textDecoration: 'none', color: 'white'}} href='/'>Services</Link>
-            <Link style={{backgroundColor : '#e62f30', padding: '15px 20px', textDecoration: 'none', color: 'white'}} href='/'>Connect with us</Link>
+            <Link style={{backgroundColor : '#0061FF', padding: '10px 15px', textDecoration: 'none', color: 'white'}} href='/'>Services</Link>
+            <Link style={{backgroundColor : '#e62f30', padding: '10px 15px', textDecoration: 'none', color: 'white'}} href='/'>Connect with us</Link>
         </div>
     </div>
   )

@@ -21,9 +21,9 @@ const Footer = () => {
                     <div className={Styles.Footerlink}>
                         <h2>Useful Links</h2>
                         <Link href='/' >Home</Link>
-                        <Link href='/' >About</Link>
-                        <Link href='/' >Services</Link>
-                        <Link href='/' >Contact</Link>
+                        <Link href='/about' >About</Link>
+                        <Link href='/services' >Services</Link>
+                        <Link href='/contact' >Contact</Link>
                     </div>
                     <div className={Styles.Footercategories}>
                         <h2>Other Links</h2>

@@ -1,10 +1,43 @@
+import Contact from '@/Components/Contact/Contact'
+import Footer from '@/Components/Footer/Footer'
+import Navbar from '@/Components/Navbar/Navbar'
 import React from 'react'
 import Styles from './Contact.module.css'
+import { IoCallOutline } from "react-icons/io5";
+import { CiMail } from "react-icons/ci";
 
-const Contact = () => {
+import Link from 'next/link'
+
+const contact = () => {
   return (
-    <div className={Styles.Contact}>
-        <section className={Styles.contact_con}>
+    <div>
+      <section className={Styles.inner_Header}>
+            <div data-aos="zoom-in-right" className={Styles.col1}>
+                {/* <img src="images/contact.png" alt="" /> */}
+                <h1>Contact us</h1>
+                <p className='subp'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio delectus asperiores magni et eius itaque doloribus maiores. Doloribus quas aspernatur eum dolores voluptas vitae iusto.</p>
+                <div style={{marginTop: 30}} className={Styles.coninfo}>
+                    <div>
+                        <IoCallOutline />
+                    </div>
+                    <div>
+                        <p>Contact:</p>
+                        <p>989898XX99</p>
+                    </div>
+                </div>
+                <div className={Styles.coninfo}>
+                    <div>
+                        <CiMail />
+                    </div>
+                    <div>
+                        <p>Mail:</p>
+                        <p>example@domain.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div data-aos="zoom-in-left" className={Styles.col2}>
+
             <form>
                 <p>contact us</p>
                     <div className={Styles.row}>
@@ -53,10 +86,15 @@ const Contact = () => {
                     </div>
 
                     <button>Submit</button>
-            </form>
-      </section>
+                </form>
+
+                {/* <div>
+                    <img src="images/ils1.jpg" alt="" />
+                </div> */}
+            </div>
+        </section>
     </div>
   )
 }
 
-export default Contact
+export default contact
