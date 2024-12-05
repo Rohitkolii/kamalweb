@@ -1,15 +1,56 @@
+'use client'
 import Contact from '@/Components/Contact/Contact'
 import Footer from '@/Components/Footer/Footer'
 import Navbar from '@/Components/Navbar/Navbar'
-import React from 'react'
+// import React from 'react'
 import Styles from './Contact.module.css'
 import { IoCallOutline } from "react-icons/io5";
 import { CiMail } from "react-icons/ci";
 
 import Link from 'next/link'
+import { useRef } from 'react'
+import emailjs from '@emailjs/browser';
+
 
 const contact = () => {
-  return (
+
+    const form = useRef()
+
+    // const [name, setname] = useState();
+    // const [mail, setmail] = useState();
+    // const [message, setmessage] = useState();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+            
+            emailjs.sendForm('service_unk70pt', 'template_rmhzg26', form.current, 'EoRqXeN9WXwvaf8lr')
+          .then((result) => {
+              console.log(result.text);
+            //   toast.success('Sent Succesfully!', {
+            //       position: "top-center",
+            //       autoClose: 5000,
+            //       hideProgressBar: false,
+            //       closeOnClick: true,
+            //       pauseOnHover: true,
+            //       draggable: true,
+            //       progress: undefined,
+            //       theme: "dark",
+            //   });
+  
+            //   setmail('')
+            //   setname('')
+            //   setmessage('')
+              
+              e.target.reset();
+          }, (error) => {
+              console.log(error);
+          });
+          
+          e.target.reset();
+      }
+  
+
+    return (
     <div>
       <section className={Styles.inner_Header}>
             <div data-aos="zoom-in-right" className={Styles.col1}>
@@ -38,7 +79,7 @@ const contact = () => {
 
             <div data-aos="zoom-in-left" className={Styles.col2}>
 
-            <form>
+            <form ref={form} onSubmit={sendEmail}>
                 <p>contact us</p>
                     <div className={Styles.row}>
                         <div className={Styles.col}>
@@ -46,6 +87,9 @@ const contact = () => {
                                 Name :
                                 <input type="text" 
                                 placeholder='Enter your name'
+                                // onChange={(e)=> setname(e.target.value)}
+                                // value={name}
+                                name="user_name"
                                 />
                             </label>
                         </div>
@@ -54,6 +98,9 @@ const contact = () => {
                                 Email :
                                 <input type="email" 
                                 placeholder='example@gmail.com'
+                                // onChange={(e)=> setmail(e.target.value)}
+                                // value={mail}
+                                name="user_email"
                                 />
                             </label>
                         </div>
@@ -65,6 +112,9 @@ const contact = () => {
                                 Contact :
                                 <input type="tel" 
                                 placeholder='Enter your Contact no.'
+                                // onChange={(e)=> setphone(e.target.value)}
+                                // value={name}
+                                 name="user_phone"
                                 />
                             </label>
                         </div>
@@ -80,6 +130,8 @@ const contact = () => {
                                 // cols="30" 
                                 rows="4"
                                 placeholder='Enter your message or query'
+                                // onChange={(e)=> setmessage(e.target.value)}
+                                // value={message}
                                 ></textarea>
                             </label>
                         </div>

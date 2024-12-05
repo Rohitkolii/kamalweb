@@ -9,7 +9,7 @@ const ServiceHeader = () => {
             <div>
                 <h2>You think we <span style={{color: '#0061ff'}}>Develope</span></h2>
                 <p>Turn your imagination into code</p>
-                <Link href="">Connect & Discuss</Link>
+                <Link href="contact">Connect & Discuss</Link>
             </div>
         </section>
     </>

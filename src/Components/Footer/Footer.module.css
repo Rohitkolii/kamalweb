@@ -114,6 +114,12 @@
     font-weight: 400;
 }
 
+.Footer3 .copyright a{
+    font-size: 16px;
+    font-weight: 400;
+    color: #0061ff;
+}
+
 .Footerlink{
     display: flex;
     flex-direction: column;

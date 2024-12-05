@@ -29,12 +29,7 @@ const Services = () => {
                     <p className='subp'>
                     Transform your ideas into innovative, high-performance apps with our comprehensive development services.</p>
                 </div>
-                <div data-aos="fade-up" className={Styles.col}>
-                    <span><MdWeb /></span>
-                    <p>Api's</p>
-                    <p className='subp'>
-                    Elevate your software capabilities with our expert API development services.</p>
-                </div>
+                
                 <div data-aos="fade-down" className={Styles.col}>
                     <span><MdWeb /></span>
                     <p>Software Developement</p>
@@ -49,16 +44,16 @@ const Services = () => {
                 </div>
                 <div data-aos="fade-down" className={Styles.col}>
                     <span><MdWeb /></span>
-                    <p>Backend Developement</p>
+                    <p>Databse Design</p>
                     <p className='subp'>
                     Elevate your software capabilities with our expert API development services.</p>
                 </div>
-                <div data-aos="fade-up" className={Styles.col}>
+                {/* <div data-aos="fade-up" className={Styles.col}>
                     <span><MdWeb /></span>
-                    <p>Backend Developement</p>
+                    <p>Developement</p>
                     <p className='subp'>
                     Elevate your software capabilities with our expert API development services.</p>
-                </div>
+                </div> */}
                 <div data-aos="fade-down" className={Styles.col}>
                     <span><MdWeb /></span>
                     <p>Other Services</p>

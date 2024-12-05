@@ -30,7 +30,7 @@ const Technologies = ({sections}) => {
                     <div>3</div>
                     <div>3</div>
                 </div>
-    const apiBody =  <div className={Styles.techs}>
+    const databaseBody =  <div className={Styles.techs}>
                     <div>4</div>
                     <div>4</div>
                     <div>4</div>
@@ -52,7 +52,7 @@ const Technologies = ({sections}) => {
             case sections.web : return webBody;
             case sections.app : return appBody;
             case sections.backend : return backendBody;
-            case sections.api : return apiBody;
+            case sections.database : return databaseBody;
             case sections.others : return otherBody;
             default : return null;
         }

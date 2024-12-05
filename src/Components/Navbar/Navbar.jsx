@@ -20,11 +20,12 @@ const Navbar = () => {
     <>
         <nav className={Styles.navbar}>
             <div className={Styles.logo}>
-                <Link href='/'><p><span style={{color: '#0061ff'}}>i</span>llusion<span style={{color: '#0061ff'}}>.</span></p></Link>
+                <Link href='/'><p><span style={{color: '#0061ff'}}>A</span>ppso<span style={{color: '#0061ff'}}>B</span>ytes<span>.</span></p></Link>
+                {/* <img src="images/logo.png" alt="" /> */}
             </div>
             <div>
                 <ul>
-                    <li><Link href='/'>Home</Link></li>
+                    {/* <li><Link href='/'>Home</Link></li> */}
                     {
                         !menu ?
                         <li style={{zIndex: 99}}><CiMenuFries onClick={()=> setmenu(!menu)} /></li>
@@ -48,6 +49,7 @@ const Navbar = () => {
                 <div className={Styles.menucol}>
                     <p>Quick Links</p>
                     <ul>
+                        <Link href="/">Home</Link>
                         <Link href="/about">About</Link>
                         <Link href="/services">Services</Link>
                         <Link href="/contact">Contact</Link>

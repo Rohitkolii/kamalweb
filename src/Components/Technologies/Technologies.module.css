@@ -32,7 +32,7 @@
     content: '';
     display: block;
     background-color: #0061ff;
-    height: 5px;
+    height: 3px;
     width: 100%;
     margin: auto;
     transition: .3s;
@@ -42,7 +42,7 @@
     content: '';
     display: block;
     background-color: white;
-    height: 5px;
+    height: 3px;
     width: 0%;
     margin: auto;
     transition: ease .3s;

@@ -7,7 +7,7 @@
 
 .logo p{
     /* color: dodgerblue; */
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 900;
     text-transform: uppercase;
     /* color: rgb(29, 29, 29); */
@@ -15,11 +15,17 @@
     cursor: pointer;
 }
 
+.navbar .logo img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
 .navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 100px;
+    padding: 50px 100px;
     /* background-color: aqua; */
     height: 5rem;
     /* position: fixed;

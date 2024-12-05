@@ -16,20 +16,20 @@ export default function Home() {
     web : 'Web',
     app : 'App',
     backend : 'Backend',
-    api : "Api's",
+    database : "Database",
     others : 'others',
   }
 
   return (
     <>
       <Header />
-      <Partners />
+      {/* <Partners /> */}
       <Aboutcol />
       {/* <About /> */}
       <Services />
       <Feedback />
       <Technologies sections={sections} />
-      <Random />
+      {/* <Random /> */}
       {/* <Contact /> */}
       <Footer />
     </>

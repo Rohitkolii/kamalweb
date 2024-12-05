@@ -8,15 +8,24 @@ const Footer = () => {
             <div className={Styles.innerFooter}>
                 <div className={Styles.Footer1}>
                     <div className={Styles.Footerform}>
-                        <h2><span style={{color: '#0061ff'}}>i</span>llusion<span style={{color: '#0061ff'}}>.</span></h2>
+                        <h2><span style={{color: '#0061ff'}}>A</span>ppso<span style={{color: '#0061ff'}}>B</span>yte<span>.</span></h2>
                         <p>You think we Develope, <br /> Turn your imagination into code</p>
                         <input type="email" placeholder='Your email here' />
                     </div>
-                    <div className={Styles.Footeraddress}>
+                    {/* <div className={Styles.Footeraddress}>
                         <h2>Address</h2>
                         <p>20, Awesome Road, <br /> New Delhi, 532C</p>
                         <p> &#9990; +91 9999888852</p>
                         <p>contact@illusion.com</p>
+                    </div> */}
+
+
+                    <div className={Styles.Footerlink}>
+                        <h2>Social Links</h2>
+                        <Link href='/' >Twitter</Link>
+                        <Link href='/' >Linkedin</Link>
+                        <Link href='/' >Instagram</Link>
+                        <Link href='/' >Facebook</Link>
                     </div>
                     <div className={Styles.Footerlink}>
                         <h2>Useful Links</h2>
@@ -59,7 +68,7 @@ const Footer = () => {
                 </div>
                 <div className={Styles.Footer3}>
                     <div className={Styles.copyright}>
-                        <p>All right reserved <Link href='/' > ShopinGo </Link>c 2022</p>
+                        <p>All right reserved <Link href='/' > AppsoBytes </Link>c 2024</p>
                     </div>
                     <div className={Styles.policylinks}>
                         <ul>
