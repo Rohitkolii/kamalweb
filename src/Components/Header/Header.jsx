@@ -38,7 +38,7 @@ const Header = () => {
                     <Link href='/contact'>Connect -</Link>
                   </div>
 
-                  <div data-aos="fade-down" className={Styles.socials}>
+                  <div className={Styles.socials}>
                     <ul>
                       <li><Link href='/'><FaInstagram /></Link></li>
                       <li><Link href='/'><FaLinkedin /></Link></li>

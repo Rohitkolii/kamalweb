@@ -9,7 +9,7 @@ const Footer = () => {
                 <div className={Styles.Footer1}>
                     <div className={Styles.Footerform}>
                         <h2><span style={{color: '#0061ff'}}>A</span>ppso<span style={{color: '#0061ff'}}>B</span>yte<span>.</span></h2>
-                        <p>You think we Develope, <br /> Turn your imagination into code</p>
+                        <p>Turning Ideas Into Impactful Apps</p>
                         <input type="email" placeholder='Your email here' />
                     </div>
                     {/* <div className={Styles.Footeraddress}>

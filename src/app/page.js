@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      {/* <Partners /> */}
+      <Partners />
       <Aboutcol />
       {/* <About /> */}
       <Services />

@@ -94,7 +94,7 @@
 .coninfo{
     display: flex;
     gap: 30px;
-    margin: 15px 0;
+    margin: 10px 0;
     line-height: 25px;
     align-items: center;
 }

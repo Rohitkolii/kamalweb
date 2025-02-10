@@ -56,8 +56,10 @@ const contact = () => {
             <div data-aos="zoom-in-right" className={Styles.col1}>
                 {/* <img src="images/contact.png" alt="" /> */}
                 <h1 className='gt'>Contact us</h1>
-                <p className='subp'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio delectus asperiores magni et eius itaque doloribus maiores. Doloribus quas aspernatur eum dolores voluptas vitae iusto.</p>
-                <div style={{marginTop: 30}} className={Styles.coninfo}>
+                <p className='subp'>At Appsobytes, we’re here to help you bring your ideas to life! Whether you have a question about our services, need technical support, or want to discuss your next big project, our team is ready to assist you.</p>
+                    <p style={{marginTop:10}}>Get in touch</p>
+                
+                <div style={{marginTop: 10}} className={Styles.coninfo}>
                     <div>
                         <IoCallOutline />
                     </div>
@@ -66,6 +68,17 @@ const contact = () => {
                         <p>989898XX99</p>
                     </div>
                 </div>
+                
+                <div className={Styles.coninfo}>
+                    <div>
+                        <CiMail />
+                    </div>
+                    <div>
+                        <p>Office Address:</p>
+                        <p>Block C, Noida 113355</p>
+                    </div>
+                </div>
+
                 <div className={Styles.coninfo}>
                     <div>
                         <CiMail />
@@ -75,6 +88,7 @@ const contact = () => {
                         <p>example@domain.com</p>
                     </div>
                 </div>
+
             </div>
 
             <div data-aos="zoom-in-left" className={Styles.col2}>
