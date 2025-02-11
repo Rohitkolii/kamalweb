@@ -10,6 +10,7 @@ import Technologies from "@/Components/Technologies/Technologies";
 import Random from "@/Components/Random/Random";
 import Aboutcol from "@/Components/Aboutcol/Aboutcol";
 import Numbers from "@/Components/Numbers/Numbers";
+import HeaderSlide from "@/Components/HeaderSlide/HeaderSlide";
 
 export default function Home() {
 
@@ -23,7 +24,8 @@ export default function Home() {
 
   return (
     <>
-      <Header />
+      {/* <Header /> */}
+      <HeaderSlide />
       <Partners />
       {/* <Aboutcol /> */}
       <About />

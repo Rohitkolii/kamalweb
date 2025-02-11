@@ -26,7 +26,7 @@ const contact = () => {
     const sendEmail = (e) => {
         e.preventDefault();
             
-            emailjs.sendForm('service_unk70pt', 'template_rmhzg26', form.current, 'EoRqXeN9WXwvaf8lr')
+            emailjs.sendForm('service_ftx5ev9', 'template_sbjpmjp', form.current, 'DA4KsLR9lJJvsXu7F')
           .then((result) => {
               console.log(result.text);
             //   toast.success('Sent Succesfully!', {
