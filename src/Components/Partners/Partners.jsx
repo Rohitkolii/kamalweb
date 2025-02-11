@@ -6,7 +6,7 @@ const Partners = () => {
   return (
     <>
         <section className={Styles.Partners}>
-            <p className='subp' style={{textAlign: 'center',  fontSize: '18px'}}>Technologies we use</p>
+            {/* <p className='subp' style={{textAlign: 'center',  fontSize: '18px'}}>Technologies we use</p> */}
             <div className={Styles.row}>
 
                 <div className={Styles.innerrow}>
@@ -49,7 +49,7 @@ const Partners = () => {
 
                 </div>
 
-                
+
                 <div className={Styles.innerrow}>
                     <div className={Styles.col}>
                         <img src="images/tech1.png"/>

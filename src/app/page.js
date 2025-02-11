@@ -9,6 +9,7 @@ import Feedback from "@/Components/Feedback/Feedback";
 import Technologies from "@/Components/Technologies/Technologies";
 import Random from "@/Components/Random/Random";
 import Aboutcol from "@/Components/Aboutcol/Aboutcol";
+import Numbers from "@/Components/Numbers/Numbers";
 
 export default function Home() {
 
@@ -26,6 +27,7 @@ export default function Home() {
       <Partners />
       {/* <Aboutcol /> */}
       <About />
+      <Numbers />
       <Services />
       <Feedback />
       <Technologies sections={sections} />
