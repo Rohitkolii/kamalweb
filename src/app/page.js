@@ -15,17 +15,17 @@ export default function Home() {
   const sections = {
     web : 'Web',
     app : 'App',
-    backend : 'Backend',
+    // backend : 'Backend',
     database : "Database",
-    others : 'others',
+    cloud : 'Cloud',
   }
 
   return (
     <>
       <Header />
       <Partners />
-      <Aboutcol />
-      {/* <About /> */}
+      {/* <Aboutcol /> */}
+      <About />
       <Services />
       <Feedback />
       <Technologies sections={sections} />

@@ -24,8 +24,9 @@
 }
 
 .aboutcon .col h3{
-    /* font-size: 35px; */
+    font-size: 25px;
     margin-bottom: 20px;
+    width: 80%;
 
     /* font-size: 72px; */
     /* background: -webkit-linear-gradient(45deg, #e62f30, rgb(62, 130, 255));
@@ -35,7 +36,7 @@
 
 .aboutcon .col p{
     margin: 15px 0;
-    /* font-size: 18px; */
+    font-size: 16px;
 }
 
 .aboutcon .col a{

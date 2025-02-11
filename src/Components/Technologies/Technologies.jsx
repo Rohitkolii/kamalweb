@@ -15,30 +15,24 @@ const Technologies = ({sections}) => {
                     <div><img src="images/tech7.webp"/></div>
                 </div>
     const appBody =  <div className={Styles.techs}>
-                    <div>2</div>
-                    <div>2</div>
-                    <div>2</div>
-                    <div>2</div>
-                    <div>2</div>
-                    <div>2</div>
+                    <div><img src="images/native.svg"/></div>
+                    <div><img src="images/kotlin.svg"/></div>
+                    <div><img src="images/tech4.png"/></div>
+                    <div><img src="images/python.png"/></div>
                 </div>
-    const backendBody =  <div className={Styles.techs}>
-                    <div>3</div>
-                    <div>3</div>
-                    <div>3</div>
-                    <div>3</div>
-                    <div>3</div>
-                    <div>3</div>
-                </div>
+    // const backendBody =  <div className={Styles.techs}>
+    //                 <div>3</div>
+    //                 <div>3</div>
+    //                 <div>3</div>
+    //                 <div>3</div>
+    //                 <div>3</div>
+    //                 <div>3</div>
+    //             </div>
     const databaseBody =  <div className={Styles.techs}>
-                    <div>4</div>
-                    <div>4</div>
-                    <div>4</div>
-                    <div>4</div>
-                    <div>4</div>
-                    <div>4</div>
+                    <div><img src="images/mysql.png"/></div>
+                    <div><img src="images/mongodb.png"/></div>
                 </div>
-    const otherBody =  <div className={Styles.techs}>
+    const cloudBody =  <div className={Styles.techs}>
                     <div>5</div>
                     <div>5</div>
                     <div>5</div>
@@ -51,9 +45,9 @@ const Technologies = ({sections}) => {
         switch(sections[activeSection]){
             case sections.web : return webBody;
             case sections.app : return appBody;
-            case sections.backend : return backendBody;
+            // case sections.backend : return backendBody;
             case sections.database : return databaseBody;
-            case sections.others : return otherBody;
+            case sections.cloud : return cloudBody;
             default : return null;
         }
     }

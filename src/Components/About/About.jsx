@@ -13,16 +13,17 @@ const About = () => {
         <section className={Styles.aboutcon}>
             <div className={Styles.inneraboutcon}>
                 <div className={Styles.col}>
-                    <img src="images/team.jpg" alt="" />
+                    {/* <img src="images/team.jpg" alt="" /> */}
+                    <h3 className='gt'>Why to choose us for Web & App Developement services?</h3>
                 </div>
                 <div className={Styles.col}>
-                    <h3 className='gt'>Why to choose us for Web & App Developement services?</h3>
-                    <p className='subp'>When it comes to web and app development, choosing us means opting for a partner who is deeply committed to your success. We blend cutting-edge technology with creative innovation to deliver solutions that are not only functional but also engaging. Our experienced team of developers and designers takes the time to understand your unique business needs and objectives, ensuring that every project is tailored to meet your specific goals. With a focus on quality, efficiency, and user experience, we guarantee a seamless development process and a final product that stands out in today’s competitive digital landscape. Trust us to turn your vision into a powerful, effective digital presence.</p>
-                    {/* <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat impedit molestias, quod, qui ipsam reprehenderit vitae, eaque accusamus ut voluptatibus assumenda iste aliquam. Adipisci commodi ipsam delectus iusto corrupti? Labore.</p> */}
-                        <div style={{display:'flex', gap: 20}}>
+                    {/* <h3 className='gt'>Why to choose us for Web & App Developement services?</h3> */}
+                    <p className='subp'>At Appsobytes, we are a dynamic IT services company committed to helping startups and small businesses accelerate their growth through cutting-edge technology solutions. Our expertise lies in transforming visionary ideas into high-impact applications that drive efficiency, innovation, and success.</p>
+                    <p className='subp'>Using agile methodologies, we ensure a streamlined and adaptive development process, delivering robust and scalable applications tailored to our clients' unique needs. From concept to deployment, our team works closely with businesses to turn their ideas into powerful digital solutions.</p>
+                        {/* <div style={{display:'flex', gap: 20}}>
                             <Link style={{backgroundColor : '#0061FF'}} href='/about'>Read More</Link>
                             <Link style={{backgroundColor : '#e62f30'}} href='/contact'>Connect with us</Link>
-                        </div>
+                        </div> */}
                 </div>
             </div>
         </section>

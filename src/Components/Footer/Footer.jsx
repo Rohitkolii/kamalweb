@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Styles from './Footer.module.css'
-import {FaFacebookF, FaLinkedinIn, FaTwitter, FaYoutube } from 'react-icons/fa'
+import {FaFacebookF, FaLinkedinIn, FaYoutube } from 'react-icons/fa'
+import {FaXTwitter, FaInstagram   } from 'react-icons/fa6'
 
 const Footer = () => {
     return(
@@ -10,7 +11,7 @@ const Footer = () => {
                     <div className={Styles.Footerform}>
                         <h2><span style={{color: '#0061ff'}}>A</span>ppso<span style={{color: '#0061ff'}}>B</span>yte<span>.</span></h2>
                         <p>Turning Ideas Into Impactful Apps</p>
-                        <input type="email" placeholder='Your email here' />
+                        {/* <input type="email" placeholder='Your email here' /> */}
                     </div>
                     {/* <div className={Styles.Footeraddress}>
                         <h2>Address</h2>
@@ -27,26 +28,19 @@ const Footer = () => {
                         <Link href='/' >Instagram</Link>
                         <Link href='/' >Facebook</Link>
                     </div>
-                    <div className={Styles.Footerlink}>
-                        <h2>Useful Links</h2>
-                        <Link href='/' >Home</Link>
-                        <Link href='/about' >About</Link>
-                        <Link href='/services' >Services</Link>
-                        <Link href='/contact' >Contact</Link>
-                    </div>
+                    
                     <div className={Styles.Footercategories}>
-                        <h2>Other Links</h2>
+                        <h2>Useful Links</h2>
                             <div className={Styles.footercategoriesinner}>
-                                <Link href='/' >Link 1</Link>
-                                <Link href='/' >Link 1</Link>
-                                <Link href='/' >Link 1</Link>
-                                <Link href='/' >Link 1</Link>
+                                <Link href='/' >Home</Link>
+                                <Link href='/' >About us</Link>
+                                <Link href='/' >Contact us</Link>
+                                <Link href='/' >Services</Link>
                             </div>
                             <div className={Styles.footercategoriesinner}>
-                                <Link href='/' >Link A</Link>
-                                <Link href='/' >Link A</Link>
-                                <Link href='/' >Link A</Link>
-                                <Link href='/' >Link A</Link>
+                                <Link href='/' >Blogs</Link>
+                                <Link href='/' >Gallary</Link>
+                                <Link href='/' >Achievements</Link>
                             </div>
                     </div>
                 </div>
@@ -54,17 +48,19 @@ const Footer = () => {
                 <div className={Styles.Footer2}>
                     <div className={Styles.sociallinks}>
                         <p><Link href='/' ><FaFacebookF /></Link></p>
-                        <p><Link href='/' ><FaTwitter /></Link></p>
+                        <p><Link href='/' ><FaXTwitter  /></Link></p>
                         <p><Link href='/' ><FaLinkedinIn /></Link></p>
-                        <p><Link href='/' ><FaYoutube /></Link></p>
+                        <p><Link href='/' ><FaInstagram /></Link></p>
                     </div>
-                    <div className={Styles.paymentmode}>
+
+                    {/* <div className={Styles.paymentmode}>
                         <p>Google</p>
                         <p>Wipro</p>
                         <p>Infosys</p>
                         <p>Me</p>
                         <p>You</p>
-                    </div>
+                    </div> */}
+                
                 </div>
                 <div className={Styles.Footer3}>
                     <div className={Styles.copyright}>

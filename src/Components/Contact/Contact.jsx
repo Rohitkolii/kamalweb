@@ -6,6 +6,9 @@ import Navbar from '@/Components/Navbar/Navbar'
 import Styles from './Contact.module.css'
 import { IoCallOutline } from "react-icons/io5";
 import { CiMail } from "react-icons/ci";
+import { CiLocationOn } from "react-icons/ci";
+import { CiCalendarDate } from "react-icons/ci";
+
 
 import Link from 'next/link'
 import { useRef } from 'react'
@@ -61,6 +64,16 @@ const contact = () => {
                 
                 <div style={{marginTop: 10}} className={Styles.coninfo}>
                     <div>
+                        <CiLocationOn />
+                    </div>
+                    <div>
+                        <p>Office Address:</p>
+                        <p>Block C, Noida 113355</p>
+                    </div>
+                </div>
+                
+                <div className={Styles.coninfo}>
+                    <div>
                         <IoCallOutline />
                     </div>
                     <div>
@@ -69,15 +82,7 @@ const contact = () => {
                     </div>
                 </div>
                 
-                <div className={Styles.coninfo}>
-                    <div>
-                        <CiMail />
-                    </div>
-                    <div>
-                        <p>Office Address:</p>
-                        <p>Block C, Noida 113355</p>
-                    </div>
-                </div>
+                
 
                 <div className={Styles.coninfo}>
                     <div>
@@ -86,6 +91,16 @@ const contact = () => {
                     <div>
                         <p>Mail:</p>
                         <p>example@domain.com</p>
+                    </div>
+                </div>
+                
+                <div className={Styles.coninfo}>
+                    <div>
+                        <CiCalendarDate />
+                    </div>
+                    <div>
+                        <p>Business Hours:</p>
+                        <p>Monday - Friday | 9:00 AM - 6:00 PM (IST)</p>
                     </div>
                 </div>
 
@@ -158,6 +173,11 @@ const contact = () => {
                     <img src="images/ils1.jpg" alt="" />
                 </div> */}
             </div>
+
+            {/* <div>
+                <p>Let’s Build Something Great Together!</p>
+                <p>Fill out the form below, and we’ll get back to you as soon as possible. We look forward to collaborating with you and turning your ideas into impactful digital solutions.</p>
+            </div> */}
         </section>
     </div>
   )
