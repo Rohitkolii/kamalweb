@@ -18,34 +18,26 @@ const Technologies = ({sections}) => {
                     <div><img src="images/native.svg"/></div>
                     <div><img src="images/kotlin.svg"/></div>
                     <div><img src="images/tech4.png"/></div>
-                    <div><img src="images/python.png"/></div>
                 </div>
-    // const backendBody =  <div className={Styles.techs}>
-    //                 <div>3</div>
-    //                 <div>3</div>
-    //                 <div>3</div>
-    //                 <div>3</div>
-    //                 <div>3</div>
-    //                 <div>3</div>
-    //             </div>
+    const backendBody =  <div className={Styles.techs}>
+                    <div><img src="images/python.png"/></div>
+                    <div><img src="images/node.png"/></div>
+                </div>
     const databaseBody =  <div className={Styles.techs}>
                     <div><img src="images/mysql.png"/></div>
                     <div><img src="images/mongodb.png"/></div>
+                    <div><img src="images/postgre.png"/></div>
                 </div>
     const cloudBody =  <div className={Styles.techs}>
-                    <div>5</div>
-                    <div>5</div>
-                    <div>5</div>
-                    <div>5</div>
-                    <div>5</div>
-                    <div>5</div>
+                    <div><img src="images/aws.svg"/></div>
+                    <div><img src="images/cloudflare.svg"/></div>
                 </div>
     
     const generateTechBody = () => {
         switch(sections[activeSection]){
             case sections.web : return webBody;
             case sections.app : return appBody;
-            // case sections.backend : return backendBody;
+            case sections.backend : return backendBody;
             case sections.database : return databaseBody;
             case sections.cloud : return cloudBody;
             default : return null;

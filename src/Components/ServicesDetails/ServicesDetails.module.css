@@ -17,7 +17,8 @@
     gap: 20px;
     list-style: none;
     text-align: center;
-    border-bottom: 1px solid gray;
+    /* border-bottom: 1px solid gray; */
+    border-bottom: 1px solid #171717;
 }
 
 .servicelist ul li, .servicelist a{

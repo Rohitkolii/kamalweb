@@ -1,3 +1,4 @@
+import Footer from '@/Components/Footer/Footer'
 import Navbar from '@/Components/Navbar/Navbar'
 import ServiceHeader from '@/Components/ServiceHeader/ServiceHeader'
 import Link from 'next/link'
@@ -48,6 +49,8 @@ These Terms and Conditions are governed by and construed in accordance with the 
           <p className='subp' style={{margin: '10px 0'}}>Email: <Link href="mailto:appsobytes@gmail.com">appsobytes@gmail.com</Link></p>
           <i className='subp' style={{margin: '10px 0'}}>Address: Noida, Uttar Pradesh</i>
         </div>
+
+        <Footer />
     </>
   )
 }

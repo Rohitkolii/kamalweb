@@ -1,18 +1,4 @@
-/* #app { height: 100% }
-html,
-body {
-  position: relative;
-  height: 100%;
-} */
 
-/* body {
-  background: #eee;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
-  margin: 0;
-  padding: 0;
-} */
 
 .HeaderCon{
     background: url('../../../public/images/card2.jpg');
@@ -20,7 +6,7 @@ body {
 }
 
 .swiper {
-  width: 80%;
+  width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -41,7 +27,7 @@ body {
 
 .swiper-slide img {
   display: block;
-  width: 100%;
+  /* width: 100%; */
 }
 
 
@@ -51,6 +37,7 @@ body {
   gap: 25px;
   width: 100%;
   height: 100%;
+  padding: 20px;
 }
 
 .grid-head div{
@@ -59,6 +46,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  /* margin: 20px; */
   /* gap: 0; */
   /* line-height: 10; */
   

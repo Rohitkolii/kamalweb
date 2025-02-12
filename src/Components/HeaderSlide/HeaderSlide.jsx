@@ -37,7 +37,8 @@ export default function HeaderSlide() {
         className="mySwiper"
       >
         <SwiperSlide>
-            <h1>AppsoBytes</h1>
+            <h1>AppsoBytes.</h1>
+            {/* <h1><span style={{color: '#0061ff'}}>A</span>ppso<span style={{color: '#0061ff'}}>B</span>ytes.</h1> */}
             <br />
             <p className='subp'>At Appsobytes, we are a dynamic IT services company committed to helping startups and small businesses accelerate their growth through cutting-edge technology solutions. Our expertise lies in transforming visionary ideas into high-impact applications that drive efficiency, innovation, and success.</p>
           {/* <img src="https://swiperjs.com/demos/images/nature-1.jpg" /> */}
@@ -71,18 +72,6 @@ export default function HeaderSlide() {
         </SwiperSlide>
         <SwiperSlide>
           {/* <img src="https://swiperjs.com/demos/images/nature-5.jpg" /> */}
-        </SwiperSlide>
-        <SwiperSlide>
-          {/* <img src="https://swiperjs.com/demos/images/nature-6.jpg" /> */}
-        </SwiperSlide>
-        <SwiperSlide>
-          {/* <img src="https://swiperjs.com/demos/images/nature-7.jpg" /> */}
-        </SwiperSlide>
-        <SwiperSlide>
-          {/* <img src="https://swiperjs.com/demos/images/nature-8.jpg" /> */}
-        </SwiperSlide>
-        <SwiperSlide>
-          {/* <img src="https://swiperjs.com/demos/images/nature-9.jpg" /> */}
         </SwiperSlide>
       </Swiper>
       </div>

@@ -13,6 +13,8 @@ import { CiCalendarDate } from "react-icons/ci";
 import Link from 'next/link'
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+
 
 
 const contact = () => {
@@ -25,36 +27,47 @@ const contact = () => {
 
     const sendEmail = (e) => {
         e.preventDefault();
-            
-            emailjs.sendForm('service_ftx5ev9', 'template_sbjpmjp', form.current, 'DA4KsLR9lJJvsXu7F')
-          .then((result) => {
-              console.log(result.text);
-            //   toast.success('Sent Succesfully!', {
-            //       position: "top-center",
-            //       autoClose: 5000,
-            //       hideProgressBar: false,
-            //       closeOnClick: true,
-            //       pauseOnHover: true,
-            //       draggable: true,
-            //       progress: undefined,
-            //       theme: "dark",
-            //   });
-  
-            //   setmail('')
-            //   setname('')
-            //   setmessage('')
-              
-              e.target.reset();
-          }, (error) => {
-              console.log(error);
-          });
+            // console.log(form.current[0].value);
+            if(form.current[0].value && form.current[1].value && form.current[2].value && form.current[3].value){
+
+                emailjs.sendForm('service_ftx5ev9', 'template_sbjpmjp', form.current, 'DA4KsLR9lJJvsXu7F')
+                .then((result) => {
+                console.log(result.text);
+                toast.success('Sent Succesfully!', {
+                    position: "top-center",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "dark",
+                });
+                
+                e.target.reset();
+                }, (error) => {
+                    console.log(error);
+                });
+            }else{
+                toast.error('Fill form first!', {
+                    position: "top-center",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "dark",
+                });
+            }
           
-          e.target.reset();
+        //   e.target.reset();
       }
   
 
     return (
     <div>
+        <ToastContainer />
       <section className={Styles.inner_Header}>
             <div data-aos="zoom-in-right" className={Styles.col1}>
                 {/* <img src="images/contact.png" alt="" /> */}
@@ -68,7 +81,7 @@ const contact = () => {
                     </div>
                     <div>
                         <p>Office Address:</p>
-                        <p>Block C, Noida 113355</p>
+                        <p>Noida, Uttar Pradesh</p>
                     </div>
                 </div>
                 
@@ -78,7 +91,7 @@ const contact = () => {
                     </div>
                     <div>
                         <p>Contact:</p>
-                        <p>989898XX99</p>
+                        <p>9773806588</p>
                     </div>
                 </div>
                 
@@ -90,7 +103,7 @@ const contact = () => {
                     </div>
                     <div>
                         <p>Mail:</p>
-                        <p>example@domain.com</p>
+                        <p>appsobytes@gmail.com</p>
                     </div>
                 </div>
                 

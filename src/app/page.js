@@ -17,7 +17,7 @@ export default function Home() {
   const sections = {
     web : 'Web',
     app : 'App',
-    // backend : 'Backend',
+    backend : 'Backend',
     database : "Database",
     cloud : 'Cloud',
   }

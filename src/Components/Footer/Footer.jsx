@@ -12,7 +12,14 @@ const Footer = () => {
                         <h2><span style={{color: '#0061ff'}}>A</span>ppso<span style={{color: '#0061ff'}}>B</span>yte<span>.</span></h2>
                         <p>Turning Ideas Into Impactful Apps</p>
                         {/* <input type="email" placeholder='Your email here' /> */}
+                            <div className={Styles.sociallinks}>
+                                <p><Link href='/' ><FaFacebookF /></Link></p>
+                                <p><Link href='/' ><FaXTwitter  /></Link></p>
+                                <p><Link href='/' ><FaLinkedinIn /></Link></p>
+                                <p><Link href='https://www.instagram.com/appsobytes' ><FaInstagram /></Link></p>
+                            </div>
                     </div>
+
                     {/* <div className={Styles.Footeraddress}>
                         <h2>Address</h2>
                         <p>20, Awesome Road, <br /> New Delhi, 532C</p>
@@ -21,13 +28,13 @@ const Footer = () => {
                     </div> */}
 
 
-                    <div className={Styles.Footerlink}>
+                    {/* <div className={Styles.Footerlink}>
                         <h2>Social Links</h2>
                         <Link href='/' >Twitter</Link>
                         <Link href='/' >Linkedin</Link>
                         <Link href='/' >Instagram</Link>
                         <Link href='/' >Facebook</Link>
-                    </div>
+                    </div> */}
                     
                     <div className={Styles.Footercategories}>
                         <h2>Useful Links</h2>
@@ -37,14 +44,14 @@ const Footer = () => {
                                 <Link href='/' >Contact us</Link>
                                 <Link href='/' >Services</Link>
                             </div>
-                            <div className={Styles.footercategoriesinner}>
+                            {/* <div className={Styles.footercategoriesinner}>
                                 <Link href='/' >Blogs</Link>
                                 <Link href='/' >Gallary</Link>
                                 <Link href='/' >Achievements</Link>
-                            </div>
+                            </div> */}
                     </div>
                 </div>
-
+{/* 
                 <div className={Styles.Footer2}>
                     <div className={Styles.sociallinks}>
                         <p><Link href='/' ><FaFacebookF /></Link></p>
@@ -53,22 +60,22 @@ const Footer = () => {
                         <p><Link href='/' ><FaInstagram /></Link></p>
                     </div>
 
-                    {/* <div className={Styles.paymentmode}>
+                    <div className={Styles.paymentmode}>
                         <p>Google</p>
                         <p>Wipro</p>
                         <p>Infosys</p>
                         <p>Me</p>
                         <p>You</p>
-                    </div> */}
+                    </div>
                 
-                </div>
+                </div> */}
                 <div className={Styles.Footer3}>
                     <div className={Styles.copyright}>
                         <p>All right reserved <Link href='/' > AppsoBytes </Link>c 2024</p>
                     </div>
                     <div className={Styles.policylinks}>
                         <ul>
-                            <li><Link href='/'>Terms n Condition</Link></li>
+                            <li><Link href='/terms&condition'>Terms n Condition</Link></li>
                             <li><Link href='/'>Privacy Policy</Link></li>
                             <li><Link href='/'>Legal</Link></li>
                         </ul>

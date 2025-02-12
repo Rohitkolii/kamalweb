@@ -40,8 +40,8 @@ const Navbar = () => {
         <div className={menu ? Styles.showmenu : Styles.hidemenu}>
             <div className={Styles.menuheader}>
                 <div>
-                    <h2>You think we <span style={{color: '#0061ff'}}>Develope</span></h2>
-                    <p className='subp'>We ensure to establish websites with the latest trends as we believe that, products whose value satisfies the needs of the market and its potential customers can be efficiently successful.</p>
+                    <h2>Turning <span style={{color: '#0061ff'}}>Ideas</span> Into Impactful <span style={{color: '#0061ff'}}>Apps</span></h2>
+                    {/* <p className='subp'>We ensure to establish websites with the latest trends as we believe that, products whose value satisfies the needs of the market and its potential customers can be efficiently successful.</p> */}
                 </div>
             </div>
 
@@ -56,17 +56,16 @@ const Navbar = () => {
                         <Link href="/blogs">Blogs</Link>
                     </ul>
                 </div>
-                <div className={Styles.menucol}>
+
+                {/* <div className={Styles.menucol}>
                     <p>Quick Links</p>
                     <ul>
                         <Link href="/">Gallary</Link>
                         <Link href="/">Achivements</Link>
-                        {/* <Link href="/">Link C</Link>
-                        <Link href="/">Link D</Link>
-                        <Link href="/">Link E</Link> */}
                     </ul>
-                </div>
-                <div className={Styles.menucol}>
+                </div> */}
+
+                {/* <div className={Styles.menucol}>
                     <p>Quick Links</p>
                     <ul>
                         <Link href="/">Link *</Link>
@@ -75,11 +74,11 @@ const Navbar = () => {
                         <Link href="/">Link /</Link>
                         <Link href="/">Link ?</Link>
                     </ul>
-                </div>
+                </div> */}
                 <div className={Styles.menucol}>
                     <p>Connect</p>
                     <ul>
-                        <Link href="/">Facebook</Link>
+                        <Link href="https://www.instagram.com/appsobytes/">Facebook</Link>
                         <Link href="/">Instagram</Link>
                         <Link href="/">Linkedin</Link>
                         <Link href="/">Twitter</Link>

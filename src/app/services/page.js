@@ -20,7 +20,7 @@ const page = () => {
         </div>
 
         <ServicesDetails />
-        <Random />
+        {/* <Random /> */}
         <Footer />
     </>
   )
