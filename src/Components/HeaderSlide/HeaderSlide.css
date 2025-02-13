@@ -3,24 +3,22 @@
 .HeaderCon{
     background: url('../../../public/images/card2.jpg');
     background-size: cover;
+    width: 100%;
 }
 
-.swiper {
+.HeaderCon .swiper {
   width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-.swiper-slide {
+.HeaderCon .swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 600px;
-  height: 400px;
-  /* background-color: rgb(21, 21, 21); */
-  /* background-color: black; */
+  width: 700px;
+  height: 450px;
   border-radius: 12px;
   padding: 10px;
-  /* background-size: cover; */
 }
 
 .HeaderCon .swiper-slide:nth-child(3){
@@ -71,7 +69,7 @@
   justify-content: center;
 }
 
-.swiper-slide img {
+.HeaderCon .swiper-slide img {
   display: block;
   /* width: 100%; */
 }
@@ -92,9 +90,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* margin: 20px; */
-  /* gap: 0; */
-  /* line-height: 10; */
   
 }
 
@@ -102,4 +97,47 @@
   color: black;
   margin: 0 auto;
   padding: 0;
+}
+
+
+
+@media only screen and (max-width:1000px){
+  .HeaderCon .swiper-slide {
+    width: 80%;
+    height: 450px;
+  }
+}
+
+@media only screen and (max-width:700px){
+  .HeaderCon .swiper-slide {
+    width: 80%;
+    height: 350px;
+  }
+}
+
+@media only screen and (max-width:600px){
+  .HeaderCon .swiper-slide {
+    width: 80%;
+    height: 300px;
+    font-size: 70%;
+  }
+}
+
+@media only screen and (max-width:500px){
+  .HeaderCon .swiper-slide {
+    width: 80%;
+    height: 250px;
+    font-size: 70%;
+  }
+
+  .grid-head{
+    gap: 5px;
+    padding: 5px;
+  }
+}
+@media only screen and (max-width:500px){
+  .HeaderCon .swiper-slide {
+    width: 80%;
+    height: 200px;
+  }
 }

@@ -40,7 +40,7 @@ export default function HeaderSlide() {
             <h1>AppsoBytes.</h1>
             {/* <h1><span style={{color: '#0061ff'}}>A</span>ppso<span style={{color: '#0061ff'}}>B</span>ytes.</h1> */}
             <br />
-            <p className='subp'>At Appsobytes, we are a dynamic IT services company committed to helping startups and small businesses accelerate their growth through cutting-edge technology solutions. Our expertise lies in transforming visionary ideas into high-impact applications that drive efficiency, innovation, and success.</p>
+            <p>At Appsobytes, we are a dynamic IT services company committed to helping startups and small businesses accelerate their growth through cutting-edge technology solutions. Our expertise lies in transforming visionary ideas into high-impact applications that drive efficiency, innovation, and success.</p>
         </SwiperSlide>
         <SwiperSlide>
           <div className='grid-head'>
@@ -73,11 +73,11 @@ export default function HeaderSlide() {
         </SwiperSlide>
         <SwiperSlide>
           <h1>Enhanced Efficiency</h1>
-          <p className='subp'>Automate processes, improve productivity, and reduce costs.</p>
+          <p>Automate processes, improve productivity, and reduce costs.</p>
         </SwiperSlide>
         <SwiperSlide>
           <h1>Reliable Support</h1>
-          <p className='subp'>Ongoing maintenance and support to ensure seamless operations.</p>
+          <p>Ongoing maintenance and support to ensure seamless operations.</p>
         </SwiperSlide>
       </Swiper>
       </div>

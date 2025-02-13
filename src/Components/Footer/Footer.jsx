@@ -71,7 +71,7 @@ const Footer = () => {
                 </div> */}
                 <div className={Styles.Footer3}>
                     <div className={Styles.copyright}>
-                        <p>All right reserved <Link href='/' > AppsoBytes </Link>c 2024</p>
+                        <p>All right reserved <Link href='/' > AppsoBytes </Link>c 2025</p>
                     </div>
                     <div className={Styles.policylinks}>
                         <ul>
