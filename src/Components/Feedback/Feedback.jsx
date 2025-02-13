@@ -19,7 +19,8 @@ const Feedback = () => {
         <section className={Styles.Feedback}>
             <div className={Styles.col1}>
                 <p>WHAT OUR CLIENTs SAY</p>
-                <h3 className='gt'>Hear It from Those <br /> Who Know Us Best</h3>
+                <h3 className='gt'>Hear It from Those Who Know Us Best</h3>
+                {/* <h3 className='gt'>Hear It from Those <br /> Who Know Us Best</h3> */}
                 <p className='subp'>Great people make great companies, and we specialize in building the best. Our success stories show why clients trust us with their recruitment needs.</p>
             </div>
 

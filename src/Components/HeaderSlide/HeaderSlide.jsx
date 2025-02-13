@@ -41,7 +41,6 @@ export default function HeaderSlide() {
             {/* <h1><span style={{color: '#0061ff'}}>A</span>ppso<span style={{color: '#0061ff'}}>B</span>ytes.</h1> */}
             <br />
             <p className='subp'>At Appsobytes, we are a dynamic IT services company committed to helping startups and small businesses accelerate their growth through cutting-edge technology solutions. Our expertise lies in transforming visionary ideas into high-impact applications that drive efficiency, innovation, and success.</p>
-          {/* <img src="https://swiperjs.com/demos/images/nature-1.jpg" /> */}
         </SwiperSlide>
         <SwiperSlide>
           <div className='grid-head'>
@@ -54,7 +53,7 @@ export default function HeaderSlide() {
               <p>Worldwide Client</p>
             </div>
             <div style={{backgroundColor: '#5CB338'}}>
-              <h1>21+</h1>
+              <h1>30+</h1>
               <p>Team</p>
             </div>
             <div style={{backgroundColor: 'white'}}>
@@ -62,16 +61,23 @@ export default function HeaderSlide() {
               <p>On Time Project Delivered</p>
             </div>
           </div>
-          {/* <img src="https://swiperjs.com/demos/images/nature-2.jpg" /> */}
         </SwiperSlide>
         <SwiperSlide>
-          {/* <img src="https://swiperjs.com/demos/images/nature-3.jpg" /> */}
+          <h1 style={{color: '#0061ff'}}>Grow Your Business Faster</h1>
+          <p> We build impactful applications that help you scale efficiently.</p>
         </SwiperSlide>
         <SwiperSlide>
-          {/* <img src="https://swiperjs.com/demos/images/nature-4.jpg" /> */}
+          <span style={{color: '#0061ff', fontSize: 60, fontWeight: 700}}>30+</span>
+          <h1>Expert Team </h1>
+          <p>specialized IT professionals dedicated to your success.</p>
         </SwiperSlide>
         <SwiperSlide>
-          {/* <img src="https://swiperjs.com/demos/images/nature-5.jpg" /> */}
+          <h1>Enhanced Efficiency</h1>
+          <p className='subp'>Automate processes, improve productivity, and reduce costs.</p>
+        </SwiperSlide>
+        <SwiperSlide>
+          <h1>Reliable Support</h1>
+          <p className='subp'>Ongoing maintenance and support to ensure seamless operations.</p>
         </SwiperSlide>
       </Swiper>
       </div>

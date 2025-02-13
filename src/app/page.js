@@ -15,8 +15,8 @@ import HeaderSlide from "@/Components/HeaderSlide/HeaderSlide";
 export default function Home() {
 
   const sections = {
-    web : 'Web',
-    app : 'App',
+    web : 'Website',
+    app : 'Application',
     backend : 'Backend',
     database : "Database",
     cloud : 'Cloud',
