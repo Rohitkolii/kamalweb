@@ -14,7 +14,7 @@ const Numbers = () => {
                 <p>Worldwide Client</p>
             </div>
             <div>
-                <h1>83+</h1>
+                <h1>30+</h1>
                 <p>Team</p>
             </div>
             <div>

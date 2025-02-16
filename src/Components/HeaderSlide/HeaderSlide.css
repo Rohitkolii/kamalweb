@@ -18,55 +18,58 @@
   width: 700px;
   height: 450px;
   border-radius: 12px;
-  padding: 10px;
+}
+
+.HeaderCon .swiper-slide p{
+  font-size: 13px;
+  padding:5px 50px;
+  font-weight: 300;
+}
+
+.HeaderCon .swiper-slide:nth-child(1){
+  background: url('../../../public/images/Growslide.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.HeaderCon .swiper-slide:nth-child(2){
+  /* background: linear-gradient(rgba(128, 128, 128, 0.462), #0000007b),url('../../../public/images/team.jpg'); */
+  background: url('../../../public/images/ExpertTeam.png');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .HeaderCon .swiper-slide:nth-child(3){
-  background: linear-gradient(rgba(128, 128, 128, 0.462), #0000007b),url('../../../public/images/grow2.jpg');
+  background: url('../../../public/images/supportslide.png');
   background-size: cover;
   background-repeat: no-repeat;
-  text-align: center;
-  padding: 20px 0;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
-
-
 .HeaderCon .swiper-slide:nth-child(4){
-  background: linear-gradient(rgba(128, 128, 128, 0.462), #0000007b),url('../../../public/images/team.jpg');
+  background: url('../../../public/images/TailoredSolutions.png');
   background-size: cover;
   background-repeat: no-repeat;
-  text-align: center;
-  padding: 20px 0;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
-
 .HeaderCon .swiper-slide:nth-child(5){
-  background: linear-gradient(rgba(128, 128, 128, 0.462), #0000007b),url('../../../public/images/card1.jpg');
+  background: url('../../../public/images/EnhancedEfficiency.png');
   background-size: cover;
   background-repeat: no-repeat;
-  text-align: center;
-  padding: 20px 0;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+}
+.HeaderCon .swiper-slide:nth-child(5){
+  background: url('../../../public/images/competitionslide.png');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .HeaderCon .swiper-slide:nth-child(6){
-  background: linear-gradient(rgba(128, 128, 128, 0.462), #0000007b),url('../../../public/images/code.jpg');
+  background: url('../../../public/images/EnhancedEfficiency.png');
   background-size: cover;
   background-repeat: no-repeat;
-  text-align: center;
-  padding: 20px 0;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .HeaderCon .swiper-slide img {
