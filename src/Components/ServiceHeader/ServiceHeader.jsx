@@ -7,8 +7,8 @@ const ServiceHeader = () => {
     <>
         <section className={Styles.ServiceHeader}>
             <div>
-                <h2>You think we <span style={{color: '#0061ff'}}>Develope</span></h2>
-                <p>Turn your imagination into code</p>
+                <h2>Turning <span style={{color: '#0061ff'}}>Ideas</span> Into <span style={{color: '#0061ff'}}>Impactful</span>Application</h2>
+                <p className='subp'>At Appsobytes, we are a dynamic IT services company committed to helping startups and small businesses accelerate their growth through cutting-edge technology solutions. Our expertise lies in transforming visionary ideas into high-impact applications that drive efficiency, innovation, and success.</p>
                 <Link href="contact">Connect & Discuss</Link>
             </div>
         </section>

@@ -72,15 +72,21 @@
     }
 
     .aboutcon .col{
-        width: 100%;
+        width: 95%;
     }
 }
 @media only screen and (max-width:550px) {
-    /* .aboutcon .col h3{
-        font-size: 25px;
-    } */
+    .aboutcon .col h3{
+        font-size: 20px;
+    }
 
     .inneraboutcon{
         margin: 0px auto;
+    }
+
+    .inneraboutcon{
+        margin: 0px auto;
+        display: flex;
+        gap: 15px;
     }
 }

@@ -40,9 +40,9 @@ const Footer = () => {
                         <h2>Useful Links</h2>
                             <div className={Styles.footercategoriesinner}>
                                 <Link href='/' >Home</Link>
-                                <Link href='/' >About us</Link>
-                                <Link href='/' >Contact us</Link>
-                                <Link href='/' >Services</Link>
+                                <Link href='/about' >About us</Link>
+                                <Link href='/contact' >Contact us</Link>
+                                <Link href='/services' >Services</Link>
                             </div>
                             {/* <div className={Styles.footercategoriesinner}>
                                 <Link href='/' >Blogs</Link>
@@ -75,7 +75,7 @@ const Footer = () => {
                     </div>
                     <div className={Styles.policylinks}>
                         <ul>
-                            <li><Link href='/terms&condition'>Terms n Condition</Link></li>
+                            <li><Link href='/terms&condition'>Terms and Condition</Link></li>
                             <li><Link href='/'>Privacy Policy</Link></li>
                             <li><Link href='/'>Legal</Link></li>
                         </ul>

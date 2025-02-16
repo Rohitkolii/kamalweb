@@ -46,12 +46,34 @@ const Partners = () => {
                     <div className={Styles.col}>
                         <img src="images/mongodb.png"/>
                     </div>
+                    <div className={Styles.col}>
+                        <img src="images/flutter.png"/>
+                    </div>
+                    <div className={Styles.col}>
+                        <img src="images/angular.png"/>
+                    </div>
+                    <div className={Styles.col}>
+                        <img src="images/java.png"/>
+                    </div>
+                    <div className={Styles.col}>
+                        <img src="images/net.png"/>
+                    </div>
+                    <div className={Styles.col}>
+                        <img src="images/dynamodb.png"/>
+                    </div>
+                    
+                    <div className={Styles.col}>
+                        <img src="images/s3.svg"/>
+                    </div>
+                    <div className={Styles.col}>
+                        <img src="images/mongodb.png"/>
+                    </div>
 
                 </div>
 
 
                 <div className={Styles.innerrow}>
-                    <div className={Styles.col}>
+                <div className={Styles.col}>
                         <img src="images/tech1.png"/>
                     </div>
                     <div className={Styles.col}>
@@ -83,6 +105,28 @@ const Partners = () => {
                     </div>
                     <div className={Styles.col}>
                         <img src="images/mysql.png"/>
+                    </div>
+                    <div className={Styles.col}>
+                        <img src="images/mongodb.png"/>
+                    </div>
+                    <div className={Styles.col}>
+                        <img src="images/flutter.png"/>
+                    </div>
+                    <div className={Styles.col}>
+                        <img src="images/angular.png"/>
+                    </div>
+                    <div className={Styles.col}>
+                        <img src="images/java.png"/>
+                    </div>
+                    <div className={Styles.col}>
+                        <img src="images/net.png"/>
+                    </div>
+                    <div className={Styles.col}>
+                        <img src="images/dynamodb.png"/>
+                    </div>
+                    
+                    <div className={Styles.col}>
+                        <img src="images/s3.svg"/>
                     </div>
                     <div className={Styles.col}>
                         <img src="images/mongodb.png"/>

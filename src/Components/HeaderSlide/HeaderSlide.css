@@ -40,38 +40,39 @@
   background-repeat: no-repeat;
 }
 
-
 .HeaderCon .swiper-slide:nth-child(2){
-  background: url('../../../public/images/headerslide/Growslide.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.HeaderCon .swiper-slide:nth-child(3){
   background: url('../../../public/images/headerslide/ExpertTeam.png');
   background-size: cover;
   background-repeat: no-repeat;
 }
-.HeaderCon .swiper-slide:nth-child(4){
-  background: url('../../../public/images/headerslide/supportslide.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.HeaderCon .swiper-slide:nth-child(5){
+.HeaderCon .swiper-slide:nth-child(3){
   background: url('../../../public/images/headerslide/TailoredSolutions.png');
   background-size: cover;
   background-repeat: no-repeat;
 }
-.HeaderCon .swiper-slide:nth-child(5){
+
+.HeaderCon .swiper-slide:nth-child(4){
   background: url('../../../public/images/headerslide/EnhancedEfficiency.png');
   background-size: cover;
   background-repeat: no-repeat;
 }
-.HeaderCon .swiper-slide:nth-child(6){
+.HeaderCon .swiper-slide:nth-child(5){
   background: url('../../../public/images/headerslide/competitionslide.png');
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.HeaderCon .swiper-slide:nth-child(6){
+  background: url('../../../public/images/headerslide/supportslide.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+
 
 .HeaderCon .swiper-slide img {
   display: block;
@@ -112,7 +113,7 @@
   width: 200px;
   height: 200px;
   background-color: rgba(0, 98, 255, 0.259);
-  filter: blur(.3);
+  filter: blur(9px);
   position: absolute;
   top: 40%;
   left: calc(50% - 100px);
@@ -151,6 +152,16 @@
   .HeaderCon .swiper-slide {
     width: 80%;
     height: 350px;
+  }
+
+  .glow{
+    width: 120px;
+    height: 120px;
+    background-color: rgba(0, 98, 255, 0.259);
+    filter: blur(9px);
+    position: absolute;
+    top: 20%;
+    left: calc(50% - 100px);
   }
 }
 

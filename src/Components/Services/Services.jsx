@@ -15,45 +15,51 @@ const Services = () => {
   return (
     <>
         <section className={Styles.Services}>
-            <h3 className='gt'>Valuable Services that our company provides to their customers</h3>
-            <p className='subp'>Hey, Illusion.com provides website developement, App developement, api's and many more services to make your bussiness live.</p>
+            <h3 className='gt'>Innovative Web & App Development Solutions Tailored to Your Business Needs</h3>
+            <p className='subp'>"At Appsobytes, we craft custom web and app solutions that drive growth and enhance user experience. Our expert team delivers high-quality, scalable digital products tailored to your business needs."</p>
             <div className={Styles.row}>
                 <div data-aos="fade-up" className={Styles.col}>
                     <span><MdWeb /></span>
-                    <p>Web Developement</p>
+                    <p>Web Application Developement</p>
                     <p className='subp'>Unlock the full potential of your online presence with our expert web development services.</p>
                 </div>
                 <div data-aos="fade-down" className={Styles.col}>
                     <span><MdWeb /></span>
-                    <p>App Developement</p>
+                    <p>Mobile Application Developement</p>
                     <p className='subp'>
                     Transform your ideas into innovative, high-performance apps with our comprehensive development services.</p>
                 </div>
                 
                 <div data-aos="fade-down" className={Styles.col}>
                     <span><MdWeb /></span>
-                    <p>Software Developement</p>
+                    <p>Digital Transformation</p>
                     <p className='subp'>
                     Elevate your software capabilities with our expert API development services.</p>
                 </div>
                 <div data-aos="fade-up" className={Styles.col}>
                     <span><MdWeb /></span>
-                    <p>Backend Developement</p>
+                    <p>IT Consulting</p>
+                    <p className='subp'>
+                    Elevate your software capabilities with our expert API development services.</p>
+                </div>
+                <div data-aos="fade-up" className={Styles.col}>
+                    <span><MdWeb /></span>
+                    <p>Ideation And Design Strategy</p>
                     <p className='subp'>
                     Elevate your software capabilities with our expert API development services.</p>
                 </div>
                 <div data-aos="fade-down" className={Styles.col}>
                     <span><MdWeb /></span>
-                    <p>Databse Design</p>
+                    <p>DevOps</p>
                     <p className='subp'>
                     Elevate your software capabilities with our expert API development services.</p>
                 </div>
-                {/* <div data-aos="fade-up" className={Styles.col}>
+                <div data-aos="fade-down" className={Styles.col}>
                     <span><MdWeb /></span>
-                    <p>Developement</p>
+                    <p>Cloud Management Services</p>
                     <p className='subp'>
                     Elevate your software capabilities with our expert API development services.</p>
-                </div> */}
+                </div>
                 <div data-aos="fade-down" className={Styles.col}>
                     <span><MdWeb /></span>
                     <p>Other Services</p>

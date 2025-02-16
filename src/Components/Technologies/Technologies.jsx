@@ -1,7 +1,13 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Styles from './Technologies.module.css'
+import Link from 'next/link';
 
 const Technologies = ({sections}) => {
+
+    const [wvalue, setwvalue] = useState('');
+    useEffect(()=> {
+        setwvalue(document.body.clientWidth);
+    }, [])
 
     const [activeSection, setActiveSection] = useState(Object.keys(sections)[0])
     
@@ -53,7 +59,13 @@ const Technologies = ({sections}) => {
     <>
         <section className={Styles.Technologies}>
             <h3 className='gt'>Our Tech Stack: Powering Innovation</h3>
-            <p>Our solutions are powered by cutting-edge technologies that ensure efficiency, scalability, and innovation. From advanced programming languages to robust cloud computing platforms, we utilize the best tools to deliver high-performance solutions. Our tech stack includes AI-driven automation, secure databases, and modern development frameworks that enhance reliability and speed. By leveraging the latest in machine learning, cybersecurity, and DevOps, we create seamless, future-ready applications. Our commitment to staying ahead with emerging technologies allows us to provide smart, adaptable, and scalable solutions tailored to meet evolving business needs. With a strong technological foundation, we drive success and digital transformation.</p>
+            {
+                wvalue < 1000 ?
+                <p>Our solutions are powered by cutting-edge technologies that ensure efficiency, scalability, and innovation. From advanced programming languages to robust cloud computing platforms, we utilize the best tools to...... <Link href='/services'>Read more</Link></p>
+                :
+                <p>Our solutions are powered by cutting-edge technologies that ensure efficiency, scalability, and innovation. From advanced programming languages to robust cloud computing platforms, we utilize the best tools to deliver high-performance solutions. Our tech stack includes AI-driven automation, secure databases, and modern development frameworks that enhance reliability and speed. By leveraging the latest in machine learning, cybersecurity, and DevOps, we create seamless, future-ready applications. Our commitment to staying ahead with emerging technologies allows us to provide smart, adaptable, and scalable solutions tailored to meet evolving business needs. With a strong technological foundation, we drive success and digital transformation.</p>
+
+            }
             <div className={Styles.list}>
                 <ul>
                     {

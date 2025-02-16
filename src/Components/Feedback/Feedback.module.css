@@ -32,7 +32,7 @@
     background-color: #0F0F0F;
     width: 60%;
     margin: auto;
-    padding: 20px;
+    padding: 50px;
     border-radius: 6px;
     text-align: center;
     height: fit-content;
@@ -40,7 +40,7 @@
 }
 
 .feedname{
-    color: #fff;
+    color: #0061ff;
     font-size: 15;
     display: flex;
     align-items: center;
