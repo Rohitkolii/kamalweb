@@ -15,11 +15,11 @@ import HeaderSlide from "@/Components/HeaderSlide/HeaderSlide";
 export default function Home() {
 
   const sections = {
-    web : 'Website',
-    app : 'Application',
+    web : 'Frontent',
+    app : 'Mobile',
     backend : 'Backend',
-    database : "Database",
-    cloud : 'Cloud',
+    database : "Cloud & Database",
+    // cloud : 'Cloud',
   }
 
   return (

@@ -1,5 +1,5 @@
 .Technologies{
-    width: 40%;
+    width: 80%;
     margin: 50px auto;
     text-align: center;
 }
@@ -8,18 +8,30 @@
     margin-bottom: 30px;
 }
 
+
 .list li{
     cursor: pointer;
     text-transform: capitalize;
-    font-size: 18px;
+    font-size: 15px;
     width: 100%;
+}
+
+.list{
+    width: 50%;
+    margin: 50px auto;
+}
+
+.Technologies p{
+    color: rgb(173, 173, 173);
+    font-size: 14px;
+    font-weight: 400;
 }
 
 .list ul{
     /* padding: 10px 0; */
     border-bottom: 1px solid #171717;
     display: flex;
-    gap: 30px;
+    gap: 10px;
     justify-content: center;
     list-style-type: none;
 }
@@ -60,7 +72,8 @@
     grid-template-rows: repeat(2 , 1fr);
     height: 200px;
     gap: 15px;
-    margin: 50px 0;
+    margin: 50px auto;
+    width: 50%;
 }
 
 .techs div{
@@ -78,9 +91,9 @@
 }
 
 .techs div img{
-    max-width: 60px;
-    min-width: 100px;
-    height: 60px;
+    max-width: 50px;
+    min-width: 80px;
+    height: 50px;
     object-fit: contain;
 }
 

@@ -17,6 +17,7 @@ export default function HeaderSlide() {
   return (
     <>
     <div className='HeaderCon'>
+    <div className="glow"></div>
         <Navbar />
     
       <Swiper
@@ -58,7 +59,7 @@ export default function HeaderSlide() {
           </div>
         </SwiperSlide> */}
 
-        <SwiperSlide>
+        {/* <SwiperSlide>
           <img src="images/headerslide/Growslide.png" alt="" />
         </SwiperSlide>
         <SwiperSlide>
@@ -75,8 +76,15 @@ export default function HeaderSlide() {
         </SwiperSlide>
         <SwiperSlide>
           <img src="images/headerslide/competitionslide.png" alt="" />
-        </SwiperSlide>
+        </SwiperSlide> */}
 
+
+          <SwiperSlide></SwiperSlide>
+          <SwiperSlide></SwiperSlide>
+          <SwiperSlide></SwiperSlide>
+          <SwiperSlide></SwiperSlide>
+          <SwiperSlide></SwiperSlide>
+          <SwiperSlide></SwiperSlide>
       </Swiper>
       </div>
     </>
