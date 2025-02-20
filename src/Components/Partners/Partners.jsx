@@ -68,6 +68,9 @@ const Partners = () => {
                     <div className={Styles.col}>
                         <img src="images/mongodb.png"/>
                     </div>
+                    <div className={Styles.col}>
+                        <img src="images/ios.png"/>
+                    </div>
 
                 </div>
 
@@ -130,6 +133,9 @@ const Partners = () => {
                     </div>
                     <div className={Styles.col}>
                         <img src="images/mongodb.png"/>
+                    </div>
+                    <div className={Styles.col}>
+                        <img src="images/ios.png"/>
                     </div>
 
                 </div>

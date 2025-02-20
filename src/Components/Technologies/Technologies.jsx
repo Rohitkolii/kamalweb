@@ -25,7 +25,7 @@ const Technologies = ({sections}) => {
                     <div><img src="images/native.svg"/></div>
                     <div><img src="images/kotlin.svg"/></div>
                     <div><img src="images/flutter.png"/></div>
-                    <div><img src="images/ios.svg"/></div>
+                    <div><img src="images/ios.png"/></div>
                     
                 </div>
     const backendBody =  <div className={Styles.techs}>
