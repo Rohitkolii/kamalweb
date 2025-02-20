@@ -2,7 +2,6 @@
     margin: 20px 0;
     padding: 10px 20px;
     border-radius: 6px;
-    cursor: pointer;
     overflow: hidden;
     /* background-color: #0F0F0F; */
 }
@@ -10,11 +9,12 @@
 .servicelist{
     width: 80%;
     margin: 50px auto;
+    font-size: 18px;
 }
 
 .servicelist ul{
     display: flex;
-    gap: 20px;
+    gap: 10px;
     list-style: none;
     text-align: center;
     /* border-bottom: 1px solid gray; */
@@ -31,17 +31,18 @@
 .servicelist ul li::after{
     content: '';
     background-color: white;
-    height: 5px;
+    height: 3px;
     width: 0%;
     display: block;
     color: white;
     border-radius: 6px;
     transition: .3s;
     margin: auto;
+    margin-top: 10px;
 }
 
 .servicelist ul li:hover:after{
-    width: 100%;
+    width: 80%;
 }
 
 .servicelist .active a{
@@ -51,8 +52,8 @@
 .servicelist .active::after{
     content: '';
     background-color: #0061ff;
-    height: 5px;
-    width: 90%;
+    height: 3px;
+    width: 80%;
     display: block;
     color: white;
     border-radius: 6px;

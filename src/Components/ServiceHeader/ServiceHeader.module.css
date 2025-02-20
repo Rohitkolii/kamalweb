@@ -1,9 +1,7 @@
-.ServiceHeader{
-    /* background-color: #171717; */
+/* .ServiceHeader{
     padding: 100px 0;
     background:linear-gradient(to right,#0061ff, rgba(255, 255, 255, 0.304)), url(../../../public//images/img2.jpg);
     background-size: cover;
-    /* background-repeat: no-repeat; */
     border-radius: 12px;
     width: 90%;
     margin: 30px auto;
@@ -63,5 +61,232 @@
     .ServiceHeader h2{
         font-size: 25px;
         line-height: 25px;
+    }
+} */
+
+
+.head{
+    position: relative; 
+    overflow-x: hidden;
+}
+
+.header{
+    text-align: left;
+    z-index: 99;
+    width: 85%;
+    margin: 50px auto;
+    display: flex;
+    /* justify-content: center; */
+    /* text-align: center; */
+    gap: 50px;
+    align-items: center;
+}
+
+.header .innerheader h2{
+    font-size: 15px;
+    color: white;
+    /* background-color: red; */
+    width: fit-content;
+    /* margin: auto; */
+    /* color: #0061ff; */
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.dytext{
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+}
+
+.dytext h2{
+    position: relative;
+    top: 0;
+    animation:  slide 12s steps(4) infinite;
+}
+
+@keyframes slide{
+    100%{
+        top: -120px;
+    }
+}
+
+.dytext li h2::after{
+    content: '';
+    position: absolute;
+    background-color: #000000;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-left: 3px solid white;
+    animation:  typing 3s steps(15) infinite;
+}
+
+@keyframes typing{
+    40%,60% {
+        left: calc(100% + 30px)
+    }
+    100%{
+        left: 0; 
+    }
+}
+
+.header .innerheader h1{
+    font-size: 40px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.header .innerheader p{
+    text-transform: uppercase;
+    font-size: 15px;
+    color: rgb(173, 173, 173);
+    /* margin: 30px; */
+}
+
+.glow{
+    width: 150px;
+    height: 150px;
+    background-color: rgba(0, 98, 255, 0.259);
+    filter: blur(9px);
+    position: absolute;
+    top: 40%;
+    left: calc(50% - 100px);
+    z-index: 2;
+    /* filter: blur(); */
+    box-shadow: 1px 1px 200px #0061ff;
+    border-radius: 50%;
+    animation: moves 5s infinite ease;
+}
+
+@keyframes moves{
+    0%{
+        box-shadow: 1px 1px 150px #0061ff;
+        /* transform: translateY(0px); */
+    }
+    50%{
+        box-shadow: 1px 1px 200px #0061ff;
+        /* transform: translateY(20px); */
+    }
+    100%{
+        box-shadow: 1px 1px 150px #0061ff;
+        /* transform: translateY(0px); */
+    }
+}
+
+
+
+.btncon{
+    display: flex;
+    gap: 20px;
+    /* justify-content: center; */
+    margin: 40px 0;
+}
+
+.btncon a{
+    z-index: 9;
+    /* background-color: white; */
+    padding: 12px 25px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 6px;
+    border: 1px solid #fff;
+    transition: .5s;
+}
+
+.btncon a:hover{
+    background-color: #c5c5c5;
+    color: #000000;
+}
+
+@media only screen and (max-width:1300px) {
+    .header{
+        width: 95%;
+        margin: 50px auto;
+        gap: 20px;
+    }
+
+    .header .innerheader h1{
+        font-size: 40px;
+        text-transform: uppercase;
+        color: white;
+    }
+    
+    .header .innerheader p{
+        text-transform: uppercase;
+        font-size: 15px;
+        color: rgb(173, 173, 173);
+        /* margin: 30px; */
+    }
+
+    .header div img{
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width:1100px) {
+    .header .innerheader h1{
+        font-size: 35px;
+    }
+    
+    .head .innerheader{
+        margin: 50px 0 0 0;
+    }
+
+    
+.btncon a{
+    z-index: 9;
+    font-size: 15px;
+    padding: 10px 15px;
+}
+}
+
+@media only screen and (max-width:950px) {
+    .header{
+        width: 90%;
+        margin: 50px auto;
+        flex-direction: column;
+        /* justify-content:flex-start; */
+        gap: 0px;
+        align-items: center;
+    }
+
+    
+    .header div{
+        width: 100%;
+    }
+
+    .imgcol{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width:750px) {
+    .header .innerheader h1{
+        font-size: 30px;
+    }
+
+    .header .innerheader h2{
+        font-size: 25px;
+        margin: 0;
+    }
+
+    .head .innerheader{
+        text-align: left;
+    }
+
+    .btncon{
+        justify-content: left;
+    }
+
+    .head{
+        height: 100%;
+        padding-bottom: 50px;
+    }
+
+    .socials ul{
+        justify-content: left;
     }
 }
