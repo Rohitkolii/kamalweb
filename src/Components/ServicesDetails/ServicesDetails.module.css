@@ -1,3 +1,24 @@
+.serviceinfo{
+    display: flex;
+    justify-content: space-between;
+    background-color: #000713;
+    margin: 50px 0;
+}
+
+.serviceinfo div{
+    padding: 50px;
+    width: 100%;
+}
+
+.serviceinfo img{
+    width: 100%;
+}
+
+.serviceinfo h1{
+    margin-bottom: 15px;
+}
+
+/* Card Area  */
 .ServicesDetails{
     margin: 20px 0;
     padding: 10px 20px;
@@ -8,7 +29,7 @@
 
 .servicelist{
     width: 80%;
-    margin: 50px auto;
+    margin: 30px auto;
     font-size: 18px;
 }
 

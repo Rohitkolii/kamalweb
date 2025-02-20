@@ -76,8 +76,8 @@
     width: 85%;
     margin: 50px auto;
     display: flex;
-    /* justify-content: center; */
-    /* text-align: center; */
+    justify-content: center;
+    text-align: center;
     gap: 50px;
     align-items: center;
 }
@@ -87,7 +87,7 @@
     color: white;
     /* background-color: red; */
     width: fit-content;
-    /* margin: auto; */
+    margin: auto;
     /* color: #0061ff; */
     color: #fff;
     font-weight: 500;
@@ -180,7 +180,7 @@
 .btncon{
     display: flex;
     gap: 20px;
-    /* justify-content: center; */
+    justify-content: center;
     margin: 40px 0;
 }
 

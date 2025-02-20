@@ -10,7 +10,7 @@
 .col:first-child{
     padding: 20px;
     /* border: 1px solid rgb(51, 51, 51); */
-    border: 1px solid rgb(105, 105, 105);
+    border: 1px solid rgb(46, 46, 46);
     width: 55%;
 }
 
@@ -27,7 +27,7 @@
     height: 100%;
     object-fit: cover;
     /* filter: grayscale(0.3); */
-    filter: blur(1px);
+    /* filter: blur(1px); */
     border-radius: 6px;
 }
 
