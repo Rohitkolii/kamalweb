@@ -1,6 +1,6 @@
+import CommonHeader from '@/Components/CommonHeader/commonHeader'
 import Footer from '@/Components/Footer/Footer'
 import Navbar from '@/Components/Navbar/Navbar'
-import ServiceHeader from '@/Components/ServiceHeader/ServiceHeader'
 import Link from 'next/link'
 import React from 'react'
 
@@ -8,7 +8,7 @@ const page = () => {
   return (
     <>
         <Navbar />
-        <ServiceHeader />
+        <CommonHeader />
 
         <div style={{width: '90%', margin: ' 20px auto',}}>
           <h2>Terms and Conditions</h2>

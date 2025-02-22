@@ -25,8 +25,10 @@ body{
 }
 
 .subp{
-  color: rgb(173, 173, 173);
-  font-size: 16px;
+  /* color: rgb(173, 173, 173); */
+  color: rgb(189, 189, 189);
+  font-size: 18px;
+  font-weight: 300;
 }
 
 .layer{
@@ -71,4 +73,16 @@ body{
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #1c73ff; 
+}
+
+
+/* === About page === */
+
+.aboutextra{
+  background-color: #000713;
+  height: 50%;
+}
+
+.aboutextra img{
+  width: 70%;
 }

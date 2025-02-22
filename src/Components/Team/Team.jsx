@@ -4,12 +4,11 @@ const Team = () => {
   return (
     <div className={Style.Team}>
         <div>
-            <img src="images/team.jpg" alt="" />
+            <h3 className='gt'>About AppsoBytes</h3>
+            <p className='subp'>At AppsoBytes, we are passionate about technology, innovation, and excellence. As a leading IT solutions provider, we specialize in website development, mobile app development, backend solutions, cloud computing, and database management. Our mission is to empower businesses with cutting-edge digital solutions that drive growth, efficiency, and success.</p>
         </div>
-
         <div>
-            <h3 className='gt'>Team work does work faster</h3>
-            <p className='subp'>When it comes to web and app development, choosing us means opting for a partner who is deeply committed to your success. We blend cutting-edge technology with creative innovation to deliver solutions that are not only functional but also engaging. Our experienced team of developers and designers takes the time to understand your unique business</p>
+            <img src="images/web.jpg" alt="" />
         </div>
     </div>
   )

@@ -5,10 +5,12 @@
     width: 70%;
     margin: auto;
     text-align: center;
-    padding: 80px 50px;
+    padding: 80px 30px;
     border-radius: 12px;
-    box-shadow: 1px 1px 5px #334756;
+    box-shadow: 1px 1px 5px #33475679;
     /* border: 1px solid #334756; */
+    position: relative;
+    margin-top: 250px;
 }
 
 .Aboutinner span{
@@ -23,12 +25,8 @@
 }
 
 .Aboutinner p{
-    /* color: rgb(30, 30, 30); */
-    color: rgb(87, 87, 87);
-    font-size: 15px;
-    width: 60%;
+    width: 90%;
     margin: auto;
-    margin-bottom: 25px;
 }
 
 .Aboutinner a{
@@ -36,6 +34,12 @@
     padding: 10px 15px;
     color: white;
     text-decoration: none;
+}
+
+.Aboutinner img{
+    width: 60%;
+    height: 350px;
+    object-fit: cover;
 }
 
 @media only screen and (max-width:900px) {

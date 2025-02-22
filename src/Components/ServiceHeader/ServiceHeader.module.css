@@ -68,6 +68,7 @@
 .head{
     position: relative; 
     overflow-x: hidden;
+    /* box-shadow: 1px 1px 5px #0062ff4f; */
 }
 
 .header{

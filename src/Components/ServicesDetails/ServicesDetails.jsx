@@ -9,7 +9,7 @@ const ServicesDetails = () => {
         web : 'Web Developement',
         app : 'App Developement',
         backend : 'Backend',
-        api : "Cloud & Database",
+        cloudanddatabase : "Cloud & Database",
     }
 
     const [activeSection, setActiveSection] = useState(Object.keys(sections)[0])
@@ -21,7 +21,7 @@ const ServicesDetails = () => {
     <>
 
     <div style={{width: '90%', margin: ' 20px auto'}}>
-        
+        {/* <div className={Styles.hrglow}></div> */}
         <div className={Styles.servicelist}>
                 <ul>
                     {
@@ -36,7 +36,7 @@ const ServicesDetails = () => {
             </div>
         
         <div onClick={()=> setshowdetail(!showdetail)} className={Styles.ServicesDetails}>
-            <ServiveCard />
+            {/* <ServiveCard /> */}
         </div>
         
         {/* <div onClick={()=> setshowdetail(!showdetail)} className={Styles.ServicesDetails}>

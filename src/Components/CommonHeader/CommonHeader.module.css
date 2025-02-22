@@ -1,0 +1,65 @@
+.comHeader{
+    padding: 80px 0;
+    background:linear-gradient(to right,#0061ff, white);
+    background-size: cover;
+    border-radius: 12px;
+    width: 90%;
+    margin: 30px auto;
+}
+
+.comHeader div{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.comHeader h2{
+    font-size: 30px;
+}
+
+.comHeader p{
+    color: black;
+    font-size: 15px;
+}
+
+.comHeader div a{
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    top: 20px;
+    position: relative;
+    border-radius: 6px;
+}
+.comHeader div a:active{
+    top: 21px;
+}
+
+@media only screen and (max-width: 800px) {
+    .comHeader{
+        padding: 50px 0;
+        border-radius: 6px;
+    }
+    
+    .comHeader h2{
+        font-size: 30px;
+    }
+    
+    
+    .comHeader div a{
+        background-color: white;
+        text-decoration: none;
+        color: black;
+        padding: 8px 10px;
+        top: 20px;
+        position: relative;
+        border-radius: 6px;
+        font-size: 13px;
+}
+}
+
+@media only screen and (max-width: 500px) {
+    .comHeader h2{
+        font-size: 25px;
+        line-height: 25px;
+    }
+}
