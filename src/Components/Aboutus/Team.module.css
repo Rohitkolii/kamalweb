@@ -1,0 +1,60 @@
+.Aboutus{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    gap: 50px;
+    margin-top: 100px;
+}
+
+.Aboutus div:nth-child(1){
+    width: 60%;
+}
+.Aboutus div:nth-child(2){
+    width: 40%;
+}
+
+.Aboutus div img{
+    float: right;
+    width: 95%;
+    /* height: 80%; */
+    object-fit: contain;
+    /* filter: blur(1px); */
+    /* filter: grayscale(1); */
+    border-radius: 24px;
+}
+
+@media only screen and (max-width:1200px){
+    .Aboutus{
+        width: 90%;
+    }
+    .Aboutus div:nth-child(1){
+        width: 50%;
+    }
+    .Aboutus div:nth-child(2){
+        width: 50%;
+    }
+}
+@media only screen and (max-width:1000px){
+    .Aboutus{
+        width: 95%;
+    }
+    
+}
+@media only screen and (max-width:900px){
+    .Aboutus{
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .Aboutus div:nth-child(1), .Aboutus div:nth-child(2){
+        width: 100%;
+    }
+
+    .Aboutus img{
+        width: 100%;
+        float: none;
+        float: left;
+    }
+}

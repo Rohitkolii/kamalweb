@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Styles from './Footer.module.css'
-import {FaFacebookF, FaLinkedinIn, FaYoutube } from 'react-icons/fa'
+import {FaFacebookF, FaLinkedinIn, FaRegCopyright, FaYoutube } from 'react-icons/fa'
 import {FaXTwitter, FaInstagram   } from 'react-icons/fa6'
 
 const Footer = () => {
@@ -11,6 +11,7 @@ const Footer = () => {
                     <div className={Styles.Footerform}>
                         <h2><span style={{color: '#0061ff'}}>A</span>ppso<span style={{color: '#0061ff'}}>B</span>yte<span>.</span></h2>
                         <p>Turning Ideas Into Impactful Apps</p>
+                        <p className='subp'>At AppsoBytes, we turn ideas into powerful, impactful applications that drive success.</p>
                         {/* <input type="email" placeholder='Your email here' /> */}
                             <div className={Styles.sociallinks}>
                                 <p><Link href='/' ><FaFacebookF /></Link></p>
@@ -71,7 +72,7 @@ const Footer = () => {
                 </div> */}
                 <div className={Styles.Footer3}>
                     <div className={Styles.copyright}>
-                        <p>All right reserved <Link href='/' > AppsoBytes </Link>c 2025</p>
+                        <p>All right reserved <Link href='/' > AppsoBytes </Link><FaRegCopyright /> 2025</p>
                     </div>
                     <div className={Styles.policylinks}>
                         <ul>

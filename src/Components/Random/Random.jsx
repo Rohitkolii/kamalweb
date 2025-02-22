@@ -1,16 +1,16 @@
 import Link from 'next/link'
 import React from 'react'
+import Styles from './Random.module.css'
 
 const Random = () => {
   return (
-    <div style={{width: '80%', margin: '100px auto', textAlign: 'center'}}>
-        <p style={{fontSize: 30, fontWeight: 900, textTransform: 'uppercase'}}><span style={{color: '#0061ff'}}>i</span>llution<span style={{color:'#0061ff'}}>.</span></p>
-        <h3>Ready to get started</h3>
-        <p className='subp'>Make your ideas Real.</p>
+    <div className={Styles.Random}>
+        <p style={{fontSize: 30, fontWeight: 900, textTransform: 'uppercase'}}>Get in <span style={{color: '#0061ff'}}>Touch</span><span style={{color:'#0061ff'}}>.</span></p>
+        {/* <h3>Get in touch</h3> */}
+        <p className='subp'>Have an idea or need a tech solution? Let’s bring it to life! 🚀 Connect with AppsoBytes for expert web, mobile, and backend development solutions tailored to your business needs. Reach out today, and let’s build something amazing together! 💡✨</p>
 
-        <div style={{display:'flex', gap: 20, justifyContent: 'center', margin: '30px 0'}}>
-            <Link style={{backgroundColor : '#0061FF', padding: '10px 15px', textDecoration: 'none', color: 'white'}} href='/'>Services</Link>
-            <Link style={{backgroundColor : '#e62f30', padding: '10px 15px', textDecoration: 'none', color: 'white'}} href='/'>Connect with us</Link>
+        <div style={{display:'flex', gap: 20, justifyContent: 'center', margin: '30px 0',}}>
+            <Link href='/contact'>Connect with us</Link>
         </div>
     </div>
   )

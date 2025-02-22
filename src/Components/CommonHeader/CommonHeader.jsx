@@ -8,7 +8,8 @@ const CommonHeader = () => {
     <>
         <section className={Styles.comHeader}>
             <div>
-                <h2>TurningIdeas Into Impactful Application</h2>
+                <h2>Turning Ideas Into Impactful Application</h2>
+                <p className='subp'>At AppsoBytes, we turn ideas into powerful, impactful applications that drive success.</p>
                 <Link href="contact">Connect & Discuss</Link>
             </div> 
         </section>

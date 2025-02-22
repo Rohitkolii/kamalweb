@@ -16,6 +16,10 @@ const Navbar = () => {
             document.body.style.overflow = "visible"
         }
     },[menu])
+
+    const setmenufun = () => {
+
+    }
   return (
     <>
         <nav className={Styles.navbar}>
@@ -25,13 +29,16 @@ const Navbar = () => {
             </div>
             <div>
                 <ul>
-                    {/* <li><Link href='/'>Home</Link></li> */}
-                    {
+                    {/* {
                         !menu ?
                         <li style={{zIndex: 99}}><CiMenuFries onClick={()=> setmenu(!menu)} /></li>
                         :
                         <li style={{zIndex: 99}}><AiOutlineClose onClick={()=> setmenu(!menu)} /></li>
-                    }
+                    } */}
+                    <li><Link href='/'>Home</Link></li>
+                    <li><Link href='/about'>About us</Link></li>
+                    <li onMouseOver={()=>setmenu(!menu)}><Link href='/services'>Services</Link></li>
+                    <li><Link href='/'>Blogs</Link></li>
                     <li><Link href='/contact' className={Styles.btn}>Contact</Link></li>
                 </ul>
             </div>
@@ -41,7 +48,7 @@ const Navbar = () => {
             <div className={Styles.menuheader}>
                 <div>
                     <h2>Turning <span style={{color: '#0061ff'}}>Ideas</span> Into Impactful <span style={{color: '#0061ff'}}>Apps</span></h2>
-                    {/* <p className='subp'>We ensure to establish websites with the latest trends as we believe that, products whose value satisfies the needs of the market and its potential customers can be efficiently successful.</p> */}
+                    <p className='subp'>We ensure to establish websites with the latest trends as we believe that, products whose value satisfies the needs of the market and its potential customers can be efficiently successful.</p>
                 </div>
             </div>
 
@@ -57,24 +64,6 @@ const Navbar = () => {
                     </ul>
                 </div>
 
-                {/* <div className={Styles.menucol}>
-                    <p>Quick Links</p>
-                    <ul>
-                        <Link href="/">Gallary</Link>
-                        <Link href="/">Achivements</Link>
-                    </ul>
-                </div> */}
-
-                {/* <div className={Styles.menucol}>
-                    <p>Quick Links</p>
-                    <ul>
-                        <Link href="/">Link *</Link>
-                        <Link href="/">Link -</Link>
-                        <Link href="/">Link +</Link>
-                        <Link href="/">Link /</Link>
-                        <Link href="/">Link ?</Link>
-                    </ul>
-                </div> */}
                 <div className={Styles.menucol}>
                     <p>Connect</p>
                     <ul>
