@@ -1,4 +1,4 @@
-import CommonHeader from '@/Components/CommonHeader/commonHeader'
+import CommonHeader from '@/Components/CommonHeader/CommonHeader'
 import Footer from '@/Components/Footer/Footer'
 import Navbar from '@/Components/Navbar/Navbar'
 import Link from 'next/link'
