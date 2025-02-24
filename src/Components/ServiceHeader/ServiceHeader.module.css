@@ -1,74 +1,9 @@
-/* .ServiceHeader{
-    padding: 100px 0;
-    background:linear-gradient(to right,#0061ff, rgba(255, 255, 255, 0.304)), url(../../../public//images/img2.jpg);
-    background-size: cover;
-    border-radius: 12px;
-    width: 90%;
-    margin: 30px auto;
-}
-
-.ServiceHeader div{
-    width: 90%;
-    margin: 0 auto;
-}
-
-.ServiceHeader h2{
-    font-size: 30px;
-}
-
-.ServiceHeader p{
-    color: black;
-    font-size: 15px;
-}
-
-.ServiceHeader div a{
-    background-color: white;
-    text-decoration: none;
-    color: black;
-    padding: 10px;
-    top: 20px;
-    position: relative;
-    border-radius: 6px;
-}
-.ServiceHeader div a:active{
-    top: 21px;
-}
-
-@media only screen and (max-width: 800px) {
-    .ServiceHeader{
-        padding: 50px 0;
-        border-radius: 6px;
-    }
-    
-    .ServiceHeader h2{
-        font-size: 30px;
-    }
-    
-    
-    .ServiceHeader div a{
-        background-color: white;
-        text-decoration: none;
-        color: black;
-        padding: 8px 10px;
-        top: 20px;
-        position: relative;
-        border-radius: 6px;
-        font-size: 13px;
-}
-}
-
-@media only screen and (max-width: 500px) {
-    .ServiceHeader h2{
-        font-size: 25px;
-        line-height: 25px;
-    }
-} */
-
-
 .head{
     position: relative; 
     overflow-x: hidden;
     /* box-shadow: 1px 1px 5px #0062ff4f; */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.836)),url('../../../public/images/sr2.jpg');
+    background-size: cover;
 }
 
 .header{
@@ -142,8 +77,6 @@
 .header .innerheader p{
     text-transform: uppercase;
     font-size: 15px;
-    color: rgb(173, 173, 173);
-    /* margin: 30px; */
 }
 
 .glow{
@@ -285,6 +218,7 @@
     .head{
         height: 100%;
         padding-bottom: 50px;
+        background-position: right;
     }
 
     .socials ul{

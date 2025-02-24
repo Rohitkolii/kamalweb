@@ -4,7 +4,7 @@
     background-size: cover;
     border-radius: 12px;
     width: 90%;
-    margin: 30px auto;
+    margin: 20px auto;
 }
 
 .comHeader div{
@@ -41,10 +41,14 @@
     }
     
     .comHeader h2{
-        font-size: 30px;
+        font-size: 25px;
     }
     
-    
+    .comHeader p{
+        color: black;
+        font-size: 13px;
+    }
+
     .comHeader div a{
         background-color: white;
         text-decoration: none;
@@ -59,7 +63,11 @@
 
 @media only screen and (max-width: 500px) {
     .comHeader h2{
-        font-size: 25px;
+        font-size: 22px;
         line-height: 25px;
+    }
+
+    .comHeader p{
+        font-size: 12px;
     }
 }

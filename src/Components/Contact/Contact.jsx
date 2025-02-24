@@ -102,7 +102,7 @@ const contact = () => {
                         <CiMail />
                     </div>
                     <div>
-                        <p>Mail:</p>
+                        <p>Email:</p>
                         <p>appsobytes@gmail.com</p>
                     </div>
                 </div>

@@ -31,13 +31,13 @@
     width: 100%;
 }
 
-.navbar ul{
+.navbar .menucon{
     display: flex;
     gap: 10px;
     list-style: none;
 }
 
-.navbar ul svg{
+.navbar svg{
     font-size: 30px;
     cursor: pointer;
 }
@@ -52,26 +52,34 @@
 
 /* Hover Menu  */
 
-.showmenu{
-    background-color: #171717;
-    width: 70%;
-    /* height: 50%; */
-    position: absolute;
-    right: 200px;
+.showservice{
+    background-color: #0e0e0e;
+    width: 90%;
+    height: fit-content;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%,10px);
     border-radius: 6px;
     z-index: 99;
-    padding: 30px;
-    /* display: none; */
-    box-shadow: 1px 1px 5px rgb(40, 40, 40);
-    transition: .9s;
+    border: 1px solid rgb(48, 48, 48);
+    padding: 50px 30px;
+    transition: .9s; background-size: cover;
 }
 
-.hidemenu{
+.showmenu{
+    position: absolute;
+    left: 50%;
+    z-index: 9;
+    transform: translate(-50%, 10px);
+}
+
+
+.hideservice{
     display: none;
     right: -100%;
 }
 
-.showmenu a, .hidemenu a{
+.showservice a, .showservice a{
     color: white;
     text-decoration: none;
     font-weight: 300;
@@ -83,14 +91,15 @@
     padding-bottom: 10px;
 }
 
-.menuheader div{
-    width: 50%;
-}
+/* .menuheader div{
+    width: 100%;
+} */
 
 .menulist{
-    display: flex;
-    gap: 100px;
-    /* justify-content: space-around; */
+    /* display: flex; */
+    gap: 20px 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .menulist p{
@@ -99,18 +108,51 @@
     line-height: 35px;
 }
 
-.menulist ul a{
+.menulist a{
     display: block;
-    color: rgb(173, 173, 173);
-    font-size: 16px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
     transition: .3s;
     line-height: 30px;
+    padding: 10px 0px;
+    text-transform: capitalize;
 }
-.menulist ul a:hover{
+.menulist a:hover{
     color: #0061ff;
-    transform: scale(102%);
+    /* transform: scale(102%); */
 }
 
+.menulist ul{
+    display: block;
+    /* color: rgb(173, 173, 173); */
+    color: white;
+}
+
+.menucol ul li{
+    font-size: 15px;
+    font-weight: 300;
+    list-style: none;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.row img{
+    width: 80%;
+    /* height: 150px; */
+    /* object-fit: cover; */
+}
+
+.ham{
+    display: none;
+}
+
+.mobmenulist ul a{
+    color: white;
+}
 
 @media only screen and (max-width:1300px) {
     .navbar{
@@ -118,71 +160,95 @@
     }
 }
 
-@media only screen and (max-width:750px) {
-    .navbar{
-        padding: 5px 50px;
+@media only screen and (max-width:1200px) {
+    .navbar .ham{
+        display: block;
     }
-
-    .navbar ul a{
+    
+    .navbar .menucon{
         display: none;
     }
 
     .showmenu{
-        background-color: #000000;
+        /* background-color: #000000; */
+        background-color: #fff;
         width: 100%;
         height: 100vh;
         position: fixed;
-        left: 0px;
-        border-radius: 6px;
+        top: 4rem;
         z-index: 99;
         overflow: hidden;
         transition: .3s;
+        border-top: 1px solid rgba(126, 126, 126, 0.404);
+        padding: 50px 20px;
+        color: black;
     }
-
+    
     .hidemenu{
         display: block;
         width: 100%;
         height: 100vh;
         position: fixed;
         left: -100%;
-        border-radius: 6px;
+        top: 0;
         z-index: 99;
-        background-color: #171717;
+        background-color: #fff;
         overflow: hidden;
         transition: .3s;
     }
-
-    .menuheader div{
-        width: 95%;
-    }
-}
-
-@media only screen and (max-width:550px) {
     
-
-    .showmenu ul, .hidemenu ul{
-        line-height: 100px;
-    }
-
-    .menuheader p{
-        font-weight: 200;
-        font-size: 15px;
-        line-height: 20px;
-    }
-
-    .menulist{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-}
-
-@media only screen and (max-width:450px) {
     .navbar{
-        padding: 0px 20px;
+        padding: 5px 30px;
+    }
+    
+    .showmenu ul, .hidemenu ul{
+        line-height: 60px;
+        list-style: none;
     }
 
-    .navbar .logo p{
-        font-size: 30px;
+    .showmenu ul li{
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
+    
+    .showmenu a{
+        color: black;
+        font-weight: 400;
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .menuheader{
+        border-bottom: none;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    
+    .menuheader div h2{
+        font-size: 20px;
+    }
+
+    .menuheader div p{
+        font-size: 13px;
+    }
+
+    .showmenu a{
+        font-size: 18px;
+    }
+}
+
+/* //Options */
+.serviceopt{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    line-height: 25px;
+    transition: .3s;
+}
+
+.serviceopt a{
+    font-size: 15px;
 }

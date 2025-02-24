@@ -26,7 +26,7 @@ const ServiceHeader = () => {
         </section> */}
 
 <div className={Styles.head}>
-                <div className={Styles.glow}></div>
+                {/* <div className={Styles.glow}></div> */}
         <Navbar />
         <section className={Styles.header}>
             <div className={Styles.innerheader} data-aos="fade-down">
