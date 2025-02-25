@@ -1,3 +1,4 @@
+'use client'
 import React, { useEffect } from 'react'
 // import Styles from './CommonHeader.module.css'
 import Styles from './CommonHeader.module.css'

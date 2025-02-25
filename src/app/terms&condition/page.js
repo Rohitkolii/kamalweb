@@ -4,11 +4,17 @@ import Navbar from '@/Components/Navbar/Navbar'
 import Link from 'next/link'
 import React from 'react'
 
+const headdata = {
+  t1: "About", 
+  t2: 'us', 
+  para: 'Innovating Digital Solutions for a Smarter Future.'
+};
+
 const page = () => {
   return (
     <>
         <Navbar />
-        <CommonHeader />
+        <CommonHeader headdata={headdata} />
 
         <div style={{width: '90%', margin: ' 20px auto',}}>
           <h2>Terms and Conditions</h2>
