@@ -121,7 +121,7 @@ const ServicesDetails = () => {
                         </div>)}
 
                         <div className={Styles.briefservice}>
-                            <p>Hello</p>
+                            
                         </div>
                     </div> 
         })
