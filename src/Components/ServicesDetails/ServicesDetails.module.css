@@ -111,9 +111,9 @@
 }
 
 
-.hideservice{
+/* .hideservice{
     display: none;
-}
+} */
 
 .serviceCard div p:nth-child(1){
     font-size: 22px;
@@ -151,7 +151,7 @@
 }
 
 .serviceCard p:nth-child(2){
-    color: #0041b3;
+    color: gray;
     font-size: 15px;
 }
 

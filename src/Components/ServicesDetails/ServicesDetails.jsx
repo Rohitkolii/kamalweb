@@ -4,36 +4,55 @@ import Styles from './ServicesDetails.module.css'
 import Link from 'next/link'
 import ServiveCard from '../ServiveCard/ServiveCard'
 
-import { MdOutlineWeb } from "react-icons/md";
+import { MdOutlineWeb, MdOutlineAppShortcut } from "react-icons/md";
+import { GiProcessor } from "react-icons/gi";
+import { VscServerProcess } from "react-icons/vsc";
+import { BsDatabaseFillGear } from "react-icons/bs";
+import { VscAzureDevops } from "react-icons/vsc";
+
+
+
 import { FaArrowRightLong } from "react-icons/fa6";
 
 const servicedata = [
     {
         id: 0,
+        svg: <MdOutlineWeb />,
         headline : 'Website Developement',
         tagline : 'Elevate Your Digital Presence with AppsoBytes',
         para:'At AppsoBytes, we specialize in crafting high-performance, user-centric websites tailored to your business needs. Our team of expert developers, designers, and strategists leverage cutting-edge technologies to deliver responsive, scalable, and visually appealing websites that drive engagement and conversions.'
     },
     {
         id: 1,
+        svg : <MdOutlineAppShortcut />,
         headline : 'Mobile Application',
         tagline : 'Transforming Ideas into Powerful Apps with AppsoBytes',
         para:'At AppsoBytes, we specialize in creating innovative, high-performance mobile applications that enhance user experience and drive business growth. Our expert developers harness the latest technologies to build secure, scalable, and feature-rich apps tailored to your unique requirements.'
     },
     {
         id: 2,
+        svg: <VscServerProcess />,
         headline : 'Backend Developement',
         tagline : 'Powering Scalable & Secure Solutions with AppsoBytes',
         para:'At AppsoBytes, we specialize in building robust, scalable, and high-performance backend systems that serve as the backbone of your digital applications. Our expert developers ensure seamless data management, API integration, and security, providing a reliable foundation for websites, mobile apps, and enterprise solutions.'
     },
     {
         id: 3,
+        svg : <BsDatabaseFillGear />,
         headline : 'Cloud & Database Solutions',
         tagline : 'Secure, Scalable, and Future-Ready with AppsoBytes',
-        para:'AAt AppsoBytes, we provide cutting-edge cloud and database solutions that ensure seamless data management, high availability, and security for your business. Our expertise in cloud computing, database architecture, and optimization helps businesses scale effortlessly while maintaining top-notch performance and reliability.'
+        para:'At AppsoBytes, we provide cutting-edge cloud and database solutions that ensure seamless data management, high availability, and security for your business. Our expertise in cloud computing, database architecture, and optimization helps businesses scale effortlessly while maintaining top-notch performance and reliability.'
     },
     {
         id: 4,
+        svg : <GiProcessor />,
+        headline : 'IT Consulting ',
+        tagline : 'Empowering Businesses with Strategic Technology Solutions',
+        para:'IT consulting helps businesses leverage technology effectively to improve efficiency, security, and scalability. It involves analyzing an organization’s IT infrastructure, identifying challenges, and providing strategic solutions to enhance performance and growth. From digital transformation and cloud adoption to cybersecurity and software integration, IT consulting ensures businesses stay competitive in a rapidly evolving technological landscape. With expert guidance, companies can optimize resources, reduce costs, and implement future-ready solutions tailored to their unique needs.'
+    },
+    {
+        id: 5,
+        svg : <VscAzureDevops />,
         headline : 'DevOps ',
         tagline : 'Streamlining Development for Faster, Reliable Deployments.',
         para:'DevOps is a modern approach that combines development and operations to enhance collaboration, automate workflows, and improve software delivery. By integrating continuous integration, continuous deployment (CI/CD), infrastructure as code (IaC), and cloud automation, DevOps ensures faster development cycles, greater efficiency, and high system reliability. It helps businesses achieve scalability, security, and seamless deployment, reducing downtime and enhancing overall performance. With the right DevOps practices, organizations can accelerate innovation while maintaining stability and operational excellence.'
@@ -88,7 +107,7 @@ const ServicesDetails = () => {
                 return <div className={Styles.serviceCardcon} key={elm.id} onClick={() => setActiveIndex(activeIndex === elm.id ? null : elm.id)}>
                         <div className={Styles.serviceCard} >
                             <div>
-                                <p><MdOutlineWeb />{elm.headline}</p>
+                                <p>{elm.svg}{elm.headline}</p>
                                 <p className='subp'>{elm.tagline}</p>
                             </div>
                             {activeIndex !== elm.id && (
@@ -100,6 +119,10 @@ const ServicesDetails = () => {
                         <div className={Styles.showservice}>
                             <p className='subp'>{elm.para}</p>
                         </div>)}
+
+                        <div className={Styles.briefservice}>
+                            <p>Hello</p>
+                        </div>
                     </div> 
         })
         }

@@ -5,15 +5,15 @@ import Link from 'next/link'
 import React from 'react'
 
 const headdata = {
-  t1: "About", 
-  t2: 'us', 
-  para: 'Innovating Digital Solutions for a Smarter Future.'
+  t1: "Term &", 
+  t2: 'Condition', 
+  para: 'Clear, Fair, and Transparent Policies for a Seamless Experience.'
 };
 
 const page = () => {
   return (
     <>
-        <Navbar />
+        {/* <Navbar /> */}
         <CommonHeader headdata={headdata} />
 
         <div style={{width: '90%', margin: ' 20px auto',}}>

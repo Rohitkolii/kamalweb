@@ -27,7 +27,6 @@ const ServiceHeader = () => {
                   <p>Get your Website & Applications done with our trusted services</p>
                     
                     <div className={Styles.btncon}>
-                      {/* <Link href='/services'>Services</Link> */}
                       <Link href='/contact'>Connect -</Link>
                     </div>
               </div>
