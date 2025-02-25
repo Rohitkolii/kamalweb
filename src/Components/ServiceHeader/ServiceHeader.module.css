@@ -30,44 +30,6 @@
     text-transform: uppercase;
 }
 
-.dytext{
-    height: 30px;
-    line-height: 30px;
-    overflow: hidden;
-}
-
-.dytext h2{
-    position: relative;
-    top: 0;
-    animation:  slide 12s steps(4) infinite;
-}
-
-@keyframes slide{
-    100%{
-        top: -120px;
-    }
-}
-
-.dytext li h2::after{
-    content: '';
-    position: absolute;
-    background-color: #000000;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    border-left: 3px solid white;
-    animation:  typing 3s steps(15) infinite;
-}
-
-@keyframes typing{
-    40%,60% {
-        left: calc(100% + 30px)
-    }
-    100%{
-        left: 0; 
-    }
-}
-
 .header .innerheader h1{
     font-size: 40px;
     text-transform: uppercase;
@@ -207,21 +169,22 @@
         margin: 0;
     }
 
-    .head .innerheader{
-        text-align: left;
-    }
-
-    .btncon{
-        justify-content: left;
-    }
-
     .head{
-        height: 100%;
-        padding-bottom: 50px;
+        /* height: 100%; */
+        padding-bottom: 0px;
         background-position: right;
     }
 
-    .socials ul{
-        justify-content: left;
+    .header{
+        text-align: left;
+        z-index: 99;
+        width: 85%;
+        margin: 20px auto;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        gap: 50px;
+        align-items: center;
     }
+    
 }

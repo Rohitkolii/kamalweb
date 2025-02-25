@@ -4,15 +4,17 @@
     background-color: #000713;
     /* margin: 50px 0; */
     box-shadow: inset 0 0 30px black;
+    padding: 50px;
+    gap: 50px;
 }
 
 .serviceinfo div:nth-child(1){
-    padding: 50px;
+    /* padding: 50px; */
     width: 55%;
 }
 .serviceinfo div:nth-child(2){
     width: 45%;
-    padding: 50px;
+    /* padding: 50px; */
 }
 
 .serviceinfo img{
@@ -98,13 +100,19 @@
 
 
 /* serviceCard */
-
+.serviceCardcon{
+    border-bottom: 1px solid #00112e;
+    padding: 40px 50px;
+}
 .serviceCard{
     display: flex;
     justify-content: space-between;
-    padding: 40px 50px;
     align-items: center;
-    border-bottom: 1px solid #00112e;
+}
+
+
+.hideservice{
+    display: none;
 }
 
 .serviceCard div p:nth-child(1){
@@ -131,7 +139,7 @@
     transition: .5s;
 }
 
-.serviceCard:hover{
+.serviceCardcon:hover{
     background-color: #000713c9;
 }
 
@@ -140,6 +148,11 @@
     background-color: #0061ff;
     color: white;
     transform: rotate(-45deg) scale(120%);
+}
+
+.serviceCard p:nth-child(2){
+    color: #0041b3;
+    font-size: 15px;
 }
 
 .showbtn{
@@ -152,8 +165,19 @@
     padding: 15px 50px;
     color: white;
     border-radius: 24px;
+    transition: .3s;
+    cursor: pointer;
 }
 
+.showbtn button:hover{
+    background-color: #0061ff;
+    color: black;
+    transition: .3s;
+}
+
+.showservice{
+    margin-top: 10px;
+}
 
 /* //stepcon============ */
 .stepcon{
@@ -188,9 +212,113 @@
 }
 
 .gridcon div:nth-child(1),.gridcon div:nth-child(4){
-    /* background-color: rgba(2, 13, 34, 0.91) */
     background: linear-gradient(to right, rgba(2, 13, 34, 0), rgba(2, 13, 34, 0.91));
 }
-.gridcon div:nth-child(2), .gridcon div:nth-child(3){
-    /* background-color: #00112e; */
+
+
+/* // Meadia queries */
+
+
+
+@media only screen and (max-width: 1000px){
+    .serviceinfo{
+        display: flex;
+        flex-direction: column-reverse;
+        /* justify-content: space-between; */
+        background-color: #000713;
+        box-shadow: inset 0 0 30px black;
+    }
+    
+    .serviceinfo div:nth-child(1){
+        width: 100%;
+        /* padding: 50px; */
+    }
+    .serviceinfo div:nth-child(2){
+        height: 400px;
+        width: 100%;
+        /* padding: 50px; */
+    }
+    .serviceinfo div:nth-child(2) img{
+        height: 100%;
+        object-fit: cover;
+    }
+    
+}
+
+@media only screen and (max-width: 950px){
+    .innerstepcon{
+        width: 95%;
+    }
+
+    .stepcon{
+        padding: 10PX 0;
+        margin-top: 80px;
+    }
+    .gridcon div{
+        padding: 10px 20px;
+    }
+
+    .gridcon div h1{
+        color: #0061ff;
+        font-size: 70px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .gridcon p:nth-child(2){
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .serviceCardcon{
+        border-bottom: 1px solid #00112e;
+        padding: 20px 0px;
+    }
+    .serviceCard:hover div:nth-child(2) svg{
+        background-color: #0061ff;
+        color: white;
+        transform: rotate(-45deg) scale(105%);
+    }
+
+    
+    .ServicesDetails h1{
+        padding: 10px 0px;
+    }
+    
+    .serviceCard div p:nth-child(1){
+        font-size: 18px;
+        font-weight: 500;
+    }
+    
+    .gridcon p:nth-child(2){
+        font-size: 18px;
+    }
+    .gridcon p:nth-child(3){
+        font-size: 15px;
+    }
+
+    .serviceinfo div:nth-child(1){
+        width: 100%;
+        /* padding: 50px; */
+    }
+    .serviceinfo div:nth-child(2){
+        height: 300px;
+        width: 100%;
+        /* padding: 50px; */
+    }
+    .serviceinfo{
+        padding: 30px 20px;
+        gap: 30px;
+    }
+
+    .serviceCard div:nth-child(2) svg{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .serviceinfo div:nth-child(2){
+        height: 200px;
+        width: 100%;
+    }
+
 }

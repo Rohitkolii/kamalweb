@@ -18,29 +18,22 @@ const ServiceHeader = () => {
 
   return (
     <>
-        {/* <section className={Styles.ServiceHeader}>
-            <div>
-                <h2>Turning <span style={{color: '#0061ff'}}>Ideas</span> Into <span style={{color: '#0061ff'}}>Impactful</span>Application</h2>
-                <Link href="contact">Connect & Discuss</Link>
-            </div>
-        </section> */}
+      <div className={Styles.head}>
+                  {/* <div className={Styles.glow}></div> */}
+          <Navbar />
+          <section className={Styles.header}>
+              <div className={Styles.innerheader} data-aos="fade-down">
+                  <h1>Our <span style={{color: '#0061ff'}}>Services</span></h1>
+                  <p>Get your Website & Applications done with our trusted services</p>
+                    
+                    <div className={Styles.btncon}>
+                      {/* <Link href='/services'>Services</Link> */}
+                      <Link href='/contact'>Connect -</Link>
+                    </div>
+              </div>
 
-<div className={Styles.head}>
-                {/* <div className={Styles.glow}></div> */}
-        <Navbar />
-        <section className={Styles.header}>
-            <div className={Styles.innerheader} data-aos="fade-down">
-                <h1>Our <span style={{color: '#0061ff'}}>Services</span></h1>
-                <p>Get your Website & Applications done with our trusted services</p>
-                  
-                  <div className={Styles.btncon}>
-                    {/* <Link href='/services'>Services</Link> */}
-                    <Link href='/contact'>Connect -</Link>
-                  </div>
-            </div>
-
-        </section>
-    </div>
+          </section>
+      </div>
     </>
   )
 }

@@ -24,7 +24,7 @@ const Navbar = () => {
     },[menu])
 
     const Showmenubody = () => {
-            return <li onMouseEnter={()=>setmenu(!menu)} onMouseLeave={()=> setmenu(!menu)}><Link href='/services'>Services</Link>
+            return <li onMouseEnter={()=>setmenu(true)} onMouseLeave={()=> setmenu(false)}><Link href='/services'>Services</Link>
             <div className={menu ? Styles.showservice : Styles.hideservice}>
                 <div className={Styles.menuheader}>
                     <div>

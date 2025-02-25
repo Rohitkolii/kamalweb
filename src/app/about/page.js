@@ -13,11 +13,17 @@ import Whyus from '@/Components/Whyus/Whyus'
 import React from 'react'
 import Aboutus from '@/Components/Aboutus/Aboutus'
 
+const headdata = {
+  t1: "About", 
+  t2: 'us', 
+  para: 'Innovating Digital Solutions for a Smarter Future.'
+};
+
 const page = () => {
   return (
     <>
-      <Navbar />
-      <CommonHeader />
+      {/* <Navbar /> */}
+      <CommonHeader headdata={headdata}/>
       <Aboutus />
       <Aboutcol />
       <Whyus />
