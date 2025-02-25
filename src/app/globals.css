@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
   padding: 0;
@@ -14,13 +15,24 @@ body{
 }
 
 .gt{
-  font-size: 35px;
-    /* margin-bottom: 20px; */
-
-    /* font-size: 72px; */
+  font-size: 40px;
+  font-family: "Noto Sans", serif;
     background: -webkit-linear-gradient(45deg, #ffffff, rgb(62, 130, 255));
-    /* background: -webkit-linear-gradient(45deg, #e62f30, rgb(62, 130, 255)); */
     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gtlight{
+  font-size: 40px;
+  font-family: "Noto Sans", serif;
+    background: -webkit-linear-gradient(45deg, #000000, rgb(62, 130, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gtlight span, .gt span{
+  background: -webkit-linear-gradient(45deg, #0062ff54, #0061ff);
+  -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 

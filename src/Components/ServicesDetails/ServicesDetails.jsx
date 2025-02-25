@@ -9,6 +9,19 @@ import { GiProcessor } from "react-icons/gi";
 import { VscServerProcess } from "react-icons/vsc";
 import { BsDatabaseFillGear } from "react-icons/bs";
 import { VscAzureDevops } from "react-icons/vsc";
+import { FaHandHoldingUsd } from "react-icons/fa";
+import { TbDeviceImacDollar } from "react-icons/tb";
+
+import { FaShoppingBag } from "react-icons/fa";
+import { LiaBusinessTimeSolid } from "react-icons/lia";
+
+import { BiSupport } from "react-icons/bi";
+import { MdOutlineSupportAgent } from "react-icons/md";
+
+import { FaChalkboardUser } from "react-icons/fa6";
+import { LuUserRoundCheck } from "react-icons/lu";
+
+
 
 
 
@@ -177,15 +190,85 @@ const ServicesDetails = () => {
     </div>
 
     <div className={Styles.serviceinfo}>
-        <div>
-            <h1>Driving innovation</h1>
-            <p className='subp'>At Appsobytes, we are a dynamic IT services company committed to helping startups and small businesses accelerate their growth through cutting-edge technology solutions. Our expertise lies in transforming visionary ideas into high-impact applications that drive efficiency, innovation, and success.</p> <br />
-            <p className='subp'>Using agile methodologies, we ensure a streamlined and adaptive development process, delivering robust and scalable applications tailored to our clients' unique needs. From concept to deployment, our team works closely with businesses to turn their ideas into powerful digital solutions.</p> <br />
-            {/* <p className='subp'>With a passion for technology and a customer-centric approach, Appsobytes is your trusted partner in building the next generation of innovative applications. Let's create something extraordinary together!</p> */}
+        <h1 className='gt'>Why trust us for <br /> your IT needs</h1>
+        <div className={Styles.serviceinfoinner}>
+            <div className={Styles.serviceinfoimg}>
+                <img src="images/sr1.jpg" alt="" />
+            </div>
+
+            <div className={Styles.serviceinfogrid}>
+                <div>
+                    <TbDeviceImacDollar />
+                    <p>Affordable pricing</p>
+                    <p className='subp'> High-quality solutions at competitive rates to fit your budget.</p>
+                </div>
+                <div>
+                    <FaChalkboardUser />
+                    <p>Professional Team</p>
+                    <p className='subp'>Skilled experts dedicated to delivering innovative and efficient solutions.</p>
+                </div>
+                <div>
+                    <LiaBusinessTimeSolid />
+                    <p>Years of Experience</p>
+                    <p className='subp'>Proven industry expertise to handle complex challenges with confidence.</p>
+                </div>
+                <div>
+                    <MdOutlineSupportAgent />
+                    <p>Dedicated Support</p>
+                    <p className='subp'>Reliable assistance to ensure seamless performance and continuous growth.</p>
+                </div>
+            </div>
         </div>
-        <div>
-            <img src="images/sr1.jpg" alt="" />
+    </div>
+
+    <div className={Styles.showcasecon}>
+        <div className={Styles.innershowcase}>
+            <p>// Our Latest Projects</p>
+            <h1 className='gtlight'>Explore our showcase of <br /> <span>Featured Works</span></h1>
+                <div className={Styles.showcasegrid}>
+                    <div className={Styles.showcasecard}>
+                        <div>
+                            <img src="images/work1.png" alt="" />
+                        </div>
+                        <div>
+                            <p>BeautyZone</p>
+                            <FaArrowRightLong />
+                        </div>
+                    </div>
+                    <div className={Styles.showcasecard}>
+                        <div>
+                            <img src="images/work2.png" alt="" />
+                        </div>
+                        <div>
+                            <p>Owly Solutions</p>
+                            <FaArrowRightLong />
+                        </div>
+                    </div>
+                     <div className={Styles.showcasecard}>
+                        <div>
+                            <img src="images/work3.png" alt="" />
+                        </div>
+                        <div>
+                            <p>Rentkaro</p>
+                            <FaArrowRightLong />
+                        </div>
+                    </div>
+                    <div className={Styles.showcasecard}>
+                        <div>
+                            <img src="images/work4.png" alt="" />
+                        </div>
+                        <div>
+                            <p>IT Company</p>
+                            <FaArrowRightLong />
+                        </div>
+                    </div>
+                </div>
+
+                <div className={Styles.showbtn}>
+                    <button>Explore more</button>
+                </div>
         </div>
+
     </div>
     </>
   )

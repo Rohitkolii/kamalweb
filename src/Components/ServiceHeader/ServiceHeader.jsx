@@ -23,7 +23,7 @@ const ServiceHeader = () => {
           <Navbar />
           <section className={Styles.header}>
               <div className={Styles.innerheader} data-aos="fade-down">
-                  <h1>Our <span style={{color: '#0061ff'}}>Services</span></h1>
+                  <h1>Our <span style={{color: '#0061ff'}}>Services</span></h1> {/* #3d72fc*/}
                   <p>Get your Website & Applications done with our trusted services</p>
                     
                     <div className={Styles.btncon}>
