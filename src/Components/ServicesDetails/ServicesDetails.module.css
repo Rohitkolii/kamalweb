@@ -21,7 +21,7 @@
 .serviceinfo h1{
     margin-bottom: 15px;
     text-transform: capitalize;
-    font-size: 40px;
+    /* font-size: 40px; */
 }
 /* .serviceinfo h1::before{
     content: '';
@@ -124,17 +124,13 @@
 .serviceCardcon{
     border-bottom: 1px solid #00112e;
     padding: 40px 50px;
+    cursor: pointer;
 }
 .serviceCard{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
-
-/* .hideservice{
-    display: none;
-} */
 
 .serviceCard div p:nth-child(1){
     font-size: 22px;
@@ -146,8 +142,8 @@
 }
 
 .serviceCard div:nth-child(1) svg{
-    color: #0061ff;
-    font-size: 20px;
+    /* color: #0061ff; */
+    font-size: 25px;
 }
 
 .serviceCard div:nth-child(2) svg{
@@ -161,7 +157,8 @@
 }
 
 .serviceCardcon:hover{
-    background-color: #000713c9;
+    /* background-color: #000713c9; */
+    background: linear-gradient(to right, #0007134d, #000713c9);
 }
 
 
@@ -172,7 +169,7 @@
 }
 
 .serviceCard p:nth-child(2){
-    color: gray;
+    /* color: gray; */
     font-size: 15px;
 }
 
@@ -197,7 +194,46 @@
 }
 
 .showservice{
-    margin-top: 10px;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 30px;
+    width: 100%;
+}
+
+.showservice div{
+    width: 100%;
+}
+.showservice .showserviceimg{
+    /* min-height: 100%; */
+    height: 350px;
+}
+
+.showservice div:nth-child(2){
+    padding: 0 10px;
+}
+
+.showservice .showserviceimg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 5px auto;
+}
+
+.tags p{
+    /* border: 1px solid #0061ff; */
+    /* color: #0061ff; */
+    color: white;
+    padding: 5px 0px;
+    border-radius: 12px;
+    /* width: fit-content; */
+    font-size: 13px;
 }
 
 /* //stepcon============ */
@@ -353,6 +389,38 @@
     .innershowcase{
         width: 95%;
     }
+
+    .ServicesDetails{
+        width: 100%;
+        padding: 10px 20px;
+    }
+    
+    .showservice{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
+    }
+    
+    .showservice div{
+        width: 100%;
+    }
+
+    .showservice .showserviceimg{
+        height: 400px;
+    }
+    
+    .showservice div:nth-child(2){
+        padding: 0 0px;
+    }
+    
+    .showservice .showserviceimg img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
     
 }
 
@@ -458,5 +526,12 @@
 
     .showcasegrid .showcasecard div:nth-child(1){
         height: 150px;
+    }
+
+    .showservice .showserviceimg{
+        height: 200px;
+    }
+    .tags p{
+        font-size: 11px;
     }
 }

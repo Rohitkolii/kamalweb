@@ -26,6 +26,7 @@ import { LuUserRoundCheck } from "react-icons/lu";
 
 
 import { FaArrowRightLong } from "react-icons/fa6";
+import Partners from '../Partners/Partners'
 
 const servicedata = [
     {
@@ -33,42 +34,54 @@ const servicedata = [
         svg: <MdOutlineWeb />,
         headline : 'Website Developement',
         tagline : 'Elevate Your Digital Presence with AppsoBytes',
-        para:'At AppsoBytes, we specialize in crafting high-performance, user-centric websites tailored to your business needs. Our team of expert developers, designers, and strategists leverage cutting-edge technologies to deliver responsive, scalable, and visually appealing websites that drive engagement and conversions.'
+        para : "Website development is essential for businesses looking to establish a solid online presence. It involves designing and developing user-friendly, responsive, and high-performing websites that engage visitors and drive conversions. A well-structured website ensures smooth navigation, fast loading speeds, and mobile responsiveness, making it easier for businesses to connect with their audience. Whether it's a corporate website, an e-commerce platform, or a custom web application, professional website development enhances brand credibility and boosts business growth.",
+        tags : ['Custom Solutions', 'Latest Technologies', 'SEO & Mobile Optimized', 'Scalability & Flexibility', 'Dedicated Support'],
+        img : 'images/web.jpg'
     },
     {
         id: 1,
         svg : <MdOutlineAppShortcut />,
         headline : 'Mobile Application',
         tagline : 'Transforming Ideas into Powerful Apps with AppsoBytes',
-        para:'At AppsoBytes, we specialize in creating innovative, high-performance mobile applications that enhance user experience and drive business growth. Our expert developers harness the latest technologies to build secure, scalable, and feature-rich apps tailored to your unique requirements.'
+        para:'Mobile application development is the process of creating feature-rich, scalable, and engaging apps for smartphones and tablets. With the increasing reliance on mobile devices, businesses can reach a wider audience through well-designed apps that offer seamless functionality and a great user experience. Whether it’s for iOS, Android, or cross-platform, mobile apps enhance customer engagement, improve efficiency, and provide innovative solutions to business challenges. A powerful mobile app helps businesses stay ahead in the digital landscape.',
+        tags : ['Custom-Built Apps', 'Cross-Platform Expertise', 'User-Centric Design', 'Scalability & Security', 'Agile Development & Support'],
+        img : 'images/app.jpg'
     },
     {
         id: 2,
         svg: <VscServerProcess />,
         headline : 'Backend Developement',
         tagline : 'Powering Scalable & Secure Solutions with AppsoBytes',
-        para:'At AppsoBytes, we specialize in building robust, scalable, and high-performance backend systems that serve as the backbone of your digital applications. Our expert developers ensure seamless data management, API integration, and security, providing a reliable foundation for websites, mobile apps, and enterprise solutions.'
+        para:'Backend development is crucial for ensuring the seamless performance, security, and functionality of digital applications. It involves managing databases, building APIs, and handling server-side operations that support the front-end experience. A robust backend enables smooth data flow, user authentication, and system scalability, ensuring that websites and apps run efficiently. With optimized backend architecture, businesses can provide fast, secure, and scalable digital solutions tailored to their needs.',
+        tags : ['Scalable Architecture', 'Secure & Reliable', 'API-First Approach', 'Optimized Performance', 'Cloud & DevOps Integration'],
+        img : 'images/code.jpg'
     },
     {
         id: 3,
         svg : <BsDatabaseFillGear />,
         headline : 'Cloud & Database Solutions',
         tagline : 'Secure, Scalable, and Future-Ready with AppsoBytes',
-        para:'At AppsoBytes, we provide cutting-edge cloud and database solutions that ensure seamless data management, high availability, and security for your business. Our expertise in cloud computing, database architecture, and optimization helps businesses scale effortlessly while maintaining top-notch performance and reliability.'
+        para:'Cloud and database solutions are at the heart of modern digital infrastructure, enabling businesses to store, manage, and scale data efficiently. Cloud computing ensures high availability, security, and cost-effectiveness, while well-structured databases optimize data access and performance. Whether using AWS, Azure, Google Cloud, SQL, or NoSQL databases, businesses can benefit from secure, scalable, and seamlessly integrated solutions that support growth and innovation in an ever-evolving digital landscape.',
+        tags : ['Scalable Cloud Infrastructure', 'Robust Database Management', 'High Security & Compliance', 'Optimized Performance', 'Seamless Integration'],
+        img : 'images/data.jpg'
     },
     {
         id: 4,
         svg : <GiProcessor />,
-        headline : 'IT Consulting ',
+        headline : 'IT Consulting',
         tagline : 'Empowering Businesses with Strategic Technology Solutions',
-        para:'IT consulting helps businesses leverage technology effectively to improve efficiency, security, and scalability. It involves analyzing an organization’s IT infrastructure, identifying challenges, and providing strategic solutions to enhance performance and growth. From digital transformation and cloud adoption to cybersecurity and software integration, IT consulting ensures businesses stay competitive in a rapidly evolving technological landscape. With expert guidance, companies can optimize resources, reduce costs, and implement future-ready solutions tailored to their unique needs.'
+        para:'IT consulting helps businesses leverage technology effectively to improve operations, enhance security, and drive innovation. From digital transformation and cloud migration to cybersecurity and infrastructure optimization, IT consulting services provide expert guidance to align technology with business goals. By analyzing existing systems and identifying opportunities for improvement, businesses can streamline workflows, reduce costs, and stay ahead of the competition in an ever-evolving digital landscape.',
+        tags : ['Scalable Cloud Infrastructure', 'Robust Database Management', 'High Security & Compliance', 'Optimized Performance', 'Seamless Integration'],
+        img : 'images/img3.jpg'
     },
     {
         id: 5,
         svg : <VscAzureDevops />,
         headline : 'DevOps ',
         tagline : 'Streamlining Development for Faster, Reliable Deployments.',
-        para:'DevOps is a modern approach that combines development and operations to enhance collaboration, automate workflows, and improve software delivery. By integrating continuous integration, continuous deployment (CI/CD), infrastructure as code (IaC), and cloud automation, DevOps ensures faster development cycles, greater efficiency, and high system reliability. It helps businesses achieve scalability, security, and seamless deployment, reducing downtime and enhancing overall performance. With the right DevOps practices, organizations can accelerate innovation while maintaining stability and operational excellence.'
+        para:'DevOps is a modern approach to software development and IT operations, ensuring faster, more reliable, and automated workflows. By integrating continuous integration (CI), continuous deployment (CD), and infrastructure automation, DevOps helps businesses reduce development cycles, improve collaboration, and enhance system reliability. With efficient cloud infrastructure, containerization (Docker, Kubernetes), and real-time monitoring, organizations can scale effortlessly, increase security, and accelerate product delivery, making DevOps a crucial strategy for digital success.',
+        tags : ['Scalable Cloud Infrastructure', 'Robust Database Management', 'High Security & Compliance', 'Optimized Performance', 'Seamless Integration'],
+        img : 'images/card1.jpg'
     },
 ];
 
@@ -92,7 +105,7 @@ const ServicesDetails = () => {
 
     // const [activeSection, setActiveSection] = useState(Object.keys(sections)[0])
 
-
+    console.log(servicedata)
   return (
     <>
 
@@ -130,12 +143,25 @@ const ServicesDetails = () => {
                         </div>
                         {activeIndex === elm.id && (
                         <div className={Styles.showservice}>
-                            <p className='subp'>{elm.para}</p>
+                            <div className={Styles.showserviceimg}>
+                                <img src={elm.img} alt="" />
+                            </div>
+                            <div  className={Styles.briefservice}>
+                                <p className='subp'>{elm.para}</p>
+                                <div className={Styles.tags}>
+                                    {
+                                        elm.tags && elm.tags.map((tags)=>{
+                                            return <p>#{tags}</p>
+                                        })
+                                    }
+                                </div>
+                                <div style={{textAlign: 'left'}} className={Styles.showbtn}>
+                                    <button>Read more</button>
+                                </div>
+                            </div>
+
                         </div>)}
 
-                        <div className={Styles.briefservice}>
-                            
-                        </div>
                     </div> 
         })
         }
@@ -188,6 +214,8 @@ const ServicesDetails = () => {
                 </div>
             </div>
     </div>
+    
+    <Partners />
 
     <div className={Styles.serviceinfo}>
         <h1 className='gt'>Why trust us for <br /> your IT needs</h1>

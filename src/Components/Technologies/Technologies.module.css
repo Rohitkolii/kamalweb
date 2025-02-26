@@ -122,20 +122,20 @@
 }
 @media only screen and (max-width:600px) {
     .Technologies{
-        width: 100%;
+        width: 95%;
     }
 
     .list{
         width: 100%;
     }
-
+    
     .techs div img{
         max-width: 40px;
-        min-width: 100px;
+        min-width: 80px;
         height: 40px;
         object-fit: contain;
     }
-
+    
     .techs{
         display: grid;
         grid-template-columns: repeat(4 , 20%);
@@ -148,11 +148,11 @@
     .list li{
         cursor: pointer;
         text-transform: capitalize;
-        font-size: 18px;
+        /* font-size: 18px; */
         width: auto;
-        font-size: 13px;
+        font-size: 15px;
     }
-
+    
     .list ul{
         /* padding: 10px 0; */
         border-bottom: 1px solid #171717;
@@ -162,5 +162,5 @@
         list-style-type: none;
         width: 100%;
     }
-
+    
 }

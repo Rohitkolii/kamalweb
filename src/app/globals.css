@@ -16,6 +16,7 @@ body{
 
 .gt{
   font-size: 40px;
+  text-transform: capitalize;
   font-family: "Noto Sans", serif;
     background: -webkit-linear-gradient(45deg, #ffffff, rgb(62, 130, 255));
     -webkit-background-clip: text;
@@ -24,6 +25,7 @@ body{
 
 .gtlight{
   font-size: 40px;
+  text-transform: capitalize;
   font-family: "Noto Sans", serif;
     background: -webkit-linear-gradient(45deg, #000000, rgb(62, 130, 255));
     -webkit-background-clip: text;
@@ -56,9 +58,10 @@ body{
 
 
 @media only screen and (max-width:550px) {
-  .gt{
-      font-size: 25px;
+  .gt, .gtlight{
+      font-size: 30px;
       line-height: 35px;
+      text-transform: capitalize;
   }
 
   .subp{
