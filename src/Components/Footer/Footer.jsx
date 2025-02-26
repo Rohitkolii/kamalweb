@@ -77,8 +77,8 @@ const Footer = () => {
                     <div className={Styles.policylinks}>
                         <ul>
                             <li><Link href='/terms&condition'>Terms and Condition</Link></li>
-                            <li><Link href='/'>Privacy Policy</Link></li>
-                            <li><Link href='/'>Legal</Link></li>
+                            <li><Link href='/privacypolicy'>Privacy Policy</Link></li>
+                            <li><Link href='/sitemap'>Sitemap</Link></li>
                         </ul>
                     </div>
                 </div>
