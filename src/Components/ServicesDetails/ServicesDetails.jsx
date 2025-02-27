@@ -21,12 +21,16 @@ import { MdOutlineSupportAgent } from "react-icons/md";
 import { FaChalkboardUser } from "react-icons/fa6";
 import { LuUserRoundCheck } from "react-icons/lu";
 
+import { MdKeyboardArrowRight } from "react-icons/md";
+
+
 
 
 
 
 import { FaArrowRightLong } from "react-icons/fa6";
 import Partners from '../Partners/Partners'
+import { useRouter } from 'next/navigation'
 
 const servicedata = [
     {
@@ -36,7 +40,8 @@ const servicedata = [
         tagline : 'Elevate Your Digital Presence with AppsoBytes',
         para : "Website development is essential for businesses looking to establish a solid online presence. It involves designing and developing user-friendly, responsive, and high-performing websites that engage visitors and drive conversions. A well-structured website ensures smooth navigation, fast loading speeds, and mobile responsiveness, making it easier for businesses to connect with their audience. Whether it's a corporate website, an e-commerce platform, or a custom web application, professional website development enhances brand credibility and boosts business growth.",
         tags : ['Custom Solutions', 'Latest Technologies', 'SEO & Mobile Optimized', 'Scalability & Flexibility', 'Dedicated Support'],
-        img : 'images/web.jpg'
+        img : 'images/web.jpg',
+        url : 'services/websitedevelopement'
     },
     {
         id: 1,
@@ -45,7 +50,8 @@ const servicedata = [
         tagline : 'Transforming Ideas into Powerful Apps with AppsoBytes',
         para:'Mobile application development is the process of creating feature-rich, scalable, and engaging apps for smartphones and tablets. With the increasing reliance on mobile devices, businesses can reach a wider audience through well-designed apps that offer seamless functionality and a great user experience. Whether it’s for iOS, Android, or cross-platform, mobile apps enhance customer engagement, improve efficiency, and provide innovative solutions to business challenges. A powerful mobile app helps businesses stay ahead in the digital landscape.',
         tags : ['Custom-Built Apps', 'Cross-Platform Expertise', 'User-Centric Design', 'Scalability & Security', 'Agile Development & Support'],
-        img : 'images/app.jpg'
+        img : 'images/app.jpg',
+        url : '/services/applicationdevelopement'
     },
     {
         id: 2,
@@ -54,7 +60,8 @@ const servicedata = [
         tagline : 'Powering Scalable & Secure Solutions with AppsoBytes',
         para:'Backend development is crucial for ensuring the seamless performance, security, and functionality of digital applications. It involves managing databases, building APIs, and handling server-side operations that support the front-end experience. A robust backend enables smooth data flow, user authentication, and system scalability, ensuring that websites and apps run efficiently. With optimized backend architecture, businesses can provide fast, secure, and scalable digital solutions tailored to their needs.',
         tags : ['Scalable Architecture', 'Secure & Reliable', 'API-First Approach', 'Optimized Performance', 'Cloud & DevOps Integration'],
-        img : 'images/code.jpg'
+        img : 'images/code.jpg',
+        url : '/services/backenddevelopement'
     },
     {
         id: 3,
@@ -63,7 +70,8 @@ const servicedata = [
         tagline : 'Secure, Scalable, and Future-Ready with AppsoBytes',
         para:'Cloud and database solutions are at the heart of modern digital infrastructure, enabling businesses to store, manage, and scale data efficiently. Cloud computing ensures high availability, security, and cost-effectiveness, while well-structured databases optimize data access and performance. Whether using AWS, Azure, Google Cloud, SQL, or NoSQL databases, businesses can benefit from secure, scalable, and seamlessly integrated solutions that support growth and innovation in an ever-evolving digital landscape.',
         tags : ['Scalable Cloud Infrastructure', 'Robust Database Management', 'High Security & Compliance', 'Optimized Performance', 'Seamless Integration'],
-        img : 'images/data.jpg'
+        img : 'images/data.jpg',
+        url : '/services/cloud&database'
     },
     {
         id: 4,
@@ -72,7 +80,8 @@ const servicedata = [
         tagline : 'Empowering Businesses with Strategic Technology Solutions',
         para:'IT consulting helps businesses leverage technology effectively to improve operations, enhance security, and drive innovation. From digital transformation and cloud migration to cybersecurity and infrastructure optimization, IT consulting services provide expert guidance to align technology with business goals. By analyzing existing systems and identifying opportunities for improvement, businesses can streamline workflows, reduce costs, and stay ahead of the competition in an ever-evolving digital landscape.',
         tags : ['Scalable Cloud Infrastructure', 'Robust Database Management', 'High Security & Compliance', 'Optimized Performance', 'Seamless Integration'],
-        img : 'images/img3.jpg'
+        img : 'images/img3.jpg',
+        url : '/services/itconsulting'
     },
     {
         id: 5,
@@ -81,12 +90,14 @@ const servicedata = [
         tagline : 'Streamlining Development for Faster, Reliable Deployments.',
         para:'DevOps is a modern approach to software development and IT operations, ensuring faster, more reliable, and automated workflows. By integrating continuous integration (CI), continuous deployment (CD), and infrastructure automation, DevOps helps businesses reduce development cycles, improve collaboration, and enhance system reliability. With efficient cloud infrastructure, containerization (Docker, Kubernetes), and real-time monitoring, organizations can scale effortlessly, increase security, and accelerate product delivery, making DevOps a crucial strategy for digital success.',
         tags : ['Scalable Cloud Infrastructure', 'Robust Database Management', 'High Security & Compliance', 'Optimized Performance', 'Seamless Integration'],
-        img : 'images/card1.jpg'
+        img : 'images/card1.jpg',
+        url : '/services/devops'
     },
 ];
 
 const ServicesDetails = () => {
 
+    const router = useRouter();
     const [showservices, setShowservices] = useState(false);
     const [activeIndex, setActiveIndex] = useState(null);
 
@@ -105,7 +116,7 @@ const ServicesDetails = () => {
 
     // const [activeSection, setActiveSection] = useState(Object.keys(sections)[0])
 
-    console.log(servicedata)
+    // console.log(servicedata)
   return (
     <>
 
@@ -155,8 +166,8 @@ const ServicesDetails = () => {
                                         })
                                     }
                                 </div>
-                                <div style={{textAlign: 'left'}} className={Styles.showbtn}>
-                                    <button>Read more</button>
+                                <div className={Styles.morebtn}>
+                                    <button onClick={() => router.push(elm.url)}>Know more <MdKeyboardArrowRight /></button>
                                 </div>
                             </div>
 

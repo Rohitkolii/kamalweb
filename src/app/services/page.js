@@ -6,7 +6,7 @@ import ServicesDetails from '@/Components/ServicesDetails/ServicesDetails'
 import ServiveCard from '@/Components/ServiveCard/ServiveCard'
 import React from 'react'
 
-const page = () => {
+const services = () => {
   return (
     <>
         {/* <Navbar /> */}
@@ -18,4 +18,4 @@ const page = () => {
   )
 }
 
-export default page
+export default services

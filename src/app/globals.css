@@ -38,6 +38,24 @@ body{
     -webkit-text-fill-color: transparent;
 }
 
+.gtlighth3{
+  font-size: 30px;
+  text-transform: capitalize;
+  font-family: "Noto Sans", serif;
+    background: -webkit-linear-gradient(45deg, #000000, rgb(62, 130, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gth3{
+  font-size: 30px;
+  text-transform: capitalize;
+  font-family: "Noto Sans", serif;
+    background: -webkit-linear-gradient(45deg, #ffffff, rgb(62, 130, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .subp{
   /* color: rgb(173, 173, 173); */
   color: rgb(189, 189, 189);
@@ -60,6 +78,8 @@ body{
   filter: blur(9);
   z-index: 9;
 }
+
+
 
 
 @media only screen and (max-width:550px) {
