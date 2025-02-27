@@ -2,8 +2,9 @@
 import CommonHeader from '@/Components/CommonHeader/CommonHeader'
 import Footer from '@/Components/Footer/Footer'
 import React, { useEffect } from 'react'
-import ServicepageContent from '@/Components/ServicepageContent/servicepageContent'
+// import ServicepageContent from '@/Components/ServicepageContent/servicepageContent'
 import servicedata from '../../../data/data.json'
+import ServicepageContent from '@/Components/ServicepageContent/ServicepageContent'
 
 const headdata = {
   t1: "Service", 
