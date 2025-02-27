@@ -14,7 +14,7 @@ const headdata = {
 const servicePage = ( { params } ) => {
   
   let newdata = servicedata.filter( data => data.titleurl == params.ServicedetailsPage)
-  console.log(newdata[0])
+  // console.log(newdata[0])
 
   return (
     <>
