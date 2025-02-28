@@ -10,32 +10,36 @@ import { GoPlus } from "react-icons/go";
 
 const Navbar = () => {
     const [menu, setmenu] = useState(false)
+    const [servicemenu, setservicemenu] = useState(false)
     const [widthvalue, setwidthvalue] = useState()
     const [service, setservice] = useState(false)
 
     useEffect(()=> {
-        if(menu ){
+        if(menu || servicemenu ){
             // && document.body.clientWidth <= 550
             document.body.style.overflow = "hidden"
         }else{
             document.body.style.overflow = "visible"
         }
-        setwidthvalue(document.body.clientWidth)
-    },[menu])
+        setwidthvalue(document.body.offsetWidth)
+
+        
+    },[menu, widthvalue])
+    console.log(widthvalue);
 
     const Showmenubody = () => {
-            return <li onMouseEnter={()=>setmenu(true)} onMouseLeave={()=> setmenu(false)}><Link href='/services'>Services</Link>
-            <div className={menu ? Styles.showservice : Styles.hideservice}>
+            return <li onMouseEnter={()=>setservicemenu(true)} onMouseLeave={()=> setservicemenu(false)}><Link href='/services'>Services</Link>
+            <div className={servicemenu ? Styles.showservice : Styles.hideservice}>
                 <div className={Styles.menuheader}>
                     <div>
-                        <h2>Turning <span style={{color: '#0061ff'}}>Ideas</span> Into Impactful <span style={{color: '#0061ff'}}>Apps</span></h2>
+                        <h2 style={{color: '#0061ff'}}>Turning Ideas Into Impactful Apps</h2>
                         <p>At AppsoBytes, we turn ideas into powerful, impactful applications that drive success.</p>
                     </div>
                 </div>
                 <div className={Styles.row}>
                     <div>
                         {/* <img src="images/web.jpg" alt="" /> */}
-                        <img src="images/contact.png" alt="" />
+                        <img src={"images/contact.png" && "../../images/contact.png"} alt="" />
                         <p></p>
                         {/* <h1><p><span style={{color: '#0061ff'}}>A</span>ppso<span style={{color: '#0061ff'}}>B</span>ytes<span>.</span></p></h1> */}
                     </div>
@@ -43,64 +47,73 @@ const Navbar = () => {
                         <div className={Styles.menucol}>
                             <p><Link href='/services#app'>Mobile Application</Link></p>
                             <ul>
-                                <li>Point 1</li>
-                                <li>Point 2</li>
+                                <li>iOS App</li>
+                                <li>Android App</li>
+                                <li>Hybrid App</li>
+                                <li>App UI/UX Design</li>
                             </ul>
                         </div>
 
                         <div className={Styles.menucol}>
                             <p><Link href='/services#web'>Website developement</Link></p>
                             <ul>
-                                <li>Point 1</li>
-                                <li>Point 2</li>
-                                <li>Point 3</li>
+                                <li>Custom Website</li>
+                                <li>E-commerce</li>
+                                <li>CMS Development</li>
                             </ul>
                         </div>
 
                         <div className={Styles.menucol}>
                             <p><Link href='services/#cloud&database'>Cloud & Database</Link></p>
                             <ul>
-                                <li>Point 1</li>
-                                <li>Point 2</li>
-                                <li>Point 3</li>
+                                <li>Cloud Hosting Services</li>
+                                <li>Database Management</li>
+                                <li>Database Design & Optimization</li>
+                                <li>Cloud Storage Solutions</li>
                             </ul>
                         </div>
 
                         <div className={Styles.menucol}>
                             <p><Link href='/services#backend'>Backend developement</Link></p>
                             <ul>
-                                <li>Point 1</li>
-                                <li>Point 2</li>
+                                <li>Custom Backend</li>
+                                <li>API Development & Integration</li>
+                                <li>Server-Side Scripting</li>
+                                <li>Payment Gateway Integration</li>
                             </ul>
                         </div>
 
                         <div className={Styles.menucol}>
                             <p><Link href='/'>DevOps</Link></p>
                             <ul>
-                                <li>Point 1</li>
-                                <li>Point 2</li>
+                                <li>CI/CD Pipeline Implementation</li>
+                                <li>Infrastructure as Code</li>
+                                <li>Containerization</li>
                             </ul>
                         </div>
 
                         <div className={Styles.menucol}>
                             <p><Link href='/'>Digital Transformation</Link></p>
                             <ul>
-                                <li>Point 1</li>
-                                <li>Point 2</li>
+                                <li>Business Process Automation</li>
+                                <li>Digital Strategy & Roadmap</li>
                             </ul>
                         </div>
                         <div className={Styles.menucol}>
                             <p><Link href='/'>IT Consulting</Link></p>
                             <ul>
-                                <li>Point 1</li>
-                                <li>Point 2</li>
+                                <li>Digital Transformation Strategy</li>
+                                <li>IT Infrastructure Assessment</li>
+                                <li>Software Architecture Consulting</li>
+                                <li>IT Support & Managed Services</li>
+                                <li>Technology Roadmap Planning</li>
                             </ul>
                         </div>
                         <div className={Styles.menucol}>
                             <p><Link href='/'>Ideation & Design</Link></p>
                             <ul>
-                                <li>Point 1</li>
-                                <li>Point 2</li>
+                                <li>UI/UX Design & User Research</li>
+                                <li>Product Design Strategy</li>
                             </ul>
                         </div>
 

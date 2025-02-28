@@ -236,26 +236,27 @@
     font-size: 13px;
 }
 
-.morebtn button svg{
+.morebtn a svg{
     font-size: 25px;
     transition: .3s;
 }
-.morebtn button:hover svg{
+.morebtn a:hover svg{
     transform: translateX(10px);
 }
 
-.morebtn button{
+.morebtn a{
     /* color: #0061ff; */
     color: #000;
     background-color: transparent;
     font-size: 16px;
-    border: transparent;
+    width: fit-content;
     margin: 20px 0px;
     padding: 10px 20px;
     background-color: white;
     border-radius: 24px;
     display: flex;
     align-items: center;
+    text-decoration: none;
 }
 
 /* //stepcon============ */

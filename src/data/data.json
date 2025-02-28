@@ -45,8 +45,8 @@
             "Cross-Platform Compatibility – Websites that work seamlessly across devices and browsers.",
             "Ongoing Support & Maintenance – Regular updates, bug fixes, and security enhancements."
         ],
-        "img1" : "../../images/sr1.jpg",
-        "img2" : "../../images/sr2.jpg"
+        "img1" : "../../images/web1.jpg",
+        "img2" : "../../images/web2.jpg"
     },
     {
         "id" : 2,
@@ -93,9 +93,9 @@
             "Security & Compliance – Secure coding, data encryption, and industry-standard best practices.",
             "Seamless Integration – Connects easily with third-party APIs, databases, and cloud solutions.",
             "Future-Ready Technology – Built with the latest tools like Swift, Kotlin, Flutter, and React Native."
-
-
-        ]
+        ],
+        "img1" : "../../images/app1.jpg",
+        "img2" : "../../images/app2.jpg"
     },
     {
         "id" : 3,
@@ -143,8 +143,8 @@
             "Optimized Database Management – Efficient data storage, retrieval, and indexing for smooth operations.",
             "Cloud-Based Scalability – Scalable infrastructure to handle traffic spikes and future growth."
         ],
-        "img1" : "../../images/sr1.jpg",
-        "img2" : "../../images/sr2.jpg"
+        "img1" : "../../images/back1.jpg",
+        "img2" : "../../images/back2.jpg"
     },
     {
         "id" : 4,
@@ -192,8 +192,8 @@
            "Cost-Efficient Solutions – Reduce infrastructure costs with pay-as-you-go cloud services.",
            "Seamless Data Integration – Enabling smooth data synchronization across platforms."
         ],
-        "img1" : "../../images/sr1.jpg",
-        "img2" : "../../images/sr2.jpg"
+        "img1" : "../../images/data1.jpg",
+        "img2" : "../../images/data2.jpg"
     },
     {
         "id" : 5,
@@ -244,8 +244,8 @@
             "Faster Time-to-Market – Streamline development cycles with agile methodologies and DevOps practices.",
             "Seamless Digital Transformation – Upgrade legacy systems and integrate the latest technologies effortlessly."
         ],
-        "img1" : "../../images/sr1.jpg",
-        "img2" : "../../images/sr2.jpg"
+        "img1" : "../../images/consult1.jpg",
+        "img2" : "../../images/consult2.jpg"
     },
     {
         "id" : 6,
@@ -293,7 +293,7 @@
             "Cross-Platform Compatibility – Websites that work seamlessly across devices and browsers.",
             "Ongoing Support & Maintenance – Regular updates, bug fixes, and security enhancements."
         ],
-        "img1" : "../../images/sr1.jpg",
-        "img2" : "../../images/sr2.jpg"
+        "img1" : "../../images/dev1.jpg",
+        "img2" : "../../images/dev2.jpg"
     }
 ]

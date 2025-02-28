@@ -167,7 +167,7 @@ const ServicesDetails = () => {
                                     }
                                 </div>
                                 <div className={Styles.morebtn}>
-                                    <button onClick={() => router.push(elm.url)}>Know more <MdKeyboardArrowRight /></button>
+                                    <Link href={elm.url}>Know more <MdKeyboardArrowRight /></Link>
                                 </div>
                             </div>
 
@@ -178,7 +178,12 @@ const ServicesDetails = () => {
         }
 
         <div className={Styles.showbtn}>
-            <button onClick={()=> setShowservices(!showservices)}>Show more</button>
+            {
+                showservices ?
+                <button onClick={()=> setShowservices(!showservices)}>Show less</button>
+                :
+                <button onClick={()=> setShowservices(!showservices)}>Show more</button>
+            }
         </div>
     </div>
 
@@ -260,7 +265,7 @@ const ServicesDetails = () => {
         </div>
     </div>
 
-    <div className={Styles.showcasecon}>
+    {/* <div className={Styles.showcasecon}>
         <div className={Styles.innershowcase}>
             <p>// Our Latest Projects</p>
             <h1 className='gtlight'>Explore our showcase of <br /> <span>Featured Works</span></h1>
@@ -308,7 +313,7 @@ const ServicesDetails = () => {
                 </div>
         </div>
 
-    </div>
+    </div> */}
     </>
   )
 }
