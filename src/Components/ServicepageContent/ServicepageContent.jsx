@@ -12,7 +12,7 @@ const ServicepageContent = ({newdata}) => {
           <h1 className='gtlight'>About {newdata[0].title} Services</h1>
           <p className='sublight'>{newdata[0].aboutpara}</p>
             <br/>
-          <div>
+          <div> 
             <h3 className='gtlighth3'>Our Experties in {newdata[0].title} Services</h3>
             <p className='sublight'>{newdata[0].expertiespara}</p>
             <div className={Styles.myservicegrid}>
