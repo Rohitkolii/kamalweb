@@ -71,7 +71,7 @@ const servicedata = [
         para:'Cloud and database solutions are at the heart of modern digital infrastructure, enabling businesses to store, manage, and scale data efficiently. Cloud computing ensures high availability, security, and cost-effectiveness, while well-structured databases optimize data access and performance. Whether using AWS, Azure, Google Cloud, SQL, or NoSQL databases, businesses can benefit from secure, scalable, and seamlessly integrated solutions that support growth and innovation in an ever-evolving digital landscape.',
         tags : ['Scalable Cloud Infrastructure', 'Robust Database Management', 'High Security & Compliance', 'Optimized Performance', 'Seamless Integration'],
         img : 'images/data.jpg',
-        url : '/services/cloud&database'
+        url : '/services/cloudanddatabase'
     },
     {
         id: 4,
