@@ -145,7 +145,7 @@
     {
         "id" : 4,
         "title" : "Cloud & Database",
-        "titleurl" : "cloud&database",
+        "titleurl" : "cloudanddatabase",
         "aboutpara" : "In today’s digital landscape, businesses require scalable, secure, and high-performing cloud and database solutions to manage data efficiently. At AppsoBytes, we provide end-to-end cloud computing and database management services, ensuring seamless storage, retrieval, and processing of data across various platforms.",
         "expertiespara" : "At AppsoBytes, we design cloud-native architectures and optimized database solutions that enhance performance, reliability, and security.",
         "expertiesarr" : [
