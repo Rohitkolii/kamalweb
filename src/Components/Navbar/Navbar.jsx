@@ -157,7 +157,7 @@ const Navbar = () => {
                     {
                         Showmenubody()
                     }
-                    <li><Link href='/'>Blogs</Link></li>
+                    <li><Link href='/blog'>Blogs</Link></li>
                     <li><Link href='/contact' className={Styles.btn}>Contact</Link></li>
                 </ul>
             </div>

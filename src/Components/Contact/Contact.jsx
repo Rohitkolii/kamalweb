@@ -70,7 +70,6 @@ const contact = () => {
         <ToastContainer />
       <section className={Styles.inner_Header}>
             <div data-aos="zoom-in-right" className={Styles.col1}>
-                {/* <img src="images/contact.png" alt="" /> */}
                 <h1 className='gt'>Contact us</h1>
                 <p className='subp'>At Appsobytes, we’re here to help you bring your ideas to life! Whether you have a question about our services, need technical support, or want to discuss your next big project, our team is ready to assist you.</p>
                     <p style={{marginTop:10}}>Get in touch</p>

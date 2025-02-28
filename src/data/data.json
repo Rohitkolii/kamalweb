@@ -44,7 +44,9 @@
             "Security & Compliance – Implementing HTTPS, SSL, data encryption, and secure authentication methods.",
             "Cross-Platform Compatibility – Websites that work seamlessly across devices and browsers.",
             "Ongoing Support & Maintenance – Regular updates, bug fixes, and security enhancements."
-        ]
+        ],
+        "img1" : "../../images/sr1.jpg",
+        "img2" : "../../images/sr2.jpg"
     },
     {
         "id" : 2,
@@ -140,7 +142,9 @@
             "Effortless Integrations – APIs and microservices for seamless communication between systems.",
             "Optimized Database Management – Efficient data storage, retrieval, and indexing for smooth operations.",
             "Cloud-Based Scalability – Scalable infrastructure to handle traffic spikes and future growth."
-        ]
+        ],
+        "img1" : "../../images/sr1.jpg",
+        "img2" : "../../images/sr2.jpg"
     },
     {
         "id" : 4,
@@ -187,7 +191,9 @@
            "Optimized Performance – Fast query execution, efficient indexing, and caching strategies.",
            "Cost-Efficient Solutions – Reduce infrastructure costs with pay-as-you-go cloud services.",
            "Seamless Data Integration – Enabling smooth data synchronization across platforms."
-        ]
+        ],
+        "img1" : "../../images/sr1.jpg",
+        "img2" : "../../images/sr2.jpg"
     },
     {
         "id" : 5,
@@ -237,7 +243,9 @@
             "Expert Support & Maintenance – 24/7 assistance and proactive monitoring to ensure uninterrupted operations.",
             "Faster Time-to-Market – Streamline development cycles with agile methodologies and DevOps practices.",
             "Seamless Digital Transformation – Upgrade legacy systems and integrate the latest technologies effortlessly."
-        ]
+        ],
+        "img1" : "../../images/sr1.jpg",
+        "img2" : "../../images/sr2.jpg"
     },
     {
         "id" : 6,
@@ -284,6 +292,8 @@
             "Security & Compliance – Implementing HTTPS, SSL, data encryption, and secure authentication methods.",
             "Cross-Platform Compatibility – Websites that work seamlessly across devices and browsers.",
             "Ongoing Support & Maintenance – Regular updates, bug fixes, and security enhancements."
-        ]
+        ],
+        "img1" : "../../images/sr1.jpg",
+        "img2" : "../../images/sr2.jpg"
     }
 ]

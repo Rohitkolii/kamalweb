@@ -139,9 +139,9 @@ const ServicesDetails = () => {
     <div className={Styles.ServicesDetails}>
         <h1 className='gt'>Our Services and works</h1>
         {
-            servicedata.slice(0, showservices ? servicedata.length : 3).map((elm)=> {
+            servicedata.slice(0, showservices ? servicedata.length : 3).map((elm, index)=> {
                 
-                return <div className={Styles.serviceCardcon} key={elm.id} onClick={() => setActiveIndex(activeIndex === elm.id ? null : elm.id)}>
+                return <div className={Styles.serviceCardcon} key={index} onClick={() => setActiveIndex(activeIndex === elm.id ? null : elm.id)}>
                         <div className={Styles.serviceCard} >
                             <div>
                                 <p>{elm.svg}{elm.headline}</p>
@@ -161,8 +161,8 @@ const ServicesDetails = () => {
                                 <p className='subp'>{elm.para}</p>
                                 <div className={Styles.tags}>
                                     {
-                                        elm.tags && elm.tags.map((tags)=>{
-                                            return <p>#{tags}</p>
+                                        elm.tags && elm.tags.map((tags, index)=>{
+                                            return <p key={index}>#{tags}</p>
                                         })
                                     }
                                 </div>
