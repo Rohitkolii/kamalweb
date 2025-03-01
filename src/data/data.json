@@ -45,7 +45,7 @@
             "Cross-Platform Compatibility – Websites that work seamlessly across devices and browsers.",
             "Ongoing Support & Maintenance – Regular updates, bug fixes, and security enhancements."
         ],
-        "img1" : "../../images/web1.jpg",
+        "img1" : "/images/web1.jpg",
         "img2" : "../../images/web2.jpg"
     },
     {

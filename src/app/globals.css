@@ -84,7 +84,7 @@ body{
 
 @media only screen and (max-width:550px) {
   .gt, .gtlight{
-      font-size: 30px;
+      font-size: 25px;
       line-height: 35px;
       text-transform: capitalize;
   }

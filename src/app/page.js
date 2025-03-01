@@ -11,6 +11,7 @@ import Random from "@/Components/Random/Random";
 import Aboutcol from "@/Components/Aboutcol/Aboutcol";
 import Numbers from "@/Components/Numbers/Numbers";
 import HeaderSlide from "@/Components/HeaderSlide/HeaderSlide";
+import Industuries from "@/Components/Industuries/Industuries";
 
 export default function Home() {
 
@@ -31,7 +32,8 @@ export default function Home() {
       <About />
       <Numbers />
       <Services />
-      <Feedback />
+      <Industuries />
+      {/* <Feedback /> */}
       <Technologies sections={sections} />
       {/* <Random /> */}
       {/* <Contact /> */}

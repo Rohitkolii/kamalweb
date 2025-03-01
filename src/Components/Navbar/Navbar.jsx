@@ -24,7 +24,7 @@ const Navbar = () => {
         setwidthvalue(document.body.offsetWidth)
 
         
-    },[menu, widthvalue])
+    },[menu, widthvalue, servicemenu])
     console.log(widthvalue);
 
     const Showmenubody = () => {

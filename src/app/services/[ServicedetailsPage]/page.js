@@ -6,16 +6,17 @@ import React, { useEffect } from 'react'
 import servicedata from '../../../data/data.json'
 import ServicepageContent from '@/Components/ServicepageContent/ServicepageContent'
 
-const headdata = {
-  t1: "Service", 
-  t2: 'Details', 
-  para: 'Website Developement'
-};
 
 const servicePage = ( { params } ) => {
   
   let newdata = servicedata.filter( data => data.titleurl == params.ServicedetailsPage)
   // console.log(newdata[0])
+  
+  const headdata = {
+    t1: "Service", 
+    t2: 'Details', 
+    para: newdata[0].title
+  };
 
   return (
     <>
