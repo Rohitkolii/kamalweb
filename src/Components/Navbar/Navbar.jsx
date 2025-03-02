@@ -45,7 +45,7 @@ const Navbar = () => {
                     </div>
                     <div className={Styles.menulist}>
                         <div className={Styles.menucol}>
-                            <p><Link href='/services#app'>Mobile Application</Link></p>
+                            <p><Link href='/services/applicationdevelopement'>Mobile Application</Link></p>
                             <ul>
                                 <li>iOS App</li>
                                 <li>Android App</li>
@@ -55,7 +55,7 @@ const Navbar = () => {
                         </div>
 
                         <div className={Styles.menucol}>
-                            <p><Link href='/services#web'>Website developement</Link></p>
+                            <p><Link href='/services/websitedevelopement'>Website developement</Link></p>
                             <ul>
                                 <li>Custom Website</li>
                                 <li>E-commerce</li>
@@ -64,7 +64,7 @@ const Navbar = () => {
                         </div>
 
                         <div className={Styles.menucol}>
-                            <p><Link href='services/#cloud&database'>Cloud & Database</Link></p>
+                            <p><Link href='/services/cloudanddatabase'>Cloud & Database</Link></p>
                             <ul>
                                 <li>Cloud Hosting Services</li>
                                 <li>Database Management</li>
@@ -74,7 +74,7 @@ const Navbar = () => {
                         </div>
 
                         <div className={Styles.menucol}>
-                            <p><Link href='/services#backend'>Backend developement</Link></p>
+                            <p><Link href='/services/backenddevelopement'>Backend developement</Link></p>
                             <ul>
                                 <li>Custom Backend</li>
                                 <li>API Development & Integration</li>
@@ -84,7 +84,7 @@ const Navbar = () => {
                         </div>
 
                         <div className={Styles.menucol}>
-                            <p><Link href='/'>DevOps</Link></p>
+                            <p><Link href='/services/devops'>DevOps</Link></p>
                             <ul>
                                 <li>CI/CD Pipeline Implementation</li>
                                 <li>Infrastructure as Code</li>
@@ -100,7 +100,7 @@ const Navbar = () => {
                             </ul>
                         </div>
                         <div className={Styles.menucol}>
-                            <p><Link href='/'>IT Consulting</Link></p>
+                            <p><Link href='/services/itconsulting'>IT Consulting</Link></p>
                             <ul>
                                 <li>Digital Transformation Strategy</li>
                                 <li>IT Infrastructure Assessment</li>
@@ -134,22 +134,22 @@ const Navbar = () => {
         <div className={Styles.mobmenu}>
             <ul>
                 <li><Link href='/'>Home</Link></li>
-                <li><Link href='/about'>ABout us</Link><GoPlus /></li>
+                <li><Link href='/about'>ABout us</Link></li>
                 <li><Link href='/services'>Services</Link><GoPlus onClick={()=> setservice(!service)}/></li>
                 {
                     service ?
                     <div className={Styles.serviceopt}>
-                    <Link href='/'>Website Developement</Link>
-                    <Link href='/'>Mobile Application</Link>
-                    <Link href='/'>Backend Developemet</Link>
-                    <Link href='/'>Cloud & Database</Link>
-                    <Link href='/'>Digital Transformation</Link>
-                    <Link href='/'>DevOps</Link>
-                    <Link href='/'>IT Consulting</Link>
+                    <Link href='/services/websitedevelopement'>Website Developement</Link>
+                    <Link href='/services/applicationdevelopement'>Mobile Application</Link>
+                    <Link href='/services/backenddevelopement'>Backend Developemet</Link>
+                    <Link href='/services/cloudanddatabase'>Cloud & Database</Link>
+                    {/* <Link href='services/'>Digital Transformation</Link> */}
+                    <Link href='/services/devops'>DevOps</Link>
+                    <Link href='/services/itconsulting'>IT Consulting</Link>
                     </div>
                 : ''
                 }
-                <li><Link href='/blogs'>Blogs</Link><GoPlus /></li>
+                {/* <li><Link href='/blogs'>Blogs</Link></li> */}
                 <li><Link href='/contact'>Contact</Link></li>
             </ul>
         </div>
@@ -165,12 +165,12 @@ const Navbar = () => {
 
             <div>
                 <ul className={Styles.menucon}>
-                    <li><Link href='/'>Home</Link></li>
+                    {/* <li><Link href='/'>Home</Link></li> */}
                     <li><Link href='/about'>About us</Link></li>
                     {
                         Showmenubody()
                     }
-                    <li><Link href='/blog'>Blogs</Link></li>
+                    <li><Link href='/blogs'>Blogs</Link></li>
                     <li><Link href='/contact' className={Styles.btn}>Contact</Link></li>
                 </ul>
             </div>

@@ -11,9 +11,10 @@ import { CiCalendarDate } from "react-icons/ci";
 
 
 import Link from 'next/link'
-import { useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
+import Loader from '../Loader/Loader'
 
 
 
@@ -24,50 +25,65 @@ const contact = () => {
     // const [name, setname] = useState();
     // const [mail, setmail] = useState();
     // const [message, setmessage] = useState();
+    
+    const [loading, setloading] = useState(false);
 
     const sendEmail = (e) => {
         e.preventDefault();
-            // console.log(form.current[0].value);
-            if(form.current[0].value && form.current[1].value && form.current[2].value && form.current[3].value){
-
-                emailjs.sendForm('service_ftx5ev9', 'template_sbjpmjp', form.current, 'DA4KsLR9lJJvsXu7F')
-                .then((result) => {
-                console.log(result.text);
-                toast.success('Sent Succesfully!', {
-                    position: "top-center",
-                    autoClose: 5000,
-                    hideProgressBar: false,
-                    closeOnClick: true,
-                    pauseOnHover: true,
-                    draggable: true,
-                    progress: undefined,
-                    theme: "dark",
-                });
+        // console.log(form.current[0].value);
+        if(form.current[0].value && form.current[1].value && form.current[2].value && form.current[3].value){
+            setloading(true)
+            emailjs.sendForm('service_ftx5ev9', 'template_sbjpmjp', form.current, 'DA4KsLR9lJJvsXu7F')
+            .then((result) => {
+                setloading(false)
+                console.log(result);
+                    toast.success('Thank you! Your form has been submitted successfully.', {
+                        position: "top-right",
+                        autoClose: 5000,
+                        hideProgressBar: false,
+                        closeOnClick: true,
+                        pauseOnHover: true,
+                        draggable: true,
+                        progress: undefined,
+                        theme: "light",
+                    });
                 
                 e.target.reset();
                 }, (error) => {
+                    setloading(false)
                     console.log(error);
                 });
             }else{
-                toast.error('Fill form first!', {
-                    position: "top-center",
-                    autoClose: 5000,
-                    hideProgressBar: false,
-                    closeOnClick: true,
-                    pauseOnHover: true,
-                    draggable: true,
-                    progress: undefined,
-                    theme: "dark",
-                });
+                    toast.warning('Please fill out all required fields before submitting.', {
+                        position: "top-right",
+                        autoClose: 5000,
+                        hideProgressBar: false,
+                        closeOnClick: true,
+                        pauseOnHover: true,
+                        draggable: true,
+                        progress: undefined,
+                        theme: "light",
+                    });
             }
+
           
         //   e.target.reset();
       }
+
+      useEffect(()=> {
+        if(loading ){
+            document.body.style.overflow = "hidden"
+        }else{
+            document.body.style.overflow = "visible"
+        }
+    },[loading])
   
 
     return (
     <div>
         <ToastContainer />
+        {loading ? <Loader /> : ''}
+        {loading ? <div className='layer'></div> : ''}
       <section className={Styles.inner_Header}>
             <div data-aos="zoom-in-right" className={Styles.col1}>
                 <h1 className='gt'>Contact us</h1>

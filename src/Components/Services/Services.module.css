@@ -4,7 +4,7 @@
     background-color: #000000;
 }
 
-.Services h3, .Services p:nth-child(2){
+.Services h3, .Services .spara{
     text-align: center;
     width: 75%;
     margin: auto;

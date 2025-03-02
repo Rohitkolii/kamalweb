@@ -16,7 +16,7 @@ const Services = () => {
     <>
         <section className={Styles.Services}>
             <h3 className='gt'>Innovative Web & App Development Solutions Tailored to Your Business Needs</h3>
-            <p className='subp'>"At Appsobytes, we craft custom web and app solutions that drive growth and enhance user experience. Our expert team delivers high-quality, scalable digital products tailored to your business needs."</p>
+            <p className={`subp ${Styles.spara}`}>At Appsobytes, we craft custom web and app solutions that drive growth and enhance user experience. Our expert team delivers high-quality, scalable digital products tailored to your business needs."</p>
             <div className={Styles.row}>
                 <div data-aos="fade-up" className={Styles.col}>
                     <span><MdWeb /></span>

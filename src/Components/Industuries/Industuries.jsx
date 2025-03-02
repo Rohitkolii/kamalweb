@@ -91,9 +91,9 @@ const Industuries = () => {
                     </div>
                 </div>
 
-                <Link href="/" className={Styles.morearrow}>
+                {/* <Link href="/" className={Styles.morearrow}>
                     More <MdOutlineKeyboardArrowRight />
-                </Link>
+                </Link> */}
             </div>
         </div>
     </>

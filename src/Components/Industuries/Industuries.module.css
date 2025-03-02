@@ -3,7 +3,8 @@
     padding: 50px 0;
     /* background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(0,97,255,1) 35%, rgba(0,212,255,1) 100%); */
     background-color: #D9AFD9;
-    background-image: linear-gradient(135deg, #fff 0%, #4535b18e 40%, #0061ff 100%);
+    /* background-image: linear-gradient(135deg, #fff 0%, #4535b18e 40%, #0061ff 100%); */
+    background-image: linear-gradient(135deg, #fff 0%, #0061ff 50%, #000 100%);
     width: 100%;
 }
 
@@ -41,14 +42,14 @@
 .innerindusturies .row2{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 30px 50px;
+    gap: 30px;
     margin: 50px auto;
 }
 
 .industurycard{
     padding:30px 20px;
-    box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.404);
-    /* border: 1px solid black; */
+    box-shadow: 1px 1px 5px rgba(41, 41, 41, 0.404);
+    border: 1px solid rgba(0, 0, 0, 0.203);
     border-radius: 12px;
     background-size: cover;
     position: relative;
@@ -57,7 +58,7 @@
 }
 
 .industurycard:hover{
-    transform: scale(105%);
+    transform: scale(103%);
     /* filter: blur(0px); */
 }
 
@@ -73,7 +74,7 @@
     position: absolute;
     left: 0;
     top: 0;
-    filter: blur(3px);
+    filter: blur(1px);
     border-radius: 12px;
     transition: .3s;
 }
