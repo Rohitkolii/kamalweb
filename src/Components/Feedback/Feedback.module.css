@@ -1,7 +1,8 @@
 .Feedback{
     padding: 40px 0;
     margin-bottom: 50px;
-    background-color: transparent;
+    /* background-color: transparent; */
+    background-color: white;
 }
 
 .Feedback .col1{
@@ -27,19 +28,28 @@
 }
 
 .feedbox{
-    background-color: #0F0F0F;
-    width: 60%;
+    /* background-color: #0F0F0F; */
+    background-color: #eff8ff83;
+    width: 50%;
     margin: auto;
-    padding: 50px;
+    padding: 60px;
     border-radius: 6px;
     text-align: center;
     height: fit-content;
+    /* box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.568); */
+    border: 1px solid rgba(0, 0, 0, 0.223);
+    cursor: grab;
     /* overflow-y: hidden; */
+}
+
+.feedbox svg{
+    font-size: 18px;
+    color: gold;
 }
 
 .feedname{
     color: #0061ff;
-    font-size: 15;
+    font-size: 20px;
     display: flex;
     align-items: center;
     justify-content : center;
@@ -86,7 +96,7 @@
     }
 
     .feedbox{
-        background-color: #0F0F0F;
+        /* background-color: #0F0F0F; */
         width: 95%;
         margin: auto;
         padding: 20px;

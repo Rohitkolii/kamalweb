@@ -20,7 +20,7 @@ function App() {
   return (
     <div className={Styles.blogscontainer}>
       <div className={Styles.blogscontainerin}>
-      {/* <h3 className='gtlighth3'>Stay informed with the latest insights, tips, and trends on our blog.</h3> */}
+      {feturedblog[0] && <>
       <h3 className='gtlighth3'>Featured Blog</h3>
       <div className={Styles.feturedblog}>
         <div>
@@ -33,7 +33,7 @@ function App() {
             <p>#Category</p>
             <Link className={Styles.btn} href={`blogs/${feturedblog[0].title.replace(/ /g, "-")}`}>Read More <MdKeyboardArrowRight /></Link>
         </div>
-      </div>
+      </div></>}
       <h3 className='gtlighth3'>Recent Blogs</h3>
       <div className={Styles.bloggrid}>
           {
@@ -45,9 +45,9 @@ function App() {
           }
         </div>
         {
-          blogs.length > blogvalue+6 ?          
+          blogs.length > 6 ?          
           <button onClick={()=> setBlogvalue(blogs.length > (blogvalue + 6) && (blogvalue+6))} className={Styles.btn}>Show more <MdKeyboardArrowRight /></button>
-          : 
+          :
           <button onClick={()=> setBlogvalue(6)} className={Styles.btn}>Show less <MdKeyboardArrowRight /></button>
           }
       </div>

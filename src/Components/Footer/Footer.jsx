@@ -49,7 +49,7 @@ const Footer = () => {
                     
                     <div className={Styles.Footercategories}>
                         <h2>Navigations</h2>
-                            <div className={Styles.footercategoriesinner}>
+                            <div className={Styles.Footerlink}>
                                 <Link href='/about' >About us</Link>
                                 <Link href='/contact' >Contact</Link>
                                 <Link href='/services' >Services</Link>

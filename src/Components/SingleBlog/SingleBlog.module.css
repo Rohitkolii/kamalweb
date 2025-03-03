@@ -4,7 +4,7 @@
 }
 
 .inblog{
-    width: 90%;
+    width: 85%;
     margin: auto;
 }
 
@@ -20,4 +20,10 @@
 
 .blogdiv li{
     line-height: 30px;
+}
+
+.blogdiv p:nth-child(1){
+    color: black;
+    font-size: 25px;
+    font-weight: 500;
 }

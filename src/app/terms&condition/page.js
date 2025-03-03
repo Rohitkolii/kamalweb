@@ -20,43 +20,75 @@ const page = () => {
     <>
         {/* <Navbar /> */}
         <CommonHeader headdata={headdata} />
-        <div style={{backgroundColor: 'white', color: 'black', padding: '50px 0'}}>
+        <div style={{backgroundColor: 'white', color: 'black', padding: '50px 0', lineHeight: "35px"}}>
           <div style={{width: '90%', margin: ' 0px auto'}}>
             <h1 className='gtlight'>Terms and Conditions</h1>
             <p className='sublight' style={{margin: '25px 0'}}>Last Updated: 26<sup>th</sup> February 2025</p>
-            <p className='sublight' style={{margin: '25px 0'}}>Welcome to Appsobytes! By using our services, including application development and website development, you agree to be bound by the following Terms and Conditions. Please read them carefully.</p>
-            <p className='sublight' style={{margin: '25px 0'}}>1. Acceptance of Terms By accessing or using the services of Appsobytes, you agree to comply with and be legally bound by these Terms and Conditions. If you do not agree to these Terms, please do not use our services.</p>
-            <p className='sublight' style={{margin: '25px 0'}}>2. Services Provided At Appsobytes, we specialize in the creation of impactful applications and websites. Our team excels in both front-end and back-end development, delivering custom solutions that convert your ideas into innovative applications designed to drive business growth.</p>
-            <p className='sublight' style={{margin: '25px 0'}}>3. Client Responsibilities Provide Clear Requirements: You agree to provide clear, comprehensive, and accurate information about your project requirements to help us deliver the best possible solution.</p>
-            <p className='sublight' style={{margin: '25px 0'}}>Timely Communication: You agree to provide timely feedback and responses as requested by our team throughout the development process. Content and Materials: You ensure that all content, designs, images, and materials provided for use in your project are either owned by you or licensed for use by you. You are solely responsible for any intellectual property violations related to content you provide.</p>
-            <p className='sublight' style={{margin: '25px 0'}}>4. Our Responsibilities
-              Development Process: We will provide front-end and back-end development services to create applications and websites based on the specifications provided by you. Our work includes the design, coding, testing, and deployment of applications.
-              Quality Assurance: We will ensure the applications and websites developed are fully functional and meet the requirements as agreed upon.
-              Confidentiality: We are committed to keeping your business and project details confidential. All personal, business, and proprietary information shared with us will be kept private.</p>
-            <p className='sublight' style={{margin: '25px 0'}}>5. Payment and Fees
-              Project Fees: The fees for our services will be outlined in the contract or project agreement. Any changes in scope or project requirements may result in additional fees.
-              Payment Terms: Payments will be due as per the agreed terms, with a specified upfront deposit and milestone payments. Late payments may incur additional fees or delays in project timelines.</p>
-            <p className='sublight' style={{margin: '25px 0'}}>6. Ownership and License
-              Client Ownership: Once the project is completed and full payment is made, you will own all intellectual property rights associated with the custom application or website.
-              License to Use Tools: We retain the right to use third-party tools, frameworks, and libraries in the development process, but this does not affect your ownership of the final deliverable.</p>
-            <p className='sublight' style={{margin: '25px 0'}}>7. Termination and Cancellation
-              Project Cancellation: Either party may terminate the project at any time with written notice. In the event of cancellation, you are responsible for paying for all work completed up to the termination point.
-              Refunds: Refunds are at the sole discretion of Appsobytes. Any refund requests must be submitted in writing and will be evaluated on a case-by-case basis.</p>
-            <p className='sublight' style={{margin: '25px 0'}}>8. Limitation of Liability
-            Appsobytes will not be held responsible for any indirect, incidental, or consequential damages resulting from the use of our applications or websites. Our total liability is limited to the amount paid for the services rendered.</p>
-            <p className='sublight' style={{margin: '25px 0'}}>9. Indemnification
-            You agree to indemnify and hold harmless Appsobytes, its employees, contractors, and agents from any claims, damages, liabilities, and expenses arising from your use of our services, your breach of these Terms, or any content provided by you.
-                </p>
-            <p className='sublight' style={{margin: '25px 0'}}>10. Privacy Policy
-            Your privacy is important to us. Our Privacy Policy explains how we collect, use, and protect your personal information. By using our services, you agree to the terms of our Privacy Policy.</p>
-            <p className='sublight' style={{margin: '25px 0'}}>11. Amendments to the Terms
-            Appsobytes reserves the right to update or modify these Terms and Conditions at any time. Any changes will be posted on our website, and the revised Terms will apply immediately upon posting. We encourage you to review these Terms periodically.
-            </p>
-            <p className='sublight' style={{margin: '25px 0'}}>12. Governing Law
-              These Terms and Conditions are governed by and construed in accordance with the laws of Noida/Uttarpradesh, without regard to its conflict of law principles. Any disputes will be resolved in the courts of India/Uttarpradesh.
-              </p>
-            <p className='sublight' style={{margin: '25px 0'}}>13. Contact Information
-            For any questions or concerns regarding these Terms and Conditions, please contact us at:</p> <br /> <hr/> <br />
+         
+            <p className="sublight"><strong>1. Introduction</strong></p>
+            <p className="sublight">Welcome to Appsobytes. These Terms and Conditions govern your use of our website and services. By accessing our website or engaging with our services, you agree to comply with these Terms. If you do not agree with any part of these Terms, please do not use our services.</p>
+
+            <p className="sublight"><strong>2. Services</strong></p>
+            <p className="sublight">Appsobytes provides IT services, including but not limited to:</p>
+            <ul style={{width: "95%", margin: "auto"}}>
+              <li>Custom Software Development</li>
+              <li>Web & Mobile Application Development</li>
+              <li>Digital Marketing Solutions</li>
+              <li>Cloud Solutions</li>
+              <li>IT Consulting</li>
+            </ul>
+            <p className="sublight">All services will be provided as per the agreement between Appsobytes and the client.</p>
+
+            <p className="sublight"><strong>3. Payment Terms</strong></p>
+            <ul style={{width: "95%", margin: "auto"}}>
+              <li>All payments must be made according to the payment schedule outlined in the project proposal or contract.</li>
+              <li>Payments are non-refundable once a service has been delivered or development work has commenced unless otherwise agreed in writing.</li>
+              <li>Late payments may be subject to additional fees or interest.</li>
+            </ul>
+
+            <p className="sublight"><strong>4. Client Responsibilities</strong></p>
+            <p className="sublight">The client agrees to:</p>
+            <ul style={{width: "95%", margin: "auto"}}>
+              <li>Provide accurate and complete project requirements.</li>
+              <li>Supply necessary content, feedback, and approvals promptly to avoid delays.</li>
+              <li>Make payments on time as per the agreed terms.</li>
+            </ul>
+
+            <p className="sublight"><strong>5. Intellectual Property</strong></p>
+            <ul style={{width: "95%", margin: "auto"}}>
+              <li>All intellectual property rights for the final deliverables will be transferred to the client upon full payment, unless otherwise stated in the agreement.</li>
+              <li>Appsobytes retains the right to showcase completed projects in its portfolio for promotional purposes unless a confidentiality agreement is in place.</li>
+            </ul>
+
+            <p className="sublight"><strong>6. Confidentiality</strong></p>
+            <p className="sublight">Both parties agree to keep all proprietary information and project details confidential unless disclosure is required by law or with mutual consent.</p>
+
+            <p className="sublight"><strong>7. Warranties & Liability</strong></p>
+            <ul style={{width: "95%", margin: "auto"}}>
+              <li>Appsobytes will make reasonable efforts to deliver high-quality services. However, we do not guarantee that our services will be error-free or uninterrupted.</li>
+              <li>We are not liable for any indirect, incidental, or consequential damages resulting from the use of our services.</li>
+            </ul>
+
+            <p className="sublight"><strong>8. Termination</strong></p>
+            <p className="sublight">Either party may terminate the project or service agreement with written notice.</p>
+            <p className="sublight">In case of termination:</p>
+            <ul style={{width: "95%", margin: "auto"}}>
+              <li>The client is responsible for payment of all work completed up to the termination date.</li>
+              <li>Any outstanding deliverables or obligations will be handled as per the termination agreement.</li>
+            </ul>
+
+            <p className="sublight"><strong>9. Governing Law</strong></p>
+            <p className="sublight">These Terms and any disputes arising from them are governed by the laws of [Insert Your Country/State].</p>
+
+            <p className="sublight"><strong>10. Amendments</strong></p>
+            <p className="sublight">Appsobytes reserves the right to update these Terms & Conditions at any time. Changes will be effective once posted on our website or communicated directly to clients.</p>
+
+            <p className="sublight"><strong>11. Contact Information</strong></p>
+            <p className="sublight">For any questions or concerns regarding these Terms, please contact us at:</p>
+
+            
+            
+            <br /> <hr/> <br />
             <p className='sublight' style={{margin: '25px 0'}}>Email: <Link href="mailto:appsobytes@gmail.com">appsobytes@gmail.com</Link></p>
             <i className='sublight' style={{margin: '25px 0'}}>Address: Noida, Uttar Pradesh</i>
           </div>

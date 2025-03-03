@@ -120,6 +120,14 @@
     list-style-type: none;
 }
 
+.Footerlink a{
+    transition: .3s;
+}
+
+.Footerlink a:hover{
+    color: #0061ff;
+}
+
 .Footercategories h2{
     text-align: center;
 }

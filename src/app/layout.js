@@ -7,7 +7,23 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: {
     default : "AppsoBytes",
-    template : "%s | AppsoBytes"
+    template : "%s | AppsoBytes",
+    keywords : ['appsobytes',
+                'website',
+                'mobile application',
+                'website developement',
+                'application developement',
+                'backend developement',
+                'cloud services',
+                'database sevices',
+                'information technology',
+                'software developement',
+                'html',
+                'css',
+                'javascript',
+                'python',
+                'website developement company',
+              ]
 
   },
   // title : "AppsoBytes",

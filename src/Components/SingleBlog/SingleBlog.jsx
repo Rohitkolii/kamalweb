@@ -17,7 +17,7 @@ const SingleBlog = ({SingleBlogdata}) => {
                 {
                     SingleBlogdata[0]?.sections?.map((info)=> {
                         return<div className={Styles.blogdiv}>
-                            <h3 className='gtlighth3'>{info.heading}</h3>
+                            <p>{info.heading}</p>
                             <p className='sublight'>{info.content}</p>
 
                             {
