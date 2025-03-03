@@ -96,6 +96,24 @@ body{
     font-size: 15px;
     font-weight: 300;
   }
+
+  .gtlighth3{
+    font-size: 22px;
+    text-transform: capitalize;
+    font-family: "Noto Sans", serif;
+      background: -webkit-linear-gradient(45deg, #000000, rgb(62, 130, 255));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }
+  
+  .gth3{
+    font-size: 22px;
+    text-transform: capitalize;
+    font-family: "Noto Sans", serif;
+      background: -webkit-linear-gradient(45deg, #ffffff, rgb(62, 130, 255));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }
 }
 
 

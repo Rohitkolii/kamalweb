@@ -8,6 +8,11 @@ const headdata = {
     para: 'Your Privacy, Our Commitment – Protecting Your Data with Trust & Transparency.'
   };
 
+  export const metadata = {
+    title: "Privacy Policies | AppsoBytes",
+    description: "Turning Ideas Into Impactful Apps",
+  }
+
 const page = () => {
   return (
     <>

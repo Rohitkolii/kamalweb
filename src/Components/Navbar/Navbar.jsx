@@ -25,7 +25,7 @@ const Navbar = () => {
 
         
     },[menu, widthvalue, servicemenu])
-    console.log(widthvalue);
+    // console.log(widthvalue);
 
     const Showmenubody = () => {
             return <li onMouseEnter={()=>setservicemenu(true)} onMouseLeave={()=> setservicemenu(false)}><Link href='/services'>Services</Link>
@@ -149,7 +149,7 @@ const Navbar = () => {
                     </div>
                 : ''
                 }
-                {/* <li><Link href='/blogs'>Blogs</Link></li> */}
+                <li><Link href='/blogs'>Blogs</Link></li>
                 <li><Link href='/contact'>Contact</Link></li>
             </ul>
         </div>

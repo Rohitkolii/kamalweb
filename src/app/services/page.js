@@ -1,18 +1,18 @@
 import Footer from '@/Components/Footer/Footer'
-import Navbar from '@/Components/Navbar/Navbar'
-import Random from '@/Components/Random/Random'
 import ServiceHeader from '@/Components/ServiceHeader/ServiceHeader'
 import ServicesDetails from '@/Components/ServicesDetails/ServicesDetails'
-import ServiveCard from '@/Components/ServiveCard/ServiveCard'
 import React from 'react'
+
+export const metadata = {
+  title: "Services | AppsoBytes",
+  description: "Turning Ideas Into Impactful Apps",
+}
 
 const services = () => {
   return (
     <>
-        {/* <Navbar /> */}
         <ServiceHeader />
         <ServicesDetails />
-        {/* <Random /> */}
         <Footer />
     </>
   )

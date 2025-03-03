@@ -11,8 +11,6 @@ const Footer = () => {
                     <div className={Styles.Footerform}>
                         <h2><span style={{color: '#0061ff'}}>A</span>ppso<span style={{color: '#0061ff'}}>B</span>yte<span>.</span></h2>
                         <p>Turning Ideas Into Impactful Apps</p>
-                        <p className='subp'>At AppsoBytes, we turn ideas into powerful, impactful applications that drive success.</p>
-                        {/* <input type="email" placeholder='Your email here' /> */}
                             <div className={Styles.sociallinks}>
                                 <p><Link href='/' ><FaFacebookF /></Link></p>
                                 <p><Link href='/' ><FaXTwitter  /></Link></p>
@@ -21,35 +19,46 @@ const Footer = () => {
                             </div>
                     </div>
 
-                    {/* <div className={Styles.Footeraddress}>
-                        <h2>Address</h2>
-                        <p>20, Awesome Road, <br /> New Delhi, 532C</p>
-                        <p> &#9990; +91 9999888852</p>
-                        <p>contact@illusion.com</p>
-                    </div> */}
-
-
+                    {/* <div className={Styles.Footeraddress}> */}
                     {/* <div className={Styles.Footerlink}>
-                        <h2>Social Links</h2>
-                        <Link href='/' >Twitter</Link>
-                        <Link href='/' >Linkedin</Link>
-                        <Link href='/' >Instagram</Link>
-                        <Link href='/' >Facebook</Link>
+                        <h2>Services</h2>
+                        <Link href='/' >Web Developement</Link>
+                        <Link href='/' >App Developement</Link>
+                        <Link href='/' >Backend</Link>
+                        <Link href='/' >Cloud & Database</Link>
                     </div> */}
+                    <div className={Styles.Footerlink}>
+                        <h2>Services</h2>
+                        <Link href='/' >Web Developement</Link>
+                        <Link href='/' >App Developement</Link>
+                        <Link href='/' >Backend</Link>
+                        <Link href='/' >Cloud & Database</Link>
+                        <Link href='/' >IT Consulting</Link>
+                    </div>
+
+
+                    <div className={Styles.Footerlink}>
+                        <h2>Industries</h2>
+                        <li>IT</li>
+                        <li>Social Meadia</li>
+                        <li>ECommerce</li>
+                        <li>Education</li>
+                        <li>Entertainment</li>
+                    </div>
                     
                     <div className={Styles.Footercategories}>
                         <h2>Useful Links</h2>
                             <div className={Styles.footercategoriesinner}>
-                                <Link href='/' >Home</Link>
                                 <Link href='/about' >About us</Link>
-                                <Link href='/contact' >Contact us</Link>
+                                <Link href='/contact' >Contact</Link>
                                 <Link href='/services' >Services</Link>
                             </div>
-                            {/* <div className={Styles.footercategoriesinner}>
+
+                            <div className={Styles.footercategoriesinner}>
                                 <Link href='/' >Blogs</Link>
-                                <Link href='/' >Gallary</Link>
-                                <Link href='/' >Achievements</Link>
-                            </div> */}
+                                {/* <Link href='/' >Gallary</Link>
+                                <Link href='/' >Achievements</Link> */}
+                            </div>
                     </div>
                 </div>
 {/* 
@@ -70,6 +79,8 @@ const Footer = () => {
                     </div>
                 
                 </div> */}
+
+
                 <div className={Styles.Footer3}>
                     <div className={Styles.copyright}>
                         <p>All right reserved <Link href='/' > AppsoBytes </Link><FaRegCopyright /> 2025</p>

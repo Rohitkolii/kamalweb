@@ -10,6 +10,11 @@ const headdata = {
   para: 'Terms & Conditions – Clear, Fair, and Transparent Guidelines for a Seamless Experience.'
 };
 
+export const metadata = {
+  title: "Terms & Condition | AppsoBytes",
+  description: "Turning Ideas Into Impactful Apps",
+}
+
 const page = () => {
   return (
     <>

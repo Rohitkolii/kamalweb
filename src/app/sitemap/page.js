@@ -9,6 +9,11 @@ const headdata = {
     para: 'Sitemap – Navigate Easily and Explore Everything We Offer.'
   };
 
+  export const metadata = {
+    title: "Sitemap | AppsoBytes",
+    description: "Turning Ideas Into Impactful Apps",
+  }
+
 const page = () => {
   return (
     <>
