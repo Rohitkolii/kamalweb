@@ -31,7 +31,7 @@ function App() {
             <p>{feturedblog[0].title}</p>
             <p className='sublight'>{feturedblog[0].sections[0].content.substring(0,300)}</p>
             <p>#Category</p>
-            <Link className={Styles.btn} href="">Read More <MdKeyboardArrowRight /></Link>
+            <Link className={Styles.btn} href={`blogs/${feturedblog[0].title.replace(/ /g, "-")}`}>Read More <MdKeyboardArrowRight /></Link>
         </div>
       </div>
       <h3 className='gtlighth3'>Recent Blogs</h3>

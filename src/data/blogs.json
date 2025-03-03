@@ -182,15 +182,5 @@
             "content": "Blockchain technology is transforming industries by enhancing security, transparency, and efficiency. While challenges remain, continued innovation and adoption will drive its evolution. Businesses, governments, and individuals must stay informed about blockchain developments to leverage its full potential and shape the future of decentralized technology."
           }
         ]
-      },
-      {
-        "id" : 2,
-        "title": "The Ultimate Guide to Blockchain Technology",
-        "img" : "https://images.unsplash.com/photo-1639322537228-f710d846310a?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "featured" : true,
-        "sections": [
-          {
-            "heading": "Introduction",
-            "content": "Blockchain technology has emerged as one of the most revolutionary innovations of the 21st century. Originally developed as the backbone for Bitcoin, blockchain has expanded far beyond cryptocurrency and is now transforming industries such as finance, healthcare, supply chain, and governance. In this comprehensive guide, we will explore the origins, fundamental concepts, working principles, applications, challenges, and the future of blockchain technology."
-          }]}
+      }
 ]

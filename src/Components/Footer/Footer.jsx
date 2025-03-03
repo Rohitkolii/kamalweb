@@ -48,18 +48,18 @@ const Footer = () => {
                     </div>
                     
                     <div className={Styles.Footercategories}>
-                        <h2>Useful Links</h2>
+                        <h2>Navigations</h2>
                             <div className={Styles.footercategoriesinner}>
                                 <Link href='/about' >About us</Link>
                                 <Link href='/contact' >Contact</Link>
                                 <Link href='/services' >Services</Link>
+                                <Link href='/' >Blogs</Link>
                             </div>
 
-                            <div className={Styles.footercategoriesinner}>
-                                <Link href='/' >Blogs</Link>
-                                {/* <Link href='/' >Gallary</Link>
-                                <Link href='/' >Achievements</Link> */}
-                            </div>
+                            {/* <div className={Styles.footercategoriesinner}>
+                                <Link href='/' >Gallary</Link>
+                                <Link href='/' >Achievements</Link>
+                            </div> */}
                     </div>
                 </div>
 {/* 
