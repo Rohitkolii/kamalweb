@@ -29,11 +29,12 @@ const Footer = () => {
                     </div> */}
                     <div className={Styles.Footerlink}>
                         <h2>Services</h2>
-                        <Link href='/' >Web Developement</Link>
-                        <Link href='/' >App Developement</Link>
-                        <Link href='/' >Backend</Link>
-                        <Link href='/' >Cloud & Database</Link>
-                        <Link href='/' >IT Consulting</Link>
+                        <Link href='/services/websitedevelopement' >Web Developement</Link>
+                        <Link href='/services/applicationdevelopement' >App Developement</Link>
+                        <Link href='/services/backenddevelopement' >Backend</Link>
+                        <Link href='/services/cloudanddatabase' >Cloud & Database</Link>
+                        <Link href='/services/itconsulting' >IT Consulting</Link>
+                        <Link href='/services/devops' >DevOps</Link>
                     </div>
 
 
