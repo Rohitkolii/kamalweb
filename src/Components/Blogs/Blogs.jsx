@@ -11,15 +11,30 @@ function App() {
 
   const [blogvalue, setBlogvalue] = useState(6)
 
+  //Getting Sinle Featured Blog
   let feturedblog
-  // feturedblog = blogs?.filter((blog)=> blog.id === 1);
   feturedblog = blogs?.filter((blog)=> blog.featured === true);
   // console.log(feturedblog[0].id);
   
+  const showBlogButton = () => {
+    if(blogs){
+      if(blogs.length > blogvalue){
+        return <button onClick={()=> setBlogvalue(blogs.length > blogvalue && (blogvalue+6))} className={Styles.btn}>Show more <MdKeyboardArrowRight /></button>
+      }else if(blogs.length < blogvalue){
+        if(blogs.length > 6){
+          return <button onClick={()=> setBlogvalue(6)} className={Styles.btn}>Show less <MdKeyboardArrowRight /></button>
+        }
+      }
+      else{
+        return null
+      }
+    }
+  }
   
   return (
     <div className={Styles.blogscontainer}>
       <div className={Styles.blogscontainerin}>
+      {/* It will show featured blog Post if there will be any data contain featured : true */}
       {feturedblog[0] && <>
       <h3 className='gtlighth3'>Featured Blog</h3>
       <div className={Styles.feturedblog}>
@@ -34,6 +49,8 @@ function App() {
             <Link className={Styles.btn} href={`blogs/${feturedblog[0].title.replace(/ /g, "-")}`}>Read More <MdKeyboardArrowRight /></Link>
         </div>
       </div></>}
+
+      {/* Multiple Blogs Posts  */}
       <h3 className='gtlighth3'>Recent Blogs</h3>
       <div className={Styles.bloggrid}>
           {
@@ -44,11 +61,10 @@ function App() {
           </Link>)
           }
         </div>
+
+        {/* Show more" buuton if posts are more than 6 else "Show less" button */}
         {
-          blogs.length > 6 ?          
-          <button onClick={()=> setBlogvalue(blogs.length > (blogvalue + 6) && (blogvalue+6))} className={Styles.btn}>Show more <MdKeyboardArrowRight /></button>
-          :
-          <button onClick={()=> setBlogvalue(6)} className={Styles.btn}>Show less <MdKeyboardArrowRight /></button>
+          showBlogButton()
           }
       </div>
     </div>

@@ -21,14 +21,13 @@ export const metadata = {
 const page = () => {
   return (
     <>
-      {/* <Navbar /> */}
       <CommonHeader headdata={headdata}/>
       <Aboutus />
       <Aboutcol />
       <Whyus />
       <Numbers />
       <Random />
-        <Footer />
+      <Footer />
     </>
   )
 }

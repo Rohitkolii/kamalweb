@@ -29,7 +29,7 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 
 
 import { FaArrowRightLong } from "react-icons/fa6";
-import Partners from '../Partners/Partners'
+import Partners from '../TechStack/TechStack'
 import { useRouter } from 'next/navigation'
 
 const servicedata = [

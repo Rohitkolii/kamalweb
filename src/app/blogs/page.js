@@ -1,4 +1,3 @@
-import Navbar from '@/Components/Navbar/Navbar'
 import Blogs from '@/Components/Blogs/Blogs'
 import Footer from '@/Components/Footer/Footer'
 import CommonHeader from '@/Components/CommonHeader/CommonHeader'
@@ -17,7 +16,6 @@ export const metadata = {
 const page = () => {
   return (
     <div>
-        {/* <Navbar /> */}
         <CommonHeader headdata={headdata} />
         <Blogs />
         <Footer />

@@ -21,11 +21,6 @@ import Loader from '../Loader/Loader'
 const contact = () => {
 
     const form = useRef()
-
-    // const [name, setname] = useState();
-    // const [mail, setmail] = useState();
-    // const [message, setmessage] = useState();
-    
     const [loading, setloading] = useState(false);
 
     const sendEmail = (e) => {
@@ -144,8 +139,6 @@ const contact = () => {
                                 Name :
                                 <input type="text" 
                                 placeholder='Enter your name'
-                                // onChange={(e)=> setname(e.target.value)}
-                                // value={name}
                                 name="user_name"
                                 />
                             </label>
@@ -155,8 +148,6 @@ const contact = () => {
                                 Email :
                                 <input type="email" 
                                 placeholder='example@gmail.com'
-                                // onChange={(e)=> setmail(e.target.value)}
-                                // value={mail}
                                 name="user_email"
                                 />
                             </label>
@@ -169,8 +160,6 @@ const contact = () => {
                                 Contact :
                                 <input type="tel" 
                                 placeholder='Enter your Contact no.'
-                                // onChange={(e)=> setphone(e.target.value)}
-                                // value={name}
                                  name="user_phone"
                                 />
                             </label>
@@ -187,8 +176,6 @@ const contact = () => {
                                 // cols="30" 
                                 rows="4"
                                 placeholder='Enter your message or query'
-                                // onChange={(e)=> setmessage(e.target.value)}
-                                // value={message}
                                 ></textarea>
                             </label>
                         </div>

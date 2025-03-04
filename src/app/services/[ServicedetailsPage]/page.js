@@ -9,6 +9,7 @@ import ServicepageContent from '@/Components/ServicepageContent/ServicepageConte
 
 const servicePage = ( { params } ) => {
   
+  //Getting Single Service Details Page
   let newdata = servicedata.filter( data => data.titleurl == params.ServicedetailsPage)
   // console.log(newdata[0])
   

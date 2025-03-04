@@ -51,7 +51,6 @@ const Header = () => {
             </div>
 
             <div className={Styles.imgcol}><img src="images/h.svg" alt="" /></div>
-            {/* <div className={Styles.imgcol}><img src="images/h.svg" alt="" /></div> */}
 
 
         </section>

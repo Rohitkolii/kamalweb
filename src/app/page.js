@@ -4,7 +4,7 @@ import About from "../Components/About/About";
 import Contact from "../Components/Contact/Contact";
 import Footer from "../Components/Footer/Footer";
 import Services from "../Components/Services/Services";
-import Partners from "../Components/Partners/Partners";
+import Partners from "../Components/TechStack/TechStack";
 import Feedback from "@/Components/Feedback/Feedback";
 import Technologies from "@/Components/Technologies/Technologies";
 import Random from "@/Components/Random/Random";
@@ -20,12 +20,10 @@ export default function Home() {
     app : 'Mobile',
     backend : 'Backend',
     database : "Cloud & Database",
-    // cloud : 'Cloud',
   }
 
   return (
     <>
-      {/* <Header /> */}
       <HeaderSlide />
       <Partners />
       {/* <Aboutcol /> */}

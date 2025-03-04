@@ -59,26 +59,6 @@ export default function HeaderSlide() {
           </div>
         </SwiperSlide> */}
 
-        {/* <SwiperSlide>
-          <img src="images/headerslide/Growslide.png" alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="images/headerslide/ExpertTeam.png" alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="images/headerslide/supportslide.png" alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="images/headerslide/TailoredSolutions.png" alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="images/headerslide/EnhancedEfficiency.png" alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="images/headerslide/competitionslide.png" alt="" />
-        </SwiperSlide> */}
-
-
           <SwiperSlide></SwiperSlide>
           <SwiperSlide></SwiperSlide>
           <SwiperSlide></SwiperSlide>

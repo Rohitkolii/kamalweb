@@ -1,5 +1,5 @@
 import React from 'react'
-import Styles from './Partners.module.css'
+import Styles from './TechStack.module.css'
 const Partners = () => {
     
 

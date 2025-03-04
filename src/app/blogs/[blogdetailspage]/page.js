@@ -1,9 +1,8 @@
-// 'use client'
-// import { useEffect } from "react";
 import CommonHeader from "@/Components/CommonHeader/CommonHeader";
 import Footer from "@/Components/Footer/Footer";
 import SingleBlog from "@/Components/SingleBlog/SingleBlog";
 
+//Blogs Json data
 import blogs from '../../../data/blogs.json'
 
 
@@ -11,6 +10,7 @@ import blogs from '../../../data/blogs.json'
 
 const blogdetailspage = ({params}) => {
     
+    //Getting Single Blog Post
     const SingleBlogdata = blogs?.filter(blog => blog.title.replace(/ /g, "-") == params.blogdetailspage)
     
     const headdata = {
