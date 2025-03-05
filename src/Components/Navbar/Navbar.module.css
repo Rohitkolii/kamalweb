@@ -4,7 +4,13 @@
     padding: 15px;
     font-size: 16px;
     text-transform: uppercase;
+    transition: .3s;
 }
+
+.navbar a:hover{
+    color: #0061ff;
+}
+
 
 .logo p{
     /* color: dodgerblue; */
@@ -48,23 +54,24 @@
     border-radius: 6px;
     margin-left: 20px;
     padding: 8px 15px;
+    transition: .3s;
 }
 
+.navbar .btn:hover{
+    background-color: #0061ff;
+    color: #fff;
+}
 
 /* Hover Menu  */
 
 .showservice{
-    /* background-color: #000; */
     background-color: #fff;
-    /* background: linear-gradient(to right, #0F0F0F, #000000); */
     width: 90%;
     height: fit-content;
     position: fixed;
     left: 50%;
     transform: translate(-50%,10px);
-    /* border-radius: 6px; */
     z-index: 99;
-    /* border: 1px solid rgb(48, 48, 48); */
     padding: 30px;
     transition: .9s; background-size: cover;
     box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.593);
@@ -82,15 +89,6 @@
     display: none;
     right: -100%;
 }
-
-/* .showservice a{
-    color: white;
-    text-decoration: none;
-    font-weight: 300;
-    text-transform: uppercase;
-} */
-
-
 
 .menuheader{
     margin-bottom: 20px;

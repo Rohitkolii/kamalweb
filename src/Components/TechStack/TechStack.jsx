@@ -63,7 +63,7 @@ const Partners = () => {
                     </div>
                     
                     <div className={Styles.col}>
-                        <img src="images/s3.svg"/>
+                        <img src="images/s3.png"/>
                     </div>
                     <div className={Styles.col}>
                         <img src="images/mongodb.png"/>

@@ -10,7 +10,7 @@ import 'swiper/css/pagination';
 import './HeaderSlide.css';
 
 // import required modules
-import { EffectCoverflow, Pagination } from 'swiper/modules';
+import {Autoplay, EffectCoverflow, Pagination } from 'swiper/modules';
 import Navbar from '../Navbar/Navbar';
 
 export default function HeaderSlide() {
@@ -33,8 +33,12 @@ export default function HeaderSlide() {
           modifier: 1,
           slideShadows: true,
         }}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: true,
+        }}
         // pagination={true}
-        modules={[EffectCoverflow, Pagination]}
+        modules={[Autoplay, EffectCoverflow, Pagination]}
         className="mySwiper"
       >
 {/* 

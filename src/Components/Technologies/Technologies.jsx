@@ -41,7 +41,8 @@ const Technologies = ({sections}) => {
                     <div><img src="images/postgre.png"/></div>
                     <div><img src="images/dynamodb.png"/></div>
                     <div><img src="images/aws.svg"/></div>
-                    <div><img src="images/cloudflare.png"/></div>
+                    <div><img src="images/s3.png"/></div>
+                    <div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Cloudflare_Logo.svg/800px-Cloudflare_Logo.svg.png"/></div>
 
                 </div>
     
