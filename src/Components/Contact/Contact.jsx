@@ -101,7 +101,7 @@ const contact = () => {
                     </div>
                     <div>
                         <p>Contact:</p>
-                        <p>9773806588</p>
+                        <p>9899999999</p>
                     </div>
                 </div>
                 
